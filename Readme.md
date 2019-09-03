@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Александр Милованов](https://up.htmlacademy.ru/htmlcss/26/user/1086189).
-* Наставник: `Максим Фарига`.
+* Наставник: `Максим Фарига` {https://htmlacademy.ru/profile/maximfariga}.
 
 ---
 
