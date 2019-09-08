@@ -7,29 +7,29 @@
   <body>
   			<!-- Header - Start -->
     <header>
-    	<article>
+    	<article class="header__tehnomart">
     		<a href="index.html"><img src="#" alt="техномарт"></a>
     		<span>Поиск</span>
     		<span>корзина</span>
     		<button>Оформить заказ</button>
     	</article>
-    	<article>
+    	<article class="header__info">
     		<p>
     			Интернет-магазин <br>
 				строительных материалов <br>
 				и инструментов для ремонта <br>
     		</p>
-            <div>
+            <div class="header__phone">
     		  <span>+7 (812) 555-05-55</span>
     		  <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     		</div>
-            <div>
+            <div class="client">
                 <span>Равшан Джамшутович</span>
                 <span>Мои заказы</span>
                 <span>Личный каьинет</span>
             </div>
     	</article>
-    	<nav>
+    	<nav class="menu">
     		<ul>
     			<li><a href="index.html">Главная</a></li>
     			<li><a href="#">Компания</a></li>
@@ -43,37 +43,43 @@
     </header>
                         <!-- Main Start -->
 
-    <main>
-        <article>
+    <main class="main__wrapper">
+        <article class="main__navigation">
             <ul>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Инструменты</a></li>
                 <li><a href="#">Перфораторы</a></li>
-                <!--  Я думаю что это не список, временно потсо span сделать?  -->
+                <!--  Я думаю что это не список, временно span сделать?  -->
             </ul>
         </article>
-        <h2>ПЕРФОРАТОРЫ</h2>
-        <section>
-            <h4>Производители:</h4>
-            <ul>
-                <li>BOSCH</li>
-                <li>ИНТЕРСКОЛ</li>
-                <li>MAKIta</li>
-                <li>Dewalt</li>
-                <li>Hitachi</li>
-            </ul>
+        <article class="drill">
+            <h2>ПЕРФОРАТОРЫ</h2>
+        </article>
+        <section class="prodaction__filter">
+            <article class="manufacturers">
+                <h4>Производители:</h4>
+                <ul>
+                    <li>BOSCH</li>
+                    <li>ИНТЕРСКОЛ</li>
+                    <li>MAKIta</li>
+                    <li>Dewalt</li>
+                    <li>Hitachi</li>
+                </ul>
+            </article>
             <!-- ______________________________ -->
-            <h4>Питание:</h4>
-            <ul>
-                <li>Аккумуляторные</li>
-                <li>Сетевые</li>
-            </ul>
+            <article class="powersupply">
+                <h4>Питание:</h4>
+                <ul>
+                    <li>Аккумуляторные</li>
+                    <li>Сетевые</li>
+                </ul>
+            </article>
             <!-- Это же тоже форма? Временно сделал списком. -->
             <button>Показать</button>
         </section>
 
         <!-- Часть с типани перформаторов -->
-        <section>
+        <section class="prodaction__type">
             <li><a href="#">
                 <img src="https://via.placeholder.com/150x100" alt="Перфоратор" width="150" height="150">
             </a>
@@ -159,9 +165,9 @@
     </main>
 
                         <!-- Footer Start -->
-    <footer>
-        <nav>
-            <article>
+   <footer class="footer__wrapper">
+        <nav class="footer__tehnomart">
+            <article class="footer__logo">
                 <img src="#" alt="Логотип">
                 <ul>
                     <li><a href="#">Компания</a></li>
@@ -171,7 +177,7 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </article>
-            <article>
+            <article class="fooer__adress">
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. <br>19/8 <br>
                     +7 (812) 555-05-55</p>
                 <ul>
@@ -182,24 +188,24 @@
                 </ul>
             </article>
         </nav>
-        <section>
+        <section class="footer__info">
             <p>
                 © 2010–2019 Компания «Техномарт» <br>
                 Все права защищены
             </p>
-            <article>
+            <article class="social">
                 <a href="#"><img src="#" alt="VK"></a>
                 <a href="#"><img src="#" alt="BK"></a>
                 <a href="#"><img src="#"    alt="IN"></a>
             </article>
-            <article>
+            <article class="feedback">
                 <p>Обратная связь:</p>
                 <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 <p>Разработано -</p>
                 <a href="htmlacademy.ru">htmlacademy.ru</a>
             </article>
         </section>
-    </footer>
+    </footer
 
 
   </body>
