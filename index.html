@@ -2,38 +2,40 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Index</title> <!-- Временно для удобства -->
   </head>
   <body>
+
+
   			<!-- Header - Start -->
-    <header class="header__wrapper">
-    	<article class="header__tehnomart">
-    		<a href="index.html"><img src="#" alt="техномарт"></a>
-    		<span>Поиск</span>
-    		<span>корзина</span>
-    		<button>Оформить заказ</button>
-    	</article>
-    	<article class="header__info">
-    		<p>
-    			Интернет-магазин <br>
+    <header class="header-wrapper">
+    	<section class="header-tehnomart">
+    		<a><img src="#" alt="техномарт"></a>
+    		<a href="#">Поиск</a>
+    		<a href="#">Закладки</a>
+    		<a href="#">Корзина</a>
+    		<a href="#">Оформить заказ</a>
+    	</section>
+    	<section class="header-info">
+    		<p class="header-description">
+    			Интернет-магазин 
 				строительных материалов <br>
-				и инструментов для ремонта <br>
+				и инструментов для ремонта 
     		</p>
-    		<div class="header__phone">
-    		  <span>+7 (812) 555-05-55</span>
+    		<div class="header-phone">
+    		   <a href="+7 (812) 555-05-55">+7 (812) 555-05-55</a>
     		  <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     		</div>
-    		<button class="enter">
-    			<img src="#" alt="дверца">
-    			Выход
-    		</button>
-    		<button class="registration">
-    			Регистрация
-    		</button>
-    	</article>
+    		<div class="entrance-registration">
+    	    	<a href="#" class="entrance">Выход</a>
+    			<a href="#" class="registration">Регистрация</a>
+    		</div>
+    	</section>
+
+
     	<nav class="menu">
-    		<ul>
-    			<li><a href="index.html">Главная</a></li>
+    		<ul class="menu-list">
+    			<li><a>Главная</a></li>
     			<li><a href="#">Компания</a></li>
     			<li><a href="catalog.html">Каталог</a></li>
     			<li><a href="#">Новости</a></li>
@@ -43,74 +45,98 @@
     		</ul>
     	</nav>
     </header>
+
+
+
+
+
+
     			<!-- Main Start -->
     <main class="main__wrapper">
+
     	<!-- Тут будет основная чать контента -->
+
     	<section class="main__info">
     		<h2>КОМПАНИЯ «Техномарт»</h2>
-    		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-    		<p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>
+    		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+    		<p>Мы можем доставить ваш товар в самые отдаленные точки России!
 			Техномарт работает со многими транспортными компаниями: </p>
 			<ul>
 				<li>Деловые линии</li>
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
-			<article class="button__company">
+			<div class="about-company">
 				<a href="#">Подробнее о компании</a>
-			</article>
+			</div>
     	</section>
 
     	<section class="map__wrapper">
     		<h2>Контакты</h2>
-    		<p>Вы можете забрать товар сами, <br>
+    		<p>Вы можете забрать товар сами,
 				заехав в наш офис:</p>
-			<div class="navigation">
+			<a href="#">                                	<!-- МБ НУЖНО БУДЕТ КЛАСС СДЕЛАТЬ -->
 			<img src="https://via.placeholder.com/150x100" alt="карта" width="150" height="150">
-			</div>
+			</a>
 			<button class="button__write">Заблудились? НапиШИТЕ НАМ!</button>
     	</section>
     </main>
+
+
+
+
+
+
+
+
     				<!-- Footer Start -->
-    <footer class="footer__wrapper">
-    	<nav class="footer__tehnomart">
-    		<article class="footer__logo">
-    			<img src="#" alt="Логотип">
-    			<ul>
-    				<li><a href="#">Компания</a></li>
-    				<li><a href="#">Новости</a></li>
-    				<li><a href="catalog.html">Каталог</a></li>
-    				<li><a href="#">Доставка</a></li>
-    				<li><a href="#">Контакты</a></li>
-    			</ul>
-    		</article>
-    		<article class="fooer__adress">
-    			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. <br>19/8 <br>
+    <footer class="footer-wrapper">
+    	<nav class="footer-top">
+    		<section class="footer-logo-address">
+    			<a><img src="#" alt="Логотип"></a>    <!-- Будет картинка логотипа -->
+    			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 					+7 (812) 555-05-55</p>
+			</section>
+    		<section class="fooer-menu">
 				<ul>
 					<li><a href="#">Материалы</a></li>
 					<li><a href="#">Техника</a></li>
 					<li><a href="#">Инструменты</a></li>
 					<li><a href="#">Спецпредложения</a></li>
 				</ul>
-    		</article>
-    	</nav>
-    	<section class="footer__info">
-    		<p>
-    			© 2010–2019 Компания «Техномарт» <br>
-				Все права защищены
-    		</p>
-    		<article class="social">
-    			<a href="#"><img src="#" alt="VK"></a>
-    			<a href="#"><img src="#" alt="BK"></a>
-    			<a href="#"><img src="#"	alt="IN"></a>
-    		</article>
-    		<article class="feedback">
-    			<p>Обратная связь:</p>
-    			<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    			<p>Разработано -</p>
-    			<a href="htmlacademy.ru">htmlacademy.ru</a>
-    		</article>
+				<ul>
+    				<li><a href="#">Компания</a></li>
+    				<li><a href="#">Новости</a></li>
+    				<li><a href="catalog.html">Каталог</a></li>
+    				<li><a href="#">Доставка</a></li>
+    				<li><a href="#">Контакты</a></li>
+    			</ul>
+    		</section>
+ 	   	</nav>
+
+
+    	<section class="footer-bottom">
+    		<div class="copyrigh">
+    			<p>© 2010–2019 Компания «Техномарт»</p>
+				<p>Все права защищены</p>
+    		</div>
+    		
+    			<section class="social">
+    				<a href="#"><img src="#" alt="VK"></a>
+    				<a href="#"><img src="#" alt="BK"></a>
+    				<a href="#"><img src="#" alt="IN"></a>
+    			</section>
+    			<section class="footer-feedback">
+    				<div class="feedback">	
+    					<p>Обратная связь:</p>
+    					<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    				</div>
+    				<div class="creator">
+    					<p>Разработано -</p>
+    					<a href="htmlacademy.ru">htmlacademy.ru</a>
+    				</div>
+    			</section>
+    		
     	</section>
     </footer>
 
