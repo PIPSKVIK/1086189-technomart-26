@@ -5,17 +5,14 @@
     <title>Index</title> <!-- Временно для удобства -->
   </head>
   <body>
-    <!-- тесть git -->
-
-
   			<!-- Header - Start -->
     <header class="header-wrapper">
-    	<section class="header-tehnomart">
-    		<a><img src="#" alt="техномарт"></a>
-    		<a href="#">Поиск</a>
-    		<a href="#">Закладки</a>
-    		<a href="#">Корзина</a>
-    		<a href="#">Оформить заказ</a>
+    	<section class="header-top">
+    		<a class="logo"><img src="#" alt="техномарт"></a>
+    		<a class="search" href="#">Поиск</a>
+    		<a class="marker" href="#">Закладки</a>
+    		<a class="basket" href="#">Корзина</a>
+    		<a class="order" href="#">Оформить заказ</a>
     	</section>
     	<section class="header-info">
     		<p class="header-description">
@@ -23,13 +20,13 @@
 				строительных материалов <br>
 				и инструментов для ремонта 
     		</p>
-    		<div class="header-phone">
-    		   <a href="+7 (812) 555-05-55">+7 (812) 555-05-55</a>
-    		  <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    		<div class="contact-information">
+    		   <a class="phone" href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+    		   <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     		</div>
     		<div class="entrance-registration">
-    	    	<a href="#" class="entrance">Выход</a>
-    			<a href="#" class="registration">Регистрация</a>
+    	       <a href="#" class="entrance">Выход</a>
+    	       <a href="#" class="registration">Регистрация</a>
     		</div>
     	</section>
 
@@ -46,9 +43,6 @@
     		</ul>
     	</nav>
     </header>
-
-
-
 
 
 
@@ -71,20 +65,15 @@
     	</section>
 
     	<section class="map-wrapper">
-    		<h2>Контакты</h2>
-    		<p>Вы можете забрать товар сами,
+            <h2 class="contacts">Контакты</h2>
+            <p class="contacts-info">Вы можете забрать товар сами,
 				заехав в наш офис:</p>
-			<a class="map-location" href="#">                                	
-			<img src="https://via.placeholder.com/150x100" alt="карта" width="150" height="150">
+            <a class="map-location" href="#">
+                <img src="https://via.placeholder.com/150x100" alt="карта" width="150" height="150">
 			</a>
-			<button class="button__write">Заблудились? НапиШИТЕ НАМ!</button>
+			<a href="#">class="navugation-info">Заблудились? Напишите нам!</a>
     	</section>
     </main>
-
-
-
-
-
 
 
 
@@ -92,18 +81,18 @@
     <footer class="footer-wrapper">
     	<nav class="footer-top">
     		<section class="footer-logo-address">
-    			<a><img src="#" alt="Логотип"></a>    <!-- Будет картинка логотипа -->
-    			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-					+7 (812) 555-05-55</p>
+    			<a class="footer-logo"><img src="#" alt="Логотип"></a>    <!-- Будет картинка логотипа -->
+    			<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
 			</section>
-    		<section class="fooer-menu">
-				<ul>
+    		<section class="footer-menu">
+				<ul class="footer-menu-top">
 					<li><a href="#">Материалы</a></li>
 					<li><a href="#">Техника</a></li>
 					<li><a href="#">Инструменты</a></li>
 					<li><a href="#">Спецпредложения</a></li>
 				</ul>
-				<ul>
+				<ul class="footer-menu-bottom">
     				<li><a href="#">Компания</a></li>
     				<li><a href="#">Новости</a></li>
     				<li><a href="catalog.html">Каталог</a></li>
@@ -116,29 +105,25 @@
 
     	<section class="footer-bottom">
     		<div class="copyrigh">
-    			<p>© 2010–2019 Компания «Техномарт»</p>
-				<p>Все права защищены</p>
+                <p class="description">© 2010–2019 Компания «Техномарт»</p>
+                <p class="protected">Все права защищены</p>
     		</div>
-    		
-    			<section class="social">
-    				<a href="#"><img src="#" alt="VK"></a>
-    				<a href="#"><img src="#" alt="BK"></a>
-    				<a href="#"><img src="#" alt="IN"></a>
-    			</section>
-    			<section class="footer-feedback">
-    				<div class="feedback">	
-    					<p>Обратная связь:</p>
-    					<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    				</div>
-    				<div class="creator">
-    					<p>Разработано -</p>
-    					<a href="htmlacademy.ru">htmlacademy.ru</a>
-    				</div>
-    			</section>
-    		
+    		<section class="social">
+    			<a href="#"><img src="#" alt="Вконтакте"></a>
+    			<a href="#"><img src="#" alt="Фейсбук"></a>
+    			<a href="#"><img src="#" alt="Инстаграм"></a>
+    		</section>
+    		<section class="footer-feedback">
+    			<div class="footer-feedback-title">	
+    				<p>Обратная связь:</p>
+    				<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    			</div>
+    			<div class="footer-feedback-title">
+    				<p>Разработано -</p>
+    				<a href="htmlacademy.ru">htmlacademy.ru</a>
+    			</div>
+    		</section>
     	</section>
     </footer>
-
-
   </body>
 </html>
