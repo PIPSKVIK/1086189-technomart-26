@@ -1,3 +1,302 @@
+/* font-family: 'Cuprum', sans-serif; */
+/* font-family: 'PT Sans', sans-serif; */
 body {
-	background: gray;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-style: normal;
+	font-weight: 400;
+	background-color: #ffffff;
+}
+/* /Header/ */
+
+header {
+	background-color: #f2f6f8;
+}
+
+.logo {
+	background-color: #ee3643;
+}
+
+.header-top {
+	background-color: #293449;
+}
+
+.header-top a {
+	font-size: 17px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.marker:active {
+	color: #ffffff;
+	opacity: 0.4;
+	background-color: #161d29;
+}
+
+.basket:active {
+	color: #ffffff;
+	opacity: 0.4;
+	background-color: #161d29;
+}
+
+.order {
+	background-color: #5fbb2d;
+}
+
+.order:active {
+	color: #ffffff;
+	opacity: 0.5;
+	background-color: #518534;
+}
+
+.header-info {
+	background-color: #f3f7f8;
+}
+
+.header-description {
+	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+}
+
+.phone {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;
+}
+
+.address {
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+}
+
+.entrance-registration a {
+	font-size: 21px;
+	line-height: 21px;
+	text-decoration: none;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.entrance:hover {
+	color: #ee3643;
+}
+
+.entrance:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.registration:hover {
+	color: #ee3643;
+}
+
+.registration:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+/* Стили бля catalog - client */
+
+.client a {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #ffffff;
+}
+
+.client-name:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.personal-account {
+	font-size: 16px;
+	line-height: 18px;
+	list-style-type: none;
+}
+
+.personal-account a {
+	color: #3f4e66;
+}
+
+.personal-account a:hover {
+	color: #ee3643;
+}
+
+.personal-account a:active {
+	color: #32425c;
+	opacity: 0.3;
+}
+
+.menu {
+	background-color: #32425c;
+}
+
+.menu-list li {
+	list-style-type: none;
+}
+
+.menu-list a {
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 17px;
+	color: #ffffff;
+}
+
+.menu-list a:hover {
+	background-color: #293449;
+}
+
+.menu-list a:active {
+	color: #ffffff;
+	opacity: 0.5;
+	background-color: #1d2739;
+}
+
+.main-hidden {
+	display: none;
+}
+
+.breadcrumbs-list li {
+	list-style-type: none;
+}
+
+.breadcrumbs-list a {
+	font-family: 'PT Sans', sans-serif;
+	text-decoration: none;
+	color: #000000;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.instruments-title {
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+	font-weight: 400;
+	background-color: #f2f6f8;
+}
+
+.about-company {
+	color: #000000;
+}
+
+.about-title {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.about-company p {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.about-company-list li {
+	font-size: 18px;
+	line-height: 20px;
+	list-style-type: none;
+}
+
+.button-more-details {
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.button-more-details:hover {
+	background-color: #ca2c37;
+}
+
+.button-more-details:active {
+	background-color: #ba2732;
+}
+
+.contacts {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.contacts-info {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.navigation-info {
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.navigation-info:hover {
+	background-color: #ca2c37;
+}
+
+.navigation-info:active {
+	background-color: #ba2732;
+}
+
+/* Еще часть main cotalog */
+
+.form-manufacturers {
+	font-family: 'PT Sans', sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.form-manufacturers li {
+	list-style-type: none;
+}
+
+.form-manufacturers legend {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.form-manufacturers label {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.form-electro-power {
+	font-family: 'PT Sans', sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.form-electro-power legend {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.form-electro-power li {
+	list-style-type: none;
+}
+
+.form-electro-power label {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.button-show-manufacturers {
+	background-color: #ffffff;
 }
