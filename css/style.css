@@ -10,6 +10,10 @@ body {
 }
 /* /Header/ */
 
+.popup {
+	display: none; /* Закроем попап */
+}
+
 header {
 	background-color: #f2f6f8;
 }
@@ -299,4 +303,131 @@ header {
 
 .button-show-manufacturers {
 	background-color: #ffffff;
+	border: 1px solid black;
+	border-color: #e5e5e5;
 }
+
+.button-show-manufacturers:hover {
+	border-color: #bdc6ca;
+}
+
+.button-show-manufacturers:active {
+	border-color: #ee3643;
+}
+
+/* Часть с типани перформаторов */
+/* catalog */
+
+ .catalog-list li {
+ 	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	border: 1px solid black;
+	list-style-type: none;
+	/* Времянка */
+	width: fit-content;
+	margin: 20px 20px;
+  /* Времянка */
+ }
+
+.catalog-item-type a {
+	text-decoration: none;
+	line-height: 20px;
+	color: #000000;
+}
+
+.discount {
+	font-size: 17px;
+	color: #999999;
+	text-transform: uppercase;
+}
+
+.price {
+	font-size: 17px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #ee3643;
+}
+
+         /* Стили для footer */
+
+.footer-top {
+	background-color: #32425c;
+}
+
+.footer-logo {
+	background-color: #ee3643;
+}
+
+.footer-address {
+	line-height: 24px;
+	color: #f1f5f7;
+}
+
+.footer-logo-address a {
+	text-decoration: none;
+	line-height: 24px;
+	color: #f1f5f7;
+}
+
+.footer-menu li {
+	list-style-type: none;
+}
+
+.footer-menu-top a {
+	line-height: 24px;
+	text-decoration: none;
+	color: #ffd180;
+}
+
+.footer-menu-bottom a {
+	line-height: 24px;
+	text-decoration: none;
+	color: #f1f5f7;
+}
+
+.footer-menu-bottom a:hover {
+	text-decoration: underline;
+}
+
+.footer-menu-bottom a:active {
+	color: #f1f5f7;
+	opacity: 0.5;
+}
+
+.footer-menu-top a:hover {
+	text-decoration: underline;
+}
+
+.footer-menu-top a:active {
+	color: #ffd180;
+	opacity: 0.5;
+}
+
+.footer-bottom {
+	background-color: #293449;
+}
+
+.copyrigh p {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.footer-feedback-title p {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.footer-feedback-title a {
+	font-size: 16px;
+	color: #ffd180;
+	text-decoration: none;
+}
+
+.footer-feedback-title a:hover {
+	text-decoration: underline;
+}
+
+.footer-feedback-title a:active {
+	color: #ee3643;
+}
+
