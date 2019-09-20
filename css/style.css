@@ -1,7 +1,7 @@
 /* font-family: 'Cuprum', sans-serif; */
 /* font-family: 'PT Sans', sans-serif; */
 body {
-	font-family: 'Cuprum', sans-serif;
+	font-family: 'Cuprum', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	font-style: normal;
@@ -32,16 +32,10 @@ header {
 	color: #ffffff;
 }
 
-.marker:active {
-	color: #ffffff;
-	opacity: 0.4;
+.header-top .marker:active,
+.header-top .basket:active {
 	background-color: #161d29;
-}
-
-.basket:active {
-	color: #ffffff;
-	opacity: 0.4;
-	background-color: #161d29;
+	color: rgba(255, 255, 255, 0.4);
 }
 
 .order {
@@ -49,8 +43,7 @@ header {
 }
 
 .order:active {
-	color: #ffffff;
-	opacity: 0.5;
+	color: rgba(255, 255, 255, 0.5);
 	background-color: #518534;
 }
 
@@ -86,22 +79,12 @@ header {
 	background-color: #ffffff;
 }
 
-.entrance:hover {
+.entrance-registration a:hover {
 	color: #ee3643;
 }
 
-.entrance:active {
-	color: #000000;
-	opacity: 0.3;
-}
-
-.registration:hover {
-	color: #ee3643;
-}
-
-.registration:active {
-	color: #000000;
-	opacity: 0.3;
+.entrance-registration a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 /* Стили бля catalog - client */
@@ -115,14 +98,13 @@ header {
 }
 
 .client-name:active {
-	color: #000000;
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .personal-account {
 	font-size: 16px;
 	line-height: 18px;
-	list-style-type: none;
+	list-style: none;
 }
 
 .personal-account a {
@@ -134,16 +116,15 @@ header {
 }
 
 .personal-account a:active {
-	color: #32425c;
-	opacity: 0.3;
+	color: rgba(50, 66, 92, 0.3);
 }
 
 .menu {
 	background-color: #32425c;
 }
 
-.menu-list li {
-	list-style-type: none;
+.menu-list {
+	list-style: none;
 }
 
 .menu-list a {
@@ -158,8 +139,7 @@ header {
 }
 
 .menu-list a:active {
-	color: #ffffff;
-	opacity: 0.5;
+	color: rgba(255, 255, 255, 0,5);
 	background-color: #1d2739;
 }
 
@@ -172,7 +152,7 @@ header {
 }
 
 .breadcrumbs-list a {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	color: #000000;
 	font-size: 13px;
@@ -192,26 +172,30 @@ header {
 	color: #000000;
 }
 
-.about-title {
+.about-title,
+.contacts {
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
 	font-weight: 400;
 }
 
-.about-company p {
-	font-family: 'PT Sans', sans-serif;
+.about-description-first,
+.description-second,
+.contacts-info {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
 
-.about-company-list li {
+.about-company-list {
 	font-size: 18px;
 	line-height: 20px;
 	list-style-type: none;
 }
 
-.button-more-details {
+.button-more-details,
+.navigation-info {
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
@@ -228,28 +212,6 @@ header {
 	background-color: #ba2732;
 }
 
-.contacts {
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
-	font-weight: 400;
-}
-
-.contacts-info {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-}
-
-.navigation-info {
-	font-size: 14px;
-	line-height: 18px;
-	color: #ffffff;
-	background-color: #ee3643;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
 .navigation-info:hover {
 	background-color: #ca2c37;
 }
@@ -260,43 +222,26 @@ header {
 
 /* Еще часть main cotalog */
 
-.form-manufacturers {
-	font-family: 'PT Sans', sans-serif;
-	color: #000000;
-	text-transform: uppercase;
-}
-
-.form-manufacturers li {
-	list-style-type: none;
-}
-
-.form-manufacturers legend {
-	font-size: 17px;
-	line-height: 30px;
-	font-weight: bold;
-}
-
-.form-manufacturers label {
-	font-size: 15px;
-	line-height: 20px;
-}
-
+.form-manufacturers,
 .form-electro-power {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	color: #000000;
 	text-transform: uppercase;
 }
 
+.type-manufacturers,
+.type-electro-power {
+	list-style: none;
+}
+
+.form-manufacturers legend,
 .form-electro-power legend {
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
-}
+} 
 
-.form-electro-power li {
-	list-style-type: none;
-}
-
+.form-manufacturers label,
 .form-electro-power label {
 	font-size: 15px;
 	line-height: 20px;
@@ -319,21 +264,19 @@ header {
 /* Часть с типани перформаторов */
 /* catalog */
 
- .catalog-list li {
- 	font-family: 'PT Sans', sans-serif;
+ .catalog-item {
+ 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	border: 1px solid black;
 	list-style-type: none;
-	/* Времянка */
-	width: fit-content;
-	margin: 20px 20px;
-  /* Времянка */
- }
+}
 
 .catalog-item-type a {
 	text-decoration: none;
-	line-height: 20px;
 	color: #000000;
+}
+.catalog-item-type {
+	line-height: 20px;
 }
 
 .discount {
@@ -342,10 +285,8 @@ header {
 	text-transform: uppercase;
 }
 
-.price {
-	font-size: 17px;
+.price.new {
 	color: #ffffff;
-	text-transform: uppercase;
 	background-color: #ee3643;
 }
 
@@ -370,39 +311,37 @@ header {
 	color: #f1f5f7;
 }
 
+/* Меню footer, большой список/ */
+
 .footer-menu li {
-	list-style-type: none;
+	list-style: none;
 }
 
-.footer-menu-top a {
+.footer-menu-list {
 	line-height: 24px;
-	text-decoration: none;
-	color: #ffd180;
-}
-
-.footer-menu-bottom a {
-	line-height: 24px;
-	text-decoration: none;
 	color: #f1f5f7;
 }
 
-.footer-menu-bottom a:hover {
-	text-decoration: underline;
+.footer-menu-list a {
+	text-decoration: none;
+	color: inherit;
 }
 
-.footer-menu-bottom a:active {
-	color: #f1f5f7;
-	opacity: 0.5;
-}
-
-.footer-menu-top a:hover {
-	text-decoration: underline;
-}
-
-.footer-menu-top a:active {
+.footer-menu-bottom {
 	color: #ffd180;
-	opacity: 0.5;
 }
+
+.footer-menu-list a:hover {
+	text-decoration: underline;
+}
+
+.footer-menu-list a:active {
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+/* Меню footer, большой список// */
+
 
 .footer-bottom {
 	background-color: #293449;
@@ -419,7 +358,6 @@ header {
 }
 
 .footer-feedback-title a {
-	font-size: 16px;
 	color: #ffd180;
 	text-decoration: none;
 }
@@ -430,5 +368,6 @@ header {
 
 .footer-feedback-title a:active {
 	color: #ee3643;
+	text-decoration: none;
 }
 
