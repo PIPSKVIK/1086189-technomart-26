@@ -14,8 +14,10 @@ body {
 	display: none; /* Закроем попап */
 }
 
-header {
+.header-wrapper {
 	background-color: #f2f6f8;
+	padding: 0 10px;
+	min-height: 320px;
 }
 
 .logo {
@@ -24,12 +26,23 @@ header {
 
 .header-top {
 	background-color: #293449;
+	min-height: 42px;
+}
+
+.header-top-wrapper {
+	margin: 0 auto;
+	width: 960px;
+	min-height: 42px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .header-top a {
 	font-size: 17px;
 	text-decoration: none;
 	color: #ffffff;
+	display: flex;
+	align-items: center;
 }
 
 .header-top .marker:active,
@@ -38,8 +51,21 @@ header {
 	color: rgba(255, 255, 255, 0.4);
 }
 
+.search {
+	display: block;
+	width: 270px;
+}
+
 .order {
 	background-color: #5fbb2d;
+	width: 150px;
+	display: block;
+}
+
+.marker,
+.basket {
+	display: block;
+	width: 150px;
 }
 
 .order:active {
@@ -48,14 +74,25 @@ header {
 }
 
 .header-info {
-	background-color: #f3f7f8;
+	width: 940px;
+	margin: 46px auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 .header-description {
+	width: 200px;
+	margin-left: 52px;
+	margin-top: 0px;
+  margin-bottom: 0px;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
+}
+
+.contact-information {
+	width: 270px;
 }
 
 .phone {
@@ -69,6 +106,13 @@ header {
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
+}
+
+.entrance-registration {
+	width: 283px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .entrance-registration a {
@@ -89,6 +133,11 @@ header {
 
 /* Стили бля catalog - client */
 
+.client-wrapper {
+	width: 300px;
+	text-align: center;
+}
+
 .client a {
 	font-size: 21px;
 	line-height: 21px;
@@ -105,10 +154,12 @@ header {
 	font-size: 16px;
 	line-height: 18px;
 	list-style: none;
+	display: flex;
 }
 
 .personal-account a {
 	color: #3f4e66;
+	padding-right: 33px;
 }
 
 .personal-account a:hover {
@@ -121,17 +172,29 @@ header {
 
 .menu {
 	background-color: #32425c;
+	width: 940px;
+	min-height: 60px;
+	margin: 0 auto;
 }
 
 .menu-list {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	display: flex;
+	justify-content: space-between;
+
 }
 
 .menu-list a {
+	display: block;
+	width: 127px;
+	min-height: 60px;
 	text-decoration: none;
 	font-size: 17px;
 	line-height: 17px;
 	color: #ffffff;
+	text-align: center;
 }
 
 .menu-list a:hover {
@@ -147,8 +210,15 @@ header {
 	display: none;
 }
 
+.breadcrumbs-list {
+	width: 360px;
+	display: flex;
+	padding: 0;
+}
+
 .breadcrumbs-list li {
 	list-style-type: none;
+	padding-right: 18px;
 }
 
 .breadcrumbs-list a {
@@ -159,13 +229,19 @@ header {
 	text-transform: uppercase;
 }
 
+.instruments-title-wrapper {
+	background-color: #f2f6f8;
+	min-height: 90px;
+}
+
 .instruments-title {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
 	text-transform: uppercase;
 	font-weight: 400;
-	background-color: #f2f6f8;
+	padding-top: 33px;
+	padding-left: 30px;
 }
 
 .about-company {
@@ -186,6 +262,30 @@ header {
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
+}
+
+.main-content {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.main-wrapper {
+	min-height: 537px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-wrapper-catalog {
+	/* ПУСТО */
+}
+
+.about-company {
+	width: 522px;
+}
+
+.map-wrapper {
+	width: 300px;
 }
 
 .about-company-list {
@@ -221,6 +321,16 @@ header {
 }
 
 /* Еще часть main cotalog */
+
+.form-catalog-wrapper {
+	display: flex;
+	min-height: 995px;
+}
+
+.form-wrapper {
+	min-height: 520px;
+	width: 220px;
+}
 
 .form-manufacturers,
 .form-electro-power {
@@ -264,11 +374,27 @@ header {
 /* Часть с типани перформаторов */
 /* catalog */
 
- .catalog-item {
+.catalog {
+	width: 720px;
+	min-height: 995px;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin-left: 20px;
+}
+
+.catalog-item {
  	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-weight: bold;
-	border: 1px solid black;
-	list-style-type: none;
+	outline: 1px solid #070707;
+	list-style: none;
+	width: 220px;
+	min-height: 320px;
+	margin-bottom: 20px;
+	margin-right: 5px;
 }
 
 .catalog-item-type a {
@@ -292,8 +418,24 @@ header {
 
          /* Стили для footer */
 
+
+
+
 .footer-top {
 	background-color: #32425c;
+	min-height: 192px;
+}
+
+.footer-top-wrapper {
+	width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-logo-address {
+	width: 332px;
 }
 
 .footer-logo {
@@ -313,6 +455,11 @@ header {
 
 /* Меню footer, большой список/ */
 
+.footer-menu {
+	width: 550px;
+	padding-top: 24px;
+}
+
 .footer-menu li {
 	list-style: none;
 }
@@ -320,6 +467,8 @@ header {
 .footer-menu-list {
 	line-height: 24px;
 	color: #f1f5f7;
+	display: flex;
+	justify-content: space-between;
 }
 
 .footer-menu-list a {
@@ -347,9 +496,30 @@ header {
 	background-color: #293449;
 }
 
+.footer-bootom-wrapper{
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copyrigh {
+	width: 230px;
+}
+
 .copyrigh p {
 	font-size: 16px;
 	color: #ffffff;
+}
+
+.social {
+	width: 135px;
+}
+
+.footer-feedback {
+	display: flex;
+	width: 300px;
 }
 
 .footer-feedback-title p {
@@ -370,6 +540,3 @@ header {
 	color: #ee3643;
 	text-decoration: none;
 }
-
-/* Позиционирование */
-
