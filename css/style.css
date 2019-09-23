@@ -10,13 +10,18 @@ body {
 }
 /* /Header/ */
 
+.wrap {
+	margin: 0 auto;
+	width: 960px;
+}
+
 .popup {
 	display: none; /* Закроем попап */
 }
 
 .header-wrapper {
 	background-color: #f2f6f8;
-	padding: 0 10px;
+	padding: 0;
 	min-height: 320px;
 }
 
@@ -30,8 +35,6 @@ body {
 }
 
 .header-top-wrapper {
-	margin: 0 auto;
-	width: 960px;
 	min-height: 42px;
 	display: flex;
 	justify-content: space-between;
@@ -41,8 +44,7 @@ body {
 	font-size: 17px;
 	text-decoration: none;
 	color: #ffffff;
-	display: flex;
-	align-items: center;
+	/* Будем делать по другому */
 }
 
 .header-top .marker:active,
@@ -52,7 +54,6 @@ body {
 }
 
 .search {
-	display: block;
 	width: 270px;
 }
 
@@ -172,9 +173,7 @@ body {
 
 .menu {
 	background-color: #32425c;
-	width: 940px;
 	min-height: 60px;
-	margin: 0 auto;
 }
 
 .menu-list {
@@ -192,7 +191,7 @@ body {
 	min-height: 60px;
 	text-decoration: none;
 	font-size: 17px;
-	line-height: 17px;
+	line-height: 60px;
 	color: #ffffff;
 	text-align: center;
 }
@@ -211,7 +210,6 @@ body {
 }
 
 .breadcrumbs-list {
-	width: 360px;
 	display: flex;
 	padding: 0;
 }
@@ -264,16 +262,12 @@ body {
 	line-height: 24px;
 }
 
-.main-content {
-	width: 940px;
-	margin: 0 auto;
-}
 
 .main-wrapper {
 	min-height: 537px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .main-wrapper-catalog {
@@ -427,9 +421,7 @@ body {
 }
 
 .footer-top-wrapper {
-	width: 960px;
 	padding: 0 10px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
@@ -497,8 +489,6 @@ body {
 }
 
 .footer-bootom-wrapper{
-	width: 940px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
