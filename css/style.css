@@ -11,9 +11,26 @@ body {
 /* /Header/ */
 
 .wrap {
-	margin: 0 auto;
+	margin: 0 auto; /* Центровщик */
 	width: 960px;
 }
+/* -------------------- */
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0px;
+	padding: 0px;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+/* -------------------- */
 
 .popup {
 	display: none; /* Закроем попап */
@@ -182,18 +199,17 @@ body {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
-
+	flex-wrap: wrap;
 }
 
 .menu-list a {
+	/* width: 127px;
+	min-height: 60px; */
 	display: block;
-	width: 127px;
-	min-height: 60px;
 	text-decoration: none;
 	font-size: 17px;
-	line-height: 60px;
 	color: #ffffff;
-	text-align: center;
+	padding: 22px 32px;
 }
 
 .menu-list a:hover {
