@@ -1,5 +1,13 @@
 /* font-family: 'Cuprum', sans-serif; */
 /* font-family: 'PT Sans', sans-serif; */
+html {
+	box-sizing: border-box;
+}
+
+*,*::after,*::before {
+	box-sizing: inherit;
+}
+
 body {
 	font-family: 'Cuprum', Helvetica, Arial, sans-serif;
 	font-size: 18px;
