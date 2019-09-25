@@ -118,10 +118,9 @@ body {
 }
 
 .header-info {
-	width: 940px;
 	margin: 46px auto;
 	display: flex;
-	justify-content: space-between;
+	
 }
 
 .header-description {
@@ -139,6 +138,7 @@ body {
 	width: 270px;
 	display: flex;
 	flex-direction: column;
+	margin-left: 70px;
 }
 
 .phone {
@@ -149,7 +149,7 @@ body {
 	color: #ee3643;
 	text-decoration: none;
 	padding: 5px 12px;
-	width: 170px;
+	width: 200px;
 }
 
 .address {
@@ -163,6 +163,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-left: 70px;
 }
 
 .entrance-registration a {
@@ -235,7 +236,7 @@ body {
 }
 
 .menu-style {
-	width: 960px;
+	width: 940px;
 	height: 5px;
 	bottom: 0px;
 	position: absolute;
@@ -412,7 +413,7 @@ body {
 	min-height: 995px;
 }
 
-.form-wrapper {
+.form-catalog-wrapper form {
 	min-height: 520px;
 	width: 220px;
 }
@@ -512,7 +513,6 @@ body {
 }
 
 .footer-top-wrapper {
-	padding: 0 10px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -597,7 +597,6 @@ body {
 
 .footer-bootom-wrapper{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 
@@ -612,11 +611,13 @@ body {
 
 .social {
 	width: 135px;
+	margin-left: 170px;
 }
 
 .footer-feedback {
 	display: flex;
-	width: 300px;
+	width: 255px;
+	margin-left: 120px;
 }
 
 .footer-feedback-title p {
