@@ -98,6 +98,11 @@ body {
 	padding-top: 10px;
 }
 
+.search img {
+	padding-left: 17px;
+	padding-right: 15px;
+} 
+
 .order {
 	background-color: #5fbb2d;
 	width: 150px;
@@ -110,6 +115,14 @@ body {
 .basket {
 	width: 150px;
 	padding-top: 10px;
+}
+
+.marker img {
+	padding-right: 13px;
+}
+
+.basket img {
+	padding-right: 17px;
 }
 
 .order:active {
@@ -514,7 +527,6 @@ body {
 
 .footer-top-wrapper {
 	display: flex;
-	justify-content: space-between;
 }
 
 .footer-logo-address {
@@ -557,26 +569,32 @@ body {
 .footer-menu {
 	width: 550px;
 	padding-top: 24px;
+	margin-left: 65px;
 }
 
 .footer-menu li {
 	list-style: none;
 }
 
-.footer-menu-list {
+.footer-menu-list {     /* 1 */
 	line-height: 24px;
 	color: #f1f5f7;
 	display: flex;
-	justify-content: space-between;
+	padding: 0;
+	margin: 0;
 }
+
 
 .footer-menu-list a {
 	text-decoration: none;
 	color: inherit;
+	margin-right: 60px;
 }
 
-.footer-menu-bottom {
+.footer-menu-bottom {      /* 2 */
 	color: #ffd180;
+	margin-left: 15px;
+	margin-top: 28px;
 }
 
 .footer-menu-list a:hover {
@@ -610,15 +628,34 @@ body {
 }
 
 .social {
-	width: 135px;
-	margin-left: 170px;
+	margin-left: 140px;
+	display: flex;
 }
+
+.social a {
+	background-color: #212a3a;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.social a:hover,
+.social a:active {
+	background-color: #ee3643;
+}
+
 
 .footer-feedback {
 	display: flex;
-	width: 255px;
-	margin-left: 120px;
+	justify-content: space-between;
+	width: 300px;
+	margin-left: 110px;
 }
+
 
 .footer-feedback-title p {
 	font-size: 16px;
