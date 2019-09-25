@@ -13,6 +13,7 @@ body {
 .wrap {
 	margin: 0 auto; /* Центровщик */
 	width: 960px;
+	padding: 0 10px;
 }
 /* -------------------- */
 .visually-hidden:not(:focus):not(:active) {
@@ -44,6 +45,20 @@ body {
 
 .logo {
 	background-color: #ee3643;
+	width: 220px;
+	position: relative;
+}
+
+.logo img {
+	margin: 13px 55px;
+}
+
+.header-logo-style {
+	width: 220px;
+	height: 5px;
+	bottom: -5px;
+	position: absolute;
+	background-color: #b52933;
 }
 
 .header-top {
@@ -72,18 +87,21 @@ body {
 
 .search {
 	width: 270px;
+	padding-top: 10px;
 }
 
 .order {
 	background-color: #5fbb2d;
 	width: 150px;
-	display: block;
+	padding-top: 14px;
+	display: flex;
+	justify-content: center;
 }
 
 .marker,
 .basket {
-	display: block;
 	width: 150px;
+	padding-top: 10px;
 }
 
 .order:active {
@@ -111,13 +129,19 @@ body {
 
 .contact-information {
 	width: 270px;
+	display: flex;
+	flex-direction: column;
 }
 
 .phone {
+	margin-left: 30px;
+	border: 3px solid #ffffff;
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
 	text-decoration: none;
+	padding: 5px 12px;
+	width: 170px;
 }
 
 .address {
@@ -139,6 +163,14 @@ body {
 	text-decoration: none;
 	color: #000000;
 	background-color: #ffffff;
+}
+
+.entrance {
+	padding: 14px 27px 11px 14px;
+}
+
+.registration {
+	padding: 14px 25px 11px 25px;
 }
 
 .entrance-registration a:hover {
@@ -191,6 +223,15 @@ body {
 .menu {
 	background-color: #32425c;
 	min-height: 60px;
+	position: relative;
+}
+
+.menu-style {
+	width: 960px;
+	height: 5px;
+	bottom: 0px;
+	position: absolute;
+	background-color: #293449;
 }
 
 .menu-list {
@@ -278,6 +319,13 @@ body {
 	line-height: 24px;
 }
 
+.contacts-info {
+	width: 180px;
+}
+
+.description-second {
+	width: 390px;
+}
 
 .main-wrapper {
 	min-height: 537px;
@@ -292,10 +340,16 @@ body {
 
 .about-company {
 	width: 522px;
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
 }
 
 .map-wrapper {
 	width: 300px;
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
 }
 
 .about-company-list {
@@ -305,13 +359,26 @@ body {
 }
 
 .button-more-details,
-.navigation-info {
+.button-navigation-info {
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
 	background-color: #ee3643;
 	text-decoration: none;
 	text-transform: uppercase;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	padding: 14px 0 14px 0;
+	margin-top: 40px;
+}
+
+.button-more-details {
+	width: 220px;
+}
+
+.button-navigation-info {
+	width: 300px;
 }
 
 .button-more-details:hover {
@@ -322,11 +389,11 @@ body {
 	background-color: #ba2732;
 }
 
-.navigation-info:hover {
+.button-navigation-info:hover {
 	background-color: #ca2c37;
 }
 
-.navigation-info:active {
+.button-navigation-info:active {
 	background-color: #ba2732;
 }
 
@@ -444,16 +511,32 @@ body {
 
 .footer-logo-address {
 	width: 332px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
 }
 
 .footer-logo {
 	background-color: #ee3643;
+	width: 220px;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 20px 0;
 }
 
 .footer-address {
 	line-height: 24px;
 	color: #f1f5f7;
 }
+
+.footer-logo-style {
+	width: 220px;
+	height: 5px;
+	top: 55px;
+	position: absolute;
+	background-color: #b52933;
+}
+
 
 .footer-logo-address a {
 	text-decoration: none;
