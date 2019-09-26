@@ -95,6 +95,7 @@ body {
 .search {
 	display: flex;
 	position: relative;
+	width: 270px;
 }
 
 .search svg {
@@ -148,6 +149,7 @@ input[type="search"]{
 
 .marker img {
 	padding-right: 13px;
+	padding-left: 17px;
 }
 
 .basket img {
@@ -649,12 +651,13 @@ input[type="search"]{
 .social {
 	margin-left: 140px;
 	display: flex;
+	width: 135px;
 }
 
 .social a {
 	background-color: #212a3a;
-	width: 50px;
-	height: 50px;
+	width: 42px;
+	height: 42px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
