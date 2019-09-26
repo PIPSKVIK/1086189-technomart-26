@@ -52,11 +52,12 @@ body {
 .logo {
 	background-color: #ee3643;
 	width: 220px;
+	height: 42px;
 	position: relative;
-}
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-.logo img {
-	margin: 13px 55px;
 }
 
 .header-logo-style {
@@ -92,14 +93,44 @@ body {
 }
 
 .search {
-	width: 270px;
-	padding-top: 10px;
+	display: flex;
+	position: relative;
 }
 
-.search img {
-	padding-left: 17px;
-	padding-right: 15px;
-} 
+.search svg {
+	width: 17px;
+	height: 17px;
+	position: relative;
+	top: 12px;
+	left: 17px;
+}
+
+
+.search-style {
+	border: none;
+	width: 270px;
+	height: 42px;
+	background-color: #293449;
+	outline: none;
+}
+
+.search-style:focus {
+	background-color: #ffffff;
+	color: #111111;
+
+}
+
+.search-style::-webkit-input-placeholder {  /* Цвет placeholder для Opera и Safary */
+	color: #ffffff;
+}
+
+input[type="search"]{
+    padding-left: 49px;
+}
+
+.search-style:-moz-placeholder {  /* Цвет placeholder для Firefox  */
+	color: #ffffff;
+}
 
 .order {
 	background-color: #5fbb2d;
@@ -147,8 +178,6 @@ body {
 
 .contact-information {
 	width: 270px;
-	display: flex;
-	flex-direction: column;
 	margin-left: 70px;
 }
 
