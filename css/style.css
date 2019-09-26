@@ -69,10 +69,11 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
 
-.header-logo-style {
+.logo::after {
+	content: "";
+
 	width: 220px;
 	height: 5px;
 	bottom: -5px;
@@ -381,7 +382,7 @@ input[type="search"]{
 
 .about-description-first,
 .description-second {
-	margin-top: 38px;
+	margin-top: 40px;
 }
 
 .contacts-info {
@@ -424,7 +425,7 @@ input[type="search"]{
 	font-size: 18px;
 	line-height: 20px;
 	list-style-type: none;
-	margin-top: 28px;
+	margin-top: 41px;
 }
 
 .button-more-details,
@@ -439,15 +440,16 @@ input[type="search"]{
 	display: flex;
 	justify-content: center;
 	padding: 14px 0 14px 0;
-	margin-top: 37px;
 }
 
 .button-more-details {
 	width: 220px;
+	margin-top: 50px;
 }
 
 .button-navigation-info {
 	width: 300px;
+	margin-top: 40px;
 }
 
 .button-more-details:hover {
@@ -578,12 +580,12 @@ input[type="search"]{
 
 .footer-logo-address {
 	width: 332px;
-	position: relative;
 }
 
 .footer-logo {
 	background-color: #ee3643;
 	width: 220px;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	padding: 20px 0 20px 0;
@@ -595,7 +597,8 @@ input[type="search"]{
 	margin-top: 32px;
 }
 
-.footer-logo-style {
+.footer-logo::after {
+	content: "";
 	width: 220px;
 	height: 5px;
 	top: 55px;
