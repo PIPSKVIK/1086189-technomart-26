@@ -618,6 +618,12 @@ fieldset {
 	display: flex;
 	flex-direction: column;  /* Макс, тут ты наверное тоже будешь говорить убрать Flex?))) */
 	text-align: center;
+	position: relative;
+}
+
+.new-flag img {
+	right: 0px;
+	position: absolute;
 }
 
 .catalog-item-type a {
