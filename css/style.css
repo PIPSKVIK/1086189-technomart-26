@@ -595,6 +595,7 @@ fieldset {
 .catalog {
 	width: 720px;
 	min-height: 995px;
+	margin-top: 20px;
 }
 
 .catalog-list {
@@ -607,12 +608,16 @@ fieldset {
 .catalog-item {
  	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-weight: bold;
-	outline: 1px solid #070707;
 	list-style: none;
 	width: 220px;
 	min-height: 320px;
 	margin-bottom: 20px;
-	margin-right: 5px;
+	margin-left: 13px;
+	flex-shrink: 0;
+	border: 1px solid #e5e5e5;
+	display: flex;
+	flex-direction: column;  /* Макс, тут ты наверное тоже будешь говорить убрать Flex?))) */
+	text-align: center;
 }
 
 .catalog-item-type a {
@@ -632,6 +637,25 @@ fieldset {
 .price.new {
 	color: #ffffff;
 	background-color: #ee3643;
+	width: 142px;
+	margin: 15px auto;
+	padding: 10px 30px;
+	position: relative;
+}
+
+.price.new::after {
+	content: " ";
+	
+	top: 0;
+	right: -23px;
+	border: 18.8px solid white;
+  	border-left-color: #ee3643;
+  	position: absolute;
+}
+
+.price {
+	color: #999999;
+	margin-top: 18px;
 }
 
          /* Стили для footer */
