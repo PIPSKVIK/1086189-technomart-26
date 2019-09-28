@@ -802,6 +802,7 @@ fieldset {
 
 .footer-feedback {
 	display: flex;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	justify-content: space-between;
 	width: 300px;
 	margin-left: 140px;
@@ -830,19 +831,49 @@ fieldset {
 
 
                  /* Стилизация ПОПАП */
+
+.closing-feedback {
+	border: none;
+	width: 23px;
+	height: 23px;
+	background-image: url(../img/logo/icon-popup-exit.svg);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-color: #ffffff;
+	outline: none;
+	position: absolute;
+	right: 9px;
+	top: 9px;
+}
+
 .popup-feedback {
 	margin: 0 auto;
 	width: 620px;
 	border-top: 7px solid #ff5358;
+	position: relative;
 }
 
 .form-feedback-info {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	margin-top: 45px;
 }
+
 .form-name,
 .form-email {
 	width: 220px;
+}
+
+.form-name {
+	margin-right: 20px;
+}
+
+.form-feedback-info input {
+	width: 220px;
+	border: 2px solid #dee3e4;
+	border-radius: 3px;
+	padding: 12px 14px;
+	margin-bottom: 20px;
 }
 
 .form-text-letter {
@@ -850,6 +881,13 @@ fieldset {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
+}
+
+.form-text-letter textarea {
+	border: 2px solid #dee3e4;
+	border-radius: 3px;
+	resize: none;
+	margin-bottom: 37px;
 }
 
 .feedback-popup-button {
@@ -873,4 +911,22 @@ fieldset {
 .feedback_button-wrapper {
 	background-color: #f4f4f4;
 	padding: 37px 80px;
+}
+
+.popup-map {
+	position: relative;
+}
+
+.closing-map {
+	border: none;
+	width: 23px;
+	height: 23px;
+	background-image: url(../img/logo/icon-popup-exit.svg);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-color: #ffffff;
+	outline: none;
+	position: absolute;
+	right: 5px;
+	top: 25px;
 }
