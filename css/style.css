@@ -52,9 +52,6 @@ body {
 }
 /* -------------------- */
 
-.popup {
-	display: none; /* Закроем попап */
-}
 
 .header-wrapper {
 	background-color: #f2f6f8;
@@ -812,7 +809,6 @@ fieldset {
 	margin-bottom: 35px;
 }
 
-
 .footer-feedback-title p {
 	font-size: 16px;
 	color: #ffffff;
@@ -830,4 +826,51 @@ fieldset {
 .footer-feedback-title a:active {
 	color: #ee3643;
 	text-decoration: none;
+}
+
+
+                 /* Стилизация ПОПАП */
+.popup-feedback {
+	margin: 0 auto;
+	width: 620px;
+	border-top: 7px solid #ff5358;
+}
+
+.form-feedback-info {
+	display: flex;
+	justify-content: space-around;
+}
+.form-name,
+.form-email {
+	width: 220px;
+}
+
+.form-text-letter {
+	width: 460px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.feedback-popup-button {
+	width: 460px;
+	background-color: #ee3643;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 14px 0 14px 0;
+}
+
+.feedback-popup-button:hover {
+	background-color: #ca2c37;
+}
+
+.feedback-popup-button:active {
+	background-color: #ba2732;
+}
+.feedback_button-wrapper {
+	background-color: #f4f4f4;
+	padding: 37px 80px;
 }

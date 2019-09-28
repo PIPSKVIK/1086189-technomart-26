@@ -148,11 +148,12 @@
     	</section>
     </footer>
                                         <!-- popup форма -->
-    <section class="popup">
+    <section class="popup-feedback">
       <button class="closing">
         <span class="visually-hidden">Закрыть всплывающие окна</span>
       </button>
       <form class="form-feedback" action="url" method="post">
+      <div class="form-feedback-info">
         <p class="form-name">
           <label for="name">Ваше имя:</label>
           <input type="text" id="name" name="Ваше имя и фамилия" placeholder="Имя Фамилия">
@@ -161,13 +162,16 @@
           <label for="email">Ваш e-mail:</label>
           <input type="email" id="email" name="ваш электронный адрес" placeholder="email@example.com">
         </p>
+      </div>
         <p class="form-text-letter">
           <label for="text-letter">Текст письма:</label>
           <textarea name="Текс письма" id="text-letter" cols="40" rows="10" placeholder="В свободной форма"></textarea>
         </p>
-        <button class="popup-button" type="submit">
-          Отправить
-        </button>
+        <div class="feedback_button-wrapper">
+          <button class="feedback-popup-button" type="submit">
+            Отправить
+          </button>
+        </div>
       </form>
     </section>
                             <!-- попап большой каоры -->
