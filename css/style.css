@@ -349,8 +349,6 @@ input[type="search"]{
 }
 
 .menu-list a {
-	/* width: 127px;
-	min-height: 60px; */
 	display: block;
 	text-decoration: none;
 	font-size: 17px;
@@ -529,8 +527,6 @@ fieldset {
    border: 0 none;
 }
 
-
-
 .form-catalog-wrapper {
 	display: flex;
 	min-height: 995px;
@@ -618,6 +614,83 @@ fieldset {
 	position: relative;
 }
 
+/* ссылки купить в закладки ... */
+
+.catalog-bookmark-buy {
+	display: none;
+	width: 200px;
+	min-height: 100px;
+	position: absolute;
+	left: 12px;
+	top: 30px;
+}
+
+.catalog-item:hover .catalog-bookmark-buy {
+	background-color: rgba(255,255,255,0.9);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.catalog-buy,
+.catalog-bookmark {
+	width: 135px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.catalog-buy {
+	color: #ffffff;
+	background-color: #63a63e;
+	border-radius: 3px;
+	border-bottom: 3px solid #367315;
+	padding: 14px 0 11px 0;
+}
+
+.catalog-buy::before {
+	content: "";
+	
+	left: 15px;
+	background-image: url(../img/logo/icon-basket.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	opacity: 0.3;
+}
+
+.catalog-buy:hover {
+	background-color: #5fbb2d;
+}
+
+.catalog-buy:active {
+	background-color: #518534;
+}
+
+.catalog-buy:hover::before,
+.catalog-buy:active::before {
+	opacity: 1;
+}
+
+.catalog-bookmark {
+	color: #32425c;
+	border: 3px solid #63a63e;
+	border-radius: 3px;
+	padding: 11px 0;
+	margin-top: 7px;
+}
+
+.catalog-bookmark:hover {
+	border: 3px solid #32425c;
+}
+
+.catalog-bookmark:active {
+	opacity: 0.3;
+}
+
+/* ссылки купить в закладки  !!!*/
+
 .new-flag img {
 	right: 0px;
 	position: absolute;
@@ -649,16 +722,17 @@ fieldset {
 .price.new::after {
 	content: " ";
 	
-	top: 0;
+	top: 0px;
 	right: -23px;
-	border: 18.8px solid white;
-  	border-left-color: #ee3643;
-  	position: absolute;
+	border: 19px solid white;
+  border-left-color: #ee3643;
+  position: absolute;
 }
 
 .price {
 	color: #999999;
 	margin-top: 18px;
+	min-height: 23px;
 }
 
          /* Стили для footer */
@@ -931,3 +1005,27 @@ fieldset {
 	right: 5px;
 	top: 25px;
 }
+
+/* попап "Товар добавлен в корзину"... */
+
+.popup-item-basket {
+	width: 620px;
+	border: 2px dotted #EF0606;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top: 7px solid #ee3643;
+}
+
+.item-basket {
+	padding-top: 68px;
+}
+
+.item-basket {
+	content: " ";
+
+	background-image: url(../img/logo/icon-green-check-mark.svg);
+	background-repeat: no-repeat;
+}
+
+/* попап "Товар добавлен в корзину"!!! */
