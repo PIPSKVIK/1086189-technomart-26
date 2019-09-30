@@ -906,7 +906,7 @@ fieldset {
 
                  /* Стилизация ПОПАП */
 
-.closing-feedback {
+.closed {
 	border: none;
 	width: 23px;
 	height: 23px;
@@ -924,8 +924,6 @@ fieldset {
 	width: 620px;
 	border-top: 7px solid #ff5358;
 	position: relative;
-	margin-top: 10px;           /* времяночка */
-	border: 2px dotted #5741FF; /* времяночка */
 }
 
 .form-feedback-info {
@@ -993,39 +991,65 @@ fieldset {
 }
 
 .closing-map {
-	border: none;
-	width: 23px;
-	height: 23px;
-	background-image: url(../img/logo/icon-popup-exit.svg);
-	background-repeat: no-repeat;
-	cursor: pointer;
-	background-color: #ffffff;
-	outline: none;
 	position: absolute;
 	right: 5px;
 	top: 25px;
-}
+} 
 
 /* попап "Товар добавлен в корзину"... */
 
+.closing-form-item {
+	right: 5px;
+	top: 5px;
+}
+
 .popup-item-basket {
 	width: 620px;
-	border: 2px dotted #EF0606;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	border-top: 7px solid #ee3643;
+	position: relative;
 }
 
-.item-basket {
-	padding-top: 68px;
+.item-basket-wrapper {
+	display: flex;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	align-items: center;
 }
 
-.item-basket {
-	content: " ";
-
-	background-image: url(../img/logo/icon-green-check-mark.svg);
-	background-repeat: no-repeat;
+.item-basket-wrapper img {
+	margin-right: 32px;
 }
 
+.buttons-popup-item {
+	background-color: #f1f1f1;
+	width: 620px;
+	display: flex;
+	justify-content: center;
+}
+
+.buttons-item {
+	text-transform: uppercase;
+	width: 220px;
+	padding-top: 14px;
+	padding-bottom: 10px;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	margin: 37px 0;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+.make-request {
+	margin-right: 20px;
+}
+
+.buttons-item:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
 /* попап "Товар добавлен в корзину"!!! */

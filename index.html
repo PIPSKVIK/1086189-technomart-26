@@ -150,7 +150,7 @@
                                         <!-- popup форма -->
     <section class="popup-feedback wrap">
       <h2 class="visually-hidden">Форма для обратной связи</h2>
-      <button class="closing-feedback" type="submit">
+      <button class="closed closing-feedback" type="submit">
         <span class="visually-hidden">Закрыть всплывающие окна</span>
       </button>
       <form class="form-feedback" action="url" method="post">
@@ -178,7 +178,7 @@
                             <!-- попап большой каоры -->
     <section class="popup-map wrap">
       <h2 class="visually-hidden">Карта, как до нас добратся</h2>
-      <button class="closing-map">
+      <button class="closed closing-map">
         <span class="visually-hidden">Закрыть всплывающие окна</span>
       </button>
       <img src="img/pictures/map-popap.png" width="970" height="476" alt="большая карта навигации">
@@ -186,15 +186,18 @@
                             <!-- попап корзины товаров -->
     <section class="popup-item-basket wrap">
       <h2 class="visually-hidden">Товар добавлен в корзину</h2>
-      <button class="closing">
+       <button class="closed closing-form-item">
         <span class="visually-hidden">Закрыть всплывающие окна</span>
       </button>
-      <h2 class="item-basket">Товар добавлен в корзину!</h2>
-      <form action="url" method="get">
-        <button class="make-request" type="submit">
+      <div class="item-basket-wrapper">
+        <img src="img/logo/icon-green-check-mark.svg" alt="Зеленая галочка" width="66" height="66">
+        <h2 class="item-basket">Товар добавлен в корзину!</h2>
+      </div>
+      <form class="buttons-popup-item" action="url" method="get">
+        <button class="buttons-item make-request" type="submit">
           Оформить заказ
         </button>
-        <button class="continue-shopping" type="submit">
+        <button class="buttons-item continue-shopping" type="submit">
           Продолжить покупки
         </button>
       </form>
