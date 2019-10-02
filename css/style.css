@@ -185,9 +185,11 @@ body {
 }
 
 .header-info {
+	width: 100%;
 	display: flex;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	align-items: center;
 }
 
 .header-description {
@@ -203,7 +205,7 @@ body {
 .contact-information {
 	width: 275px;
 	margin-left: 71px;
-	margin-top: 20px;
+	margin-top: 27px;
 	text-align: center;
 }
 
@@ -299,7 +301,8 @@ body {
 .client-wrapper {
 	width: 300px;
 	text-align: center;
-	margin-left: 30px;
+	margin-left: 38px;
+	padding-top: 14px;
 }
 
 .client a {
@@ -309,28 +312,62 @@ body {
 	text-decoration: none;
 }
 
+.client-name {
+	position: relative;
+}
+
 .client-name:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.client-name::before {
+	content: "";
+	
+	left: -28px;
+	width: 20px;
+	height: 18px;
+	position: absolute;
+	background-image: url("../img/logo/icon-user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.3;
+}
+
 .client {
 	background-color: #ffffff;
+	width: 100%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.client-name img {
-	margin-right: 14px;
-}
-
-.client-name {
-	display: block;
-	margin: 14px 0 10px 21px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 40px;
 }
 
 .client-exit {
-	margin-left: 35px;
+	position: relative;
+	margin-left: 45px;
+}
+
+.client-exit::after {
+	content: "";
+	
+	top: 3px;
+	width: 21px;
+	height: 17px;
+	position: absolute;
+	background-image: url("../img/logo/icon-logout.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.3;
+}
+
+.client-name:hover::before,
+.client-exit:hover::after {
+	opacity: 1;
+}
+
+.client-name:active::before,
+.client-exit:active::after {
+	opacity: 0.5;
 }
 
 .personal-account {
@@ -338,11 +375,12 @@ body {
 	line-height: 18px;
 	list-style: none;
 	display: flex;
-	margin: 10px 0 0 18px;
 	position: relative;
+	padding-left: 18px;
+	margin-bottom: 0;
 }
 
-.personal-account::after {
+.personal-account li:nth-child(1)::after {
 	content: " ";
 	width: 4px;
 	height: 4px;
@@ -354,12 +392,12 @@ body {
 }
 
 .personal-account li:nth-child(2) {
-	margin-left: 25px;
+	margin-left: 30px;
 }
 
 .personal-account a {
 	color: #3f4e66;
-	padding-right: 33px;
+	
 }
 
 .personal-account a:hover {
@@ -423,6 +461,7 @@ body {
 .breadcrumbs-list {
 	display: flex;
 	padding: 0;
+	
 }
 
 .breadcrumbs-list li {
@@ -431,15 +470,22 @@ body {
 	position: relative;
 }
 
-.breadcrumbs-list li::after {  /* Временное решение */
+.breadcrumbs-list li::after {
 	content: " ";
-	width: 13px;
-	height: 4px;
-	background-color: #c5c9d1;
+	
+	left: -23px;
+	top: 4px;
+	width: 8px;
+	height: 12px;
+	background-image: url("../img/logo/icon-right-small.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 	position: absolute;
-	left: 70%;
-	top: 45%;
 }
+
+.breadcrumbs-list li:first-child::after {
+	display: none;
+}  
 
 .breadcrumbs-list a {
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
@@ -451,7 +497,6 @@ body {
 
 .instruments-title-wrapper {
 	background-color: #f2f6f8;
-	min-height: 90px;
 }
 
 .instruments-title {
@@ -460,8 +505,7 @@ body {
 	color: #32425c;
 	text-transform: uppercase;
 	font-weight: 400;
-	padding-top: 33px;
-	padding-left: 30px;
+	padding: 33px 0 35px 30px;
 }
 
 .about-title,
@@ -653,7 +697,6 @@ fieldset {
 
 .catalog {
 	width: 720px;
-	min-height: 995px;
 	margin-top: 20px;
 }
 
@@ -672,10 +715,7 @@ fieldset {
 	min-height: 320px;
 	margin-bottom: 20px;
 	margin-left: 13px;
-	flex-shrink: 0;
 	border: 1px solid #e5e5e5;
-	display: flex;
-	flex-direction: column;  /* Макс, тут ты наверное тоже будешь говорить убрать Flex?))) */
 	text-align: center;
 	position: relative;
 }
@@ -694,8 +734,7 @@ fieldset {
 .catalog-item:hover .catalog-bookmark-buy {
 	background-color: rgba(255,255,255,0.9);
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: block;
 }
 
 .catalog-buy,
@@ -704,6 +743,8 @@ fieldset {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 14px;
+	display: block;
+	margin: 0 auto;
 }
 
 .catalog-buy {
@@ -781,7 +822,7 @@ fieldset {
 	background-color: #ee3643;
 	width: 142px;
 	margin: 15px auto;
-	padding: 10px 30px;
+	padding: 10px 0;
 	position: relative;
 }
 
@@ -799,12 +840,10 @@ fieldset {
 	color: #999999;
 	margin-top: 18px;
 	min-height: 23px;
+	display: block;
 }
 
          /* Стили для footer */
-
-
-
 
 .footer-top {
 	background-color: #32425c;
@@ -874,6 +913,9 @@ fieldset {
 .footer-menu-list a {
 	text-decoration: none;
 	color: inherit;
+}
+
+.footer-menu-list li {
 	margin-right: 60px;
 }
 
@@ -894,7 +936,6 @@ fieldset {
 
 /* Меню footer, большой список// */
 
-
 .footer-bottom {
 	background-color: #293449;
 }
@@ -902,13 +943,8 @@ fieldset {
 .footer-bootom-wrapper{
 	display: flex;
 	align-items: center;
-}
-
-.copyrigh {
-	width: 230px;
-	margin-top: 40px;
-	margin-bottom: 35px;
-	flex-shrink: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .copyrigh p {
@@ -916,16 +952,24 @@ fieldset {
 	color: #ffffff;
 }
 
-.social {
-	margin-left: 140px;
-	display: flex;
-	width: 135px;
-	margin-top: 40px;
-	margin-bottom: 30px;
-	flex-shrink: 0;
+.copyrigh {
+	width: 230px;
+	margin-right: 145px;
 }
 
-.social a {
+.social-wrapper {
+	display: flex;
+	width: 135px;
+	margin-right: 115px;
+}
+
+.footer-feedback {
+	display: flex;
+	justify-content: center;
+	width: 310px;
+}
+
+.social-wrapper a {
 	background-color: #212a3a;
 	width: 42px;
 	height: 42px;
@@ -934,27 +978,45 @@ fieldset {
 	justify-content: center;
 	border-radius: 50%;
 	margin-right: 5px;
+	position: relative;
 }
 
-.social a:hover,
-.social a:active {
+.social-wrapper a:hover,
+.social-wrapper a:active {
 	background-color: #ee3643;
 }
 
 
-.footer-feedback {
-	display: flex;
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-	justify-content: space-between;
-	width: 300px;
-	margin-left: 140px;
-	margin-top: 40px;
-	margin-bottom: 35px;
-	flex-shrink: 0;
+.vkontakte::before,
+.facebook::before,
+.instagram::before {
+	content: "";
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
-.footer-feedback-title {
-	margin-left: -35px;
+.vkontakte::before {
+	width: 26px;
+	height: 15px;
+	background-image: url("../img/logo/icon-vk.svg");
+}
+
+.facebook::before {
+	width: 12px;
+	height: 22px;
+	background-image: url("../img/logo/icon-fb.svg");
+}
+
+.instagram::before {
+	width: 21px;
+	height: 21px;
+	background-image: url("../img/logo/icon-insta.svg");
+}
+
+
+.footer-feedback-title.left {
+	padding-right: 40px;
 }
 
 .footer-feedback-title p {
@@ -975,8 +1037,6 @@ fieldset {
 	color: #ee3643;
 	text-decoration: none;
 }
-
-
                  /* Стилизация ПОПАП */
 
 .closed {
