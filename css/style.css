@@ -6,19 +6,6 @@ html {
 	box-sizing: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-fieldset {
-	margin: 0;
-	padding: 0;
-}
-
 body {
 	font-family: 'Cuprum', Helvetica, Arial, sans-serif;
 	font-size: 18px;
@@ -52,8 +39,6 @@ body {
 	overflow: hidden;
 }
 /* -------------------- */
-
-
 .header-wrapper {
 	background-color: #f2f6f8;
 	padding: 0;
@@ -72,21 +57,18 @@ body {
 
 .logo::after {
 	content: "";
-
-	width: 220px;
+	width: 100%;
 	height: 5px;
-	bottom: -5px;
+	top: 100%;
 	position: absolute;
 	background-color: #b52933;
 }
 
 .header-top {
 	background-color: #293449;
-	min-height: 42px;
 }
 
 .header-top-wrapper {
-	min-height: 42px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -95,7 +77,6 @@ body {
 	font-size: 17px;
 	text-decoration: none;
 	color: #ffffff;
-	/* Будем делать по другому */
 }
 
 .header-top .marker:active,
@@ -111,20 +92,32 @@ body {
 }
 
 .search svg {
-	width: 17px;
-	height: 17px;
-	position: relative;
-	top: 12px;
+	position: absolute;
+	top: 50%;
+	margin-top: -8.5px;
 	left: 17px;
+	z-index: 10;
+	pointer-events: none;
+	opacity: 0.3;
 }
 
 
 .search-style {
 	border: none;
-	width: 270px;
+	width: 100%;
 	height: 42px;
-	background-color: #293449;
+	background-color: transparent;
 	outline: none;
+	padding-left: 49px;
+}
+
+.search-style:hover + svg {
+	opacity: 1;
+}
+
+.search-style:focus + svg {   /* Это гиниально)))) */
+	fill: #ee3643;
+	opacity: 1;
 }
 
 .search-style:focus {
@@ -137,32 +130,53 @@ body {
 	color: #ffffff;
 }
 
-input[type="search"]{
-    padding-left: 49px;
-}
-
 .search-style:-moz-placeholder {  /* Цвет placeholder для Firefox  */
 	color: #ffffff;
 }
 
 .order {
 	background-color: #5fbb2d;
-	width: 150px;
-	padding-top: 14px;
-	display: flex;
-	justify-content: center;
 }
 
 .marker,
-.basket {
+.basket,
+.order {
 	width: 150px;
-	padding-top: 10px;
+	padding-top: 11px;
+	padding-bottom: 12px;
+	position: relative;
+	text-align: center;
 }
 
-.marker img,
-.basket img {
-	padding-right: 13px;
-	padding-left: 17px;
+.marker::before,
+.basket::before {
+	content: "";
+	
+	left: 17px;
+	position: absolute;
+	width: 14px;
+	height: 16px;
+	background-image: url("../img/logo/icon-bookmark.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.3;
+}
+
+.basket::before {
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/logo/icon-basket.svg");
+}
+
+.marker:hover::before,
+.basket:hover::before,
+.entrance:hover::before {
+	opacity: 1;
+}
+.marker:active::before,
+.basket:active::before,
+.entrance:active::before {
+	opacity: 0.5;
 }
 
 .order:active {
@@ -171,26 +185,39 @@ input[type="search"]{
 }
 
 .header-info {
-	margin: 46px auto;
 	display: flex;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .header-description {
 	width: 200px;
-	margin-left: 52px;
-	margin-top: 0px;
-  	margin-bottom: 0px;
+	margin-left: 53px;
+	margin-top: ;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
-	flex-shrink: 0;
 }
 
 .contact-information {
 	width: 275px;
-	margin-left: 70px;
-	flex-shrink: 0;
+	margin-left: 71px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.phone::before {
+	content: "";
+	
+	width: 18px;
+	height: 19px;
+	position: absolute;
+	background-image: url("../img/logo/icon-phone.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	top: 22%;
+	left: 13px;
 }
 
 .phone {
@@ -202,6 +229,7 @@ input[type="search"]{
 	padding: 5px 12px;
 	width: 270px;
 	display: block;
+	position: relative;
 }
 
 .phone img {
@@ -217,12 +245,11 @@ input[type="search"]{
 }
 
 .entrance-registration {
-	width: 283px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-left: 60px;
-	flex-shrink: 0;
+	margin-left: 50px;
+	padding-bottom: 22px;
 }
 
 .entrance-registration a {
@@ -231,14 +258,32 @@ input[type="search"]{
 	text-decoration: none;
 	color: #000000;
 	background-color: #ffffff;
+	position: relative;
 }
 
 .entrance {
-	padding: 14px 27px 11px 14px;
+	padding: 14px 27px 15px 48px;
+	margin-right: 10px;
+	width: 121px;
+}
+
+.entrance::before {
+	content: "";
+	
+	width: 20px;
+	height: 17px;
+	background-image: url("../img/logo/icon-login.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	left: 14px;
+	top: 15px;
+	opacity: 0.3;
 }
 
 .registration {
-	padding: 14px 25px 11px 25px;
+	padding: 14px 27px 15px 25px;
+	width: 150px;
 }
 
 .entrance-registration a:hover {
@@ -254,8 +299,7 @@ input[type="search"]{
 .client-wrapper {
 	width: 300px;
 	text-align: center;
-	flex-shrink: 0;
-	margin-left: 42px;
+	margin-left: 30px;
 }
 
 .client a {
@@ -330,6 +374,8 @@ input[type="search"]{
 	background-color: #32425c;
 	min-height: 60px;
 	position: relative;
+	margin: 0 auto;
+	width: 940px;
 }
 
 .menu-style {
@@ -436,7 +482,7 @@ input[type="search"]{
 
 .about-description-first,
 .description-second {
-	margin-top: 40px;
+	margin-top: 27px;
 }
 
 .contacts-info {
@@ -462,12 +508,14 @@ input[type="search"]{
 .about-company {
 	color: #000000;
 	width: 522px;
-	margin-top: 83px;
+	padding-top: 83px;
+	margin: 0;
 }
 
 .map-wrapper {
 	width: 300px;
-	margin-top: 83px;
+	padding-top: 83px;
+	margin: 0;
 }
 
 .map-location {
@@ -477,9 +525,24 @@ input[type="search"]{
 
 .about-company-list {
 	font-size: 18px;
-	line-height: 20px;
+	line-height: 40px;
 	list-style-type: none;
-	margin-top: 41px;
+	margin-bottom: 37px;
+}
+
+.about-company-list li {
+	position: relative;
+}
+
+.about-company-list li::before {
+	content: "";
+	
+	left: -35px;
+	top: 18px;
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	background-color: #ee3643;
 }
 
 .button-more-details,
@@ -494,15 +557,17 @@ input[type="search"]{
 	display: flex;
 	justify-content: center;
 	padding: 14px 0 14px 0;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
 }
 
 .button-more-details {
 	width: 220px;
-	margin-top: 50px;
 }
 
 .button-navigation-info {
-	width: 300px;
+	width: 100%;
 	margin-top: 40px;
 }
 
@@ -771,9 +836,9 @@ fieldset {
 
 .footer-logo::after {
 	content: "";
-	width: 220px;
+	width: 100%;
 	height: 5px;
-	top: 55px;
+	top: 100%;
 	position: absolute;
 	background-color: #b52933;
 }
