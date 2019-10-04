@@ -792,6 +792,21 @@ body {
 /* Нижняя часть промо!!! */
 
 /* ПОПУЛЯРНЫЕ ТОВАРЫ... */
+.items-catalog-products {
+	position: relative;
+}
+.items-catalog-products:nth-child(4)::after {
+	content: "";
+	
+	top: 0px;
+	right: 0px;
+	width: 60px;
+	height: 59px;
+	position: absolute;
+	background-image: url("../img/logo/icon-new-flag.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 
 .popular-products-wrapper {
 	background-color: #f9f5f0;
@@ -909,7 +924,14 @@ body {
 	opacity: 0.3;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-/* СПИСОК ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ... */
+/* СПИСОК ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ!!! */
+
+/* СЕРВИС И ДОСТАВКА ТАМ ГДЕ МАШИНКА... */
+
+
+
+/* СЕРВИС И ДОСТАВКА ТАМ ГДЕ МАШИНКА!!! */
+
 /* Основная часть MAIN главной станицы!!! */
 
 
@@ -1093,6 +1115,10 @@ fieldset {
 	position: absolute;
 	left: 12px;
 	top: 30px;
+}
+
+.catalog-item:hover {
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .catalog-item:hover .catalog-bookmark-buy {
