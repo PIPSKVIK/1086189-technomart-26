@@ -545,9 +545,373 @@ body {
 	align-items: flex-start;
 }
 
-.main-wrapper-catalog {
-	/* ПУСТО */
+/* Основная часть MAIN главной станицы... */
+
+/* верхняя часть... */
+.main-promo-wrapper {
+	width: 940px;
 }
+
+.main-promo-wrapper li {
+	list-style: none;
+	width: 300px;
+}
+
+.main-promo-materials,
+.main-promo-tools,
+.main-promo-technics,
+.main-promo-discount,
+.main-promo-delivery {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	line-height: 30px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.main-promo-wrapper a {
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.main-promo-wrapper {
+	width: 940px;
+}
+
+.main-promo-top ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 59px 0 20px 0;
+}
+
+.main-promo-position {
+	position: relative;
+}
+
+.main-promo-position:not(:last-child) {
+	margin-right: 20px;
+}
+
+.main-promo-materials {
+	background-color: #ffbf47;
+	padding: 22px 166px 71px 23px;
+	position: relative;
+}
+
+.promo-materials {
+	background-color: #dda028;
+} 
+
+.button-promo {
+	width: 135px;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 22px;
+	left: 25px;
+}
+
+.main-promo-tools {
+	background-color: #3bbce3;
+	padding: 22px 166px 71px 23px;
+}
+
+.promo-tools {
+	background-color: #35a9cc;
+} 
+
+.main-promo-technics {
+	background-color: #dc91d8;
+	padding: 22px 166px 71px 23px;
+	position: relative;
+}
+
+.promo-technics {
+	background-color: #c682c2;
+}
+
+.promo-materials:hover,
+.promo-tools:hover,
+.promo-technics:hover {
+	opacity: 0.9;
+}
+
+.promo-materials:active,
+.promo-tools:active,
+.promo-technics:active {
+	opacity: 0.5;
+}
+
+.main-promo-position::after {
+	content: "";
+	position: absolute;
+	background-repeat: no-repeat;
+	position: 0 0;
+}
+
+.main-promo-position:first-child::after {
+	bottom: 27px;
+	right: 43px;
+	width: 44px;
+	height: 66px;
+	background-image: url("../img/logo/icon-materials.svg");
+}
+
+.main-promo-materials::after {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 59px;
+	background-image: url("../img/logo/icon-new-flag.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.main-promo-position:nth-child(2)::after {
+	bottom: 29px;
+	right: 28px;
+	width: 75px;
+	height: 61px;
+	background-image: url("../img/logo/icon-tools.svg");
+}
+
+.main-promo-position:nth-child(3)::after {
+	bottom: 30px;
+	right: 31px;
+	width: 78px;
+	height: 62px;
+	background-image: url("../img/logo/icon-tractor.svg");
+}
+/* верхняя часть!!! */
+/* Нижняя часть... */
+
+.main-promo-bottom {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.main-promo-position-bottom {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+/* Слайдер... */
+
+
+
+/* Слайдер!!! */
+
+.main-promo-discount-delivery {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+
+.main-promo-discount {
+	background-color: #8ed78f;
+	padding: 22px 0 71px 23px;
+	position: relative;
+}
+
+.main-promo-delivery {
+	background-color: #ffc047;
+	padding: 22px 0 71px 22px;
+}
+
+.button-promo-bottom {
+	width: 135px;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 22px;
+	left: 25px;
+}
+
+.promo-discount {
+	background-color: #80c180;
+}
+
+.promo-delivery {
+	background-color: #e5ac40;
+}
+
+.promo-discount:hover,
+.promo-delivery:hover {
+	opacity: 0.9;
+} 
+
+.promo-discount:active,
+.promo-delivery:active {
+	opacity: 0.5;
+}
+
+.main-promo-position-bottom:first-child::after {
+	content: "";
+
+	position: absolute;
+	background-repeat: no-repeat;
+	position: 0 0;
+	bottom: 25px;
+	right: 45px;
+	width: 59px;
+	height: 72px;
+	background-image: url("../img/logo/icon-promo-basket.png");
+}
+
+.main-promo-position-bottom:nth-child(2)::after {
+	content: "";
+
+	position: absolute;
+	background-repeat: no-repeat;
+	position: 0 0;
+	bottom: 28px;
+	right: 31px;
+	width: 78px;
+	height: 63px;
+	background-image: url("../img/logo/icon-promo-car.svg");
+}
+
+/* Нижняя часть промо!!! */
+
+/* ПОПУЛЯРНЫЕ ТОВАРЫ... */
+
+.popular-products-wrapper {
+	background-color: #f9f5f0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 53px;
+}
+
+.popular-products {
+	color: #32425c;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-left: 30px;
+}
+
+.all-popular-products {
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #ee3643;
+	width: 253px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 0;
+	border-radius: 3px;
+	margin-right: 24px;
+}
+
+.all-popular-products:hover {
+	background-color: #ca2c37;
+}
+
+.all-popular-products:active {
+	background-color: #ba2732;
+}
+
+/* ПОПУЛЯРНЫЕ ТОВАРЫ!!! */
+
+/* СПИСОК ПОПУЛЯРНЫЕ ТОВАРЫ... */
+
+.catalog-popular ul {
+	padding: 0;
+	margin: 20px 0 0 0;
+}
+
+.catalog-popular-products {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.catalog-popular-products li:not(:last-child) {
+	margin: 0 20px 0 0;
+}
+
+.catalog-popular-products li:last-child {
+	margin: 0;
+}
+
+/* СПИСОК ПОПУЛЯРНЫЕ ТОВАРЫ!!! */
+
+/* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ... */
+.popular-products2-wrapper {
+	background-color: #f9f5f0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 21px;
+}
+/* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ!!! */
+
+/* СПИСОК ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ... */
+
+.popular-manufacturers-wrapper {
+	margin-top: 21px;
+}
+
+.manufacturers-list-wrapper {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.manufactures-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 220px;
+	min-height: 145px;
+	border: 1px solid #ebebeb;
+}
+
+.manufactures-item:nth-child(1),
+.manufactures-item:nth-child(2),
+.manufactures-item:nth-child(3),
+.manufactures-item:nth-child(5),
+.manufactures-item:nth-child(6),
+.manufactures-item:nth-child(7) {
+	margin: 0 20px 20px 0;
+}
+
+.manufactures-item:nth-child(4),
+.manufactures-item:nth-child(8) {
+	margin-bottom: 20px;
+}
+
+.manufactures-item:hover {
+	box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.manufactures-item:active {
+	opacity: 0.3;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/* СПИСОК ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ... */
+/* Основная часть MAIN главной станицы!!! */
+
 
 .about-company {
 	color: #000000;
