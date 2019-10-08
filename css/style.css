@@ -708,7 +708,7 @@ body {
 	margin-bottom: 20px;
 }
 
-/* Слайдер... */
+/* Верхний Слайдер... */
 
 .main-promo-slider-wrapper {
 	position: relative;
@@ -818,8 +818,7 @@ body {
 .slider-left {
 	margin-left: 20px;
 }
-
-/* Слайдер!!! */
+/* Верхний Слайдер!!! */
 
 .main-promo-discount-delivery {
 	width: 300px;
@@ -1032,11 +1031,100 @@ body {
 }
 /* СПИСОК ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ!!! */
 
-/* СЕРВИС И ДОСТАВКА ТАМ ГДЕ МАШИНКА... */
+/* СЕРВИС И ДОСТАВКА ВТОРОЙ СЛАЙДЕР... */
 
+.services-wrapper {
+	background-color: #f4f7f9;
 
+}
 
-/* СЕРВИС И ДОСТАВКА ТАМ ГДЕ МАШИНКА!!! */
+.services-wrapper li {
+	list-style: none;
+}
+
+.services-wrapper ul {
+	padding: 0;
+	margin: 0;
+}
+
+.service-wrapper {
+	width: 400px;
+	position: relative;
+}
+
+.service-information h3 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.service-information p {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000;
+	margin: 0px;
+	margin-top: 38px;
+}
+
+.services-button-list {
+	display: flex;
+}
+
+.button-service {
+	font-size: 21px;
+	line-height: 30px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	width: 240px;
+	display: inline-block;
+	background-color: #32425c;
+	padding: 21px 0 22px 22px;
+	border-bottom: 1px solid #293449;
+	border-top: 1px solid #405069;
+}
+
+.botton-delivery {
+	margin-top: 74px;
+}
+
+.button-service:hover {
+	background-color: #293449;
+}
+
+.button-service:focus {
+	background-color: #fff;
+	color: #32425c;
+	border: none;
+}
+
+.delivery-wrapper {
+	width: 275px;
+	margin-top: 74px;
+}
+
+.delivery-wrapper h3 {
+	font-size: 36px;
+	line-height: 36px;
+	color: #32425c;
+	margin: 0;
+}
+
+.delivery-wrapper p {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000;
+	margin: 0;
+}
+
+.picture-procedure {
+	position: relative;
+	margin-top: 74px;
+}
+/* СЕРВИС И ДОСТАВКА ВТОРОЙ СЛАЙДЕР!!! */
 
 /* Основная часть MAIN главной станицы!!! */
 
