@@ -710,7 +710,114 @@ body {
 
 /* Слайдер... */
 
+.main-promo-slider-wrapper {
+	position: relative;
+}
 
+.slider-list-first {
+	width: 620px;
+	height: 266px;
+	background-image: url("../img/pictures/Sliders-first.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: none; /* Спрятали первый слайд */
+}
+
+.slider-list-second {
+	width: 620px;
+	height: 266px;
+	background-image: url("../img/pictures/slider-second.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.slider-list {
+	position: relative;
+}
+
+.slider-list h3 {
+	font-size: 36px;
+	line-height: 36px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 27px 0 0 24px;
+}
+
+.slider-list p {
+	line-height: 24px;
+	color: #fff;
+	margin: 0;
+	padding: 8px 0 0 25px;
+}
+
+.slider-catalog-open {
+	position: absolute;
+	width: 195px;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: #ee3643;
+	text-align: center;
+	padding: 14px 0;
+	border-radius: 3px;
+	left: 25px;
+	bottom: 22px;
+}
+
+.slider-catalog-open:hover {
+	background-color: #ca2c37;
+}
+
+.slider-catalog-open:active {
+	background-color: #ba2732;
+}
+
+.button-slider1 {
+	background-image: url("../img/logo/icon-left.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 22px;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	left: 25px;
+	top: 114px;
+	cursor: pointer;
+	outline: none;
+}
+
+.button-slider2 {
+	background-image: url("../img/logo/icon-right.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 22px;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	right: 25px;
+	top: 114px;
+	cursor: pointer;
+	outline: none;
+}
+
+.arrow-button {
+	border: none;
+	outline: none;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	position: absolute;
+	border-radius: 50%;
+	left: 295px;
+	bottom: 60px;
+	cursor: pointer;
+}
+
+.slider-left {
+	margin-left: 20px;
+}
 
 /* Слайдер!!! */
 
@@ -721,7 +828,6 @@ body {
 	margin: 0 0 0 20px;
 	padding: 0;
 }
-
 
 .main-promo-discount {
 	background-color: #8ed78f;
