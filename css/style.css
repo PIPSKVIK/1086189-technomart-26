@@ -1070,6 +1070,10 @@ body {
 	position: relative;
 }
 
+.services-button-list.delivery {
+	/* display: none; */
+}
+
 .services-button {
 	width: 240px;
 }
@@ -1099,19 +1103,21 @@ body {
 	border: 1px solid #fff;
 }
 
-.delivery-wrapper {
+.service-list-title {
 	width: 356px;
 	padding-left: 80px;
 }
 
-.delivery-wrapper h3 {
+.service-list-title h3 {
 	font-size: 36px;
 	line-height: 36px;
 	color: #32425c;
+	text-transform: uppercase;
 	margin: 0;
 }
 
-.delivery-wrapper p {
+
+.service-list-title p {
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -1123,7 +1129,30 @@ body {
 	position: absolute;
 	right: 0px;
 	top: 83px;
+}
 
+.picture-procedure.warranty-image {
+	top: 61px;
+}
+
+.service-list-title.warranty-wrapper {
+	width: 500px;
+}
+
+.services-button-list.warranty {
+	display: none;
+}
+
+.service-list-title.credit-wrapper {
+	width: 360px;
+}
+
+.picture-procedure.credit-image {
+	top: 59px;
+}
+
+.services-button-list.credit {
+	display: none;
 }
 /* СЕРВИС И ДОСТАВКА ВТОРОЙ СЛАЙДЕР!!! */
 
