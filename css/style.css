@@ -548,9 +548,7 @@ body {
 /* Основная часть MAIN главной станицы... */
 
 /* верхняя часть... */
-.main-promo-wrapper {
-	width: 940px;
-}
+
 
 .main-promo-wrapper li {
 	list-style: none;
@@ -575,10 +573,6 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
-}
-
-.main-promo-wrapper {
-	width: 940px;
 }
 
 .main-promo-top ul {
@@ -1043,13 +1037,14 @@ body {
 }
 
 .services-wrapper ul {
-	padding: 0;
 	margin: 0;
 }
 
 .service-wrapper {
 	width: 400px;
 	position: relative;
+	padding-top: 20px;
+	padding-left: 0;
 }
 
 .service-information h3 {
@@ -1070,6 +1065,12 @@ body {
 
 .services-button-list {
 	display: flex;
+	padding: 60px 0;
+	position: relative;
+}
+
+.services-button {
+	width: 240px;
 }
 
 .button-service {
@@ -1086,9 +1087,6 @@ body {
 	border-top: 1px solid #405069;
 }
 
-.botton-delivery {
-	margin-top: 74px;
-}
 
 .button-service:hover {
 	background-color: #293449;
@@ -1097,12 +1095,12 @@ body {
 .button-service:focus {
 	background-color: #fff;
 	color: #32425c;
-	border: none;
+	border: 1px solid #fff;
 }
 
 .delivery-wrapper {
-	width: 275px;
-	margin-top: 74px;
+	width: 356px;
+	padding-left: 80px;
 }
 
 .delivery-wrapper h3 {
@@ -1121,8 +1119,10 @@ body {
 }
 
 .picture-procedure {
-	position: relative;
-	margin-top: 74px;
+	position: absolute;
+	right: 0px;
+	top: 83px;
+
 }
 /* СЕРВИС И ДОСТАВКА ВТОРОЙ СЛАЙДЕР!!! */
 
