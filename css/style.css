@@ -1308,6 +1308,49 @@ fieldset {
 	margin-top: 40px;
 }
 
+/* Стилизуем checkdox и radio... */
+
+.label-manufacturers {
+
+}
+
+.checkbox-manufacturers {
+	display: none;
+}
+
+.fake-checkbox-manufacturers {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	border: 2px solid #c5c5c5;
+	border-radius: 3px;
+	position: relative;
+}
+
+.fake-checkbox-manufacturers::before {
+	content: "";
+	position: absolute;
+	display: block;
+
+	background-image: url(../img/logo/icon-checkbox-on.svg);
+	background-repeat: no-repeat;
+	background-position: -2px -2px;
+	width: 27px;
+	height: 23px;
+	opacity: 0;
+	transition: .2s;
+}
+
+.checkbox-manufacturers:checked + .fake-checkbox-manufacturers::before {
+	opacity: 0.5;
+}
+
+.text-manufacturers {
+
+}
+
+/* Стилизуем checkdox и radio!!! */
+
 .type-manufacturers,
 .type-electro-power {
 	list-style: none;
@@ -1319,12 +1362,6 @@ fieldset {
 	line-height: 30px;
 	font-weight: bold;
 	border-top: 1px solid #e5e5e5;
-} 
-
-.form-manufacturers label,
-.form-electro-power label {
-	font-size: 15px;
-	line-height: 20px;
 }
 
 .button-show-manufacturers {
@@ -1546,6 +1583,51 @@ fieldset {
 	line-height: 24px;
 	color: #f1f5f7;
 }
+
+/* Кнопки страниц каталога...  */
+
+.catalog-button-page {
+	padding-left: 33px;
+	margin: 34px 0 60px 0;
+}
+
+.catalog-button-page li {
+	list-style: none;
+}
+
+.catalog-button-page {
+	display: flex;
+}
+
+.catalog-page {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #000;
+	text-decoration: none;
+	border: 1px solid #e5e5e5;
+	width: 38px;
+	border-radius: 3px;
+	padding-bottom: 9px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 9px;
+	margin-right: 10px;
+
+}
+
+.catalog-next-button {
+	width: 140px;
+	text-transform: uppercase;
+}
+
+.catalog-page:hover {
+	border-color: #bdc6ca;
+}
+
+.catalog-page:active {
+	border-color: #ee3643;
+}
+/* Кнопки страниц каталога!!!  */
 
 /* Меню footer, большой список/ */
 
