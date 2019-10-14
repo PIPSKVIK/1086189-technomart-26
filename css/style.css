@@ -554,7 +554,6 @@ body {
 /* верхняя часть...*/
 .main-promo-wrapper li {
 	list-style: none;
-	width: 300px;
 }
 
 .main-promo-materials,
@@ -585,75 +584,41 @@ body {
 }
 /* ________________________________________________________ */
 
+.main-promo-bottom ul {
+	padding: 0;
+	margin: 0;
+}
 
-/* .main-promo-position {
+.main-promo-top li {
+	width: 300px;
+	padding: 26px 90px 20px 20px;
+}
+
+.backgroud-promo-materials {
+	background-color: #ffbf47;
+	background-image: url("../img/logo/icon-materials.svg");
+	background-repeat: no-repeat;
+	background-position: right 43px top 31px;
 	position: relative;
-} */
-
-/* .main-promo-position:not(:last-child) {
 	margin-right: 20px;
 }
- */
-/* .main-promo-materials {
-	background-color: #ffbf47;
-	padding: 22px 166px 71px 23px;
-	position: relative;
-} */
 
-/* .promo-materials {
-	background-color: #dda028;
-}  */
-/* 
-.button-promo {
-	width: 135px;
-	display: inline-block;
-	text-align: center;
-	padding: 10px 0;
-	border-radius: 3px;
-	position: absolute;
-	bottom: 22px;
-	left: 25px;
-}
-
-.main-promo-tools {
+.backgroud-promo-tools {
 	background-color: #3bbce3;
-	padding: 22px 166px 71px 23px;
-}
-
-.promo-tools {
-	background-color: #35a9cc;
-} 
-
-.main-promo-technics {
-	background-color: #dc91d8;
-	padding: 22px 166px 71px 23px;
-	position: relative;
-}
-
-.promo-technics {
-	background-color: #c682c2;
-}
-
-.promo-materials:hover,
-.promo-tools:hover,
-.promo-technics:hover {
-	opacity: 0.9;
-}
-
-.promo-materials:active,
-.promo-tools:active,
-.promo-technics:active {
-	opacity: 0.5;
-}
-
-.main-promo-position::after {
-	content: "";
-	position: absolute;
+	background-image: url("../img/logo/icon-tools.svg");
 	background-repeat: no-repeat;
-	position: 0 0;
+	background-position: right 28px top 33px;
+	margin-right: 20px;
 }
 
-.main-promo-materials::after {
+.backgroud-promo-technics {
+	background-color: #dc91d8;
+	background-image: url("../img/logo/icon-tractor.svg");
+	background-repeat: no-repeat;
+	background-position: right 31px top 31px;
+}
+
+.promo-new::after {
 	content: "";
 
 	position: absolute;
@@ -666,29 +631,67 @@ body {
 	background-position: 0 0;
 }
 
-.main-promo-position:first-child::after {
-	bottom: 27px;
-	right: 43px;
-	width: 44px;
-	height: 66px;
-	background-image: url("../img/logo/icon-materials.svg");
+.button-promo {
+	width: 135px;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 3px;
+	margin-top: 9px;
 }
 
-.main-promo-position:nth-child(2)::after {
-	bottom: 29px;
-	right: 28px;
-	width: 75px;
-	height: 61px;
-	background-image: url("../img/logo/icon-tools.svg");
+.button-promo-materials {
+	background-color: #dda028;
 }
 
-.main-promo-position:nth-child(3)::after {
-	bottom: 30px;
-	right: 31px;
-	width: 78px;
-	height: 62px;
-	background-image: url("../img/logo/icon-tractor.svg");
-} */
+.button-promo-tools {
+	background-color: #35a9cc;
+}
+
+.button-promo-technics {
+	background-color: #c682c2;
+}
+
+.button-promo:hover {
+	opacity: 0.8;
+}
+
+.button-promo:active {
+	opacity: 0.5;
+}
+
+.main-promo-discount-delivery li {
+	margin-left: 20px;
+}
+
+.main-promo-discount-delivery li {
+	width: 300px;
+	padding: 26px 90px 20px 20px;
+}
+
+.backgroud-promo-discount {
+	background-color: #8ed78f;
+	background-image: url("../img/logo/icon-promo-basket.png");
+	background-repeat: no-repeat;
+	background-position: right 46px top 26px;
+	margin-bottom: 20px;
+}
+
+.backgroud-promo-delivery {
+	background-color: #ffc047;
+	background-image: url("../img/logo/icon-promo-car.svg");
+	background-repeat: no-repeat;
+	background-position: right 31px top 32px;
+}
+
+.promo-discount {
+	background-color: #80c180;
+}
+
+.promo-delivery {
+	background-color: #e5ac40;
+}
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* верхняя часть!!!*/
 
 /* Нижняя часть...*/
@@ -700,37 +703,27 @@ body {
 	flex-direction: row;
 	position: relative;
 }
-
-.main-promo-position-bottom {
-	position: relative;
-	margin-bottom: 20px;
-}
-
-/* Верхний Слайдер... */
+/* __________________________________________________________ */
 
 .main-promo-slider-wrapper {
 	position: relative;
-}
-
-.slider-list-first {
 	width: 620px;
 	height: 266px;
-	background-image: url("../img/pictures/Sliders-first.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	display: none; /* Спрятали первый слайд */
-}
-
-.slider-list-second {
-	width: 620px;
-	height: 266px;
-	background-image: url("../img/pictures/slider-second.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
 .slider-list {
-	position: relative;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding: 27px 25px 22px 25px;
+}
+
+.slider-list-first {
+	background-image: url("../img/pictures/Sliders-first.jpg");
+}
+
+.slider-list-second {
+	background-image: url("../img/pictures/slider-second.jpg");
+	display: none;  /* Спрятали Второй слайд */
 }
 
 .slider-list h3 {
@@ -739,27 +732,22 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	margin: 0;
-	padding: 27px 0 0 24px;
 }
 
 .slider-list p {
 	line-height: 24px;
 	color: #fff;
-	margin: 0;
-	padding: 8px 0 0 25px;
+	margin: 10px 0;
 }
 
 .slider-catalog-open {
-	position: absolute;
+	display: inline-block;
 	width: 195px;
-	font-size: 14px;
-	text-transform: uppercase;
 	background-color: #ee3643;
 	text-align: center;
-	padding: 14px 0;
 	border-radius: 3px;
-	left: 25px;
-	bottom: 22px;
+	padding: 14px 0;
+	margin-top: 91px;
 }
 
 .slider-catalog-open:hover {
@@ -770,8 +758,7 @@ body {
 	background-color: #ba2732;
 }
 
-.button-slider1 {
-	background-image: url("../img/logo/icon-left.svg");
+.button-slider {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	width: 22px;
@@ -779,120 +766,44 @@ body {
 	border: none;
 	background-color: transparent;
 	position: absolute;
-	left: 25px;
-	top: 114px;
+	top: 50%;
+	transform: translateY(-50%);
 	cursor: pointer;
 	outline: none;
 }
 
-.button-slider2 {
+.button-slider-prev {
+	background-image: url("../img/logo/icon-left.svg");
+	left: 25px;
+}
+
+.button-slider-next {
 	background-image: url("../img/logo/icon-right.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	width: 22px;
-	height: 40px;
-	border: none;
-	background-color: transparent;
-	position: absolute;
 	right: 25px;
-	top: 114px;
-	cursor: pointer;
-	outline: none;
+}
+
+.arrow-button-wrapper {
+	width: 65px;
+	position: absolute;
+	left: 277px;
+	bottom: 33px;
 }
 
 .arrow-button {
 	border: none;
 	outline: none;
 	width: 10px;
-	height: 10px;
+	height: 11px;
 	background-color: #fff;
-	position: absolute;
 	border-radius: 50%;
-	left: 295px;
-	bottom: 60px;
 	cursor: pointer;
 }
 
 .slider-left {
 	margin-left: 20px;
 }
-/* Верхний Слайдер!!! */
 
-.main-promo-discount-delivery {
-	width: 300px;
-	display: flex;
-	flex-direction: column;
-	margin: 0 0 0 20px;
-	padding: 0;
-}
-
-.main-promo-discount {
-	background-color: #8ed78f;
-	padding: 22px 0 71px 23px;
-	position: relative;
-}
-
-.main-promo-delivery {
-	background-color: #ffc047;
-	padding: 22px 0 71px 22px;
-}
-
-.button-promo-bottom {
-	width: 135px;
-	display: inline-block;
-	text-align: center;
-	padding: 10px 0;
-	border-radius: 3px;
-	position: absolute;
-	bottom: 22px;
-	left: 25px;
-}
-
-.promo-discount {
-	background-color: #80c180;
-}
-
-.promo-delivery {
-	background-color: #e5ac40;
-}
-
-.promo-discount:hover,
-.promo-delivery:hover {
-	opacity: 0.9;
-} 
-
-.promo-discount:active,
-.promo-delivery:active {
-	opacity: 0.5;
-}
-
-.main-promo-position-bottom:first-child::after {
-	content: "";
-
-	position: absolute;
-	background-repeat: no-repeat;
-	position: 0 0;
-	bottom: 25px;
-	right: 45px;
-	width: 59px;
-	height: 72px;
-	background-image: url("../img/logo/icon-promo-basket.png");
-}
-
-.main-promo-position-bottom:nth-child(2)::after {
-	content: "";
-
-	position: absolute;
-	background-repeat: no-repeat;
-	position: 0 0;
-	bottom: 28px;
-	right: 31px;
-	width: 78px;
-	height: 63px;
-	background-image: url("../img/logo/icon-promo-car.svg");
-}
-
-/* Нижняя часть промо!!! */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* ПОПУЛЯРНЫЕ ТОВАРЫ... */
 .items-catalog-products {
