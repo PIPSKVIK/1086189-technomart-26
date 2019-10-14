@@ -142,16 +142,19 @@ body {
 .basket,
 .order {
 	width: 150px;
-	padding-top: 11px;
-	padding-bottom: 12px;
+	padding: 11px 0 12px 0;
 	position: relative;
 	text-align: center;
+}
+
+.marker,
+.basket {
+	padding-left: 30px;
 }
 
 .marker::before,
 .basket::before {
 	content: "";
-	
 	left: 17px;
 	position: absolute;
 	width: 14px;
@@ -185,7 +188,6 @@ body {
 }
 
 .header-info {
-	width: 100%;
 	display: flex;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -195,7 +197,6 @@ body {
 .header-description {
 	width: 200px;
 	margin-left: 53px;
-	margin-top: ;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
@@ -218,8 +219,10 @@ body {
 	background-image: url("../img/logo/icon-phone.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	top: 22%;
+	top: 50%;
+	transform: translateY(-50%);
 	left: 13px;
+	
 }
 
 .phone {
@@ -264,7 +267,7 @@ body {
 }
 
 .entrance {
-	padding: 14px 27px 15px 48px;
+	padding: 14px 10px 15px 48px;
 	margin-right: 10px;
 	width: 121px;
 }
@@ -284,7 +287,7 @@ body {
 }
 
 .registration {
-	padding: 14px 27px 15px 25px;
+	padding: 14px 10px 15px 25px;
 	width: 150px;
 }
 
@@ -411,17 +414,8 @@ body {
 .menu {
 	background-color: #32425c;
 	min-height: 60px;
-	position: relative;
 	margin: 0 auto;
 	width: 940px;
-}
-
-.menu-style {
-	width: 940px;
-	height: 5px;
-	bottom: 0px;
-	position: absolute;
-	background-color: #293449;
 }
 
 .menu-list {
@@ -431,6 +425,16 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	position: relative;
+}
+
+.menu-list::after {
+	content: "";
+	width: 940px;
+	height: 5px;
+	top: 100%;
+	position: absolute;
+	background-color: #293449;
 }
 
 .menu-list a {
@@ -446,8 +450,8 @@ body {
 }
 
 .menu-list a:active {
-	color: rgba(255, 255, 255, 0,5);
 	background-color: #1d2739;
+	opacity: 0.5;
 }
 
 .main-hidden {
@@ -547,9 +551,7 @@ body {
 
 /* Основная часть MAIN главной станицы... */
 
-/* верхняя часть... */
-
-
+/* верхняя часть...*/
 .main-promo-wrapper li {
 	list-style: none;
 	width: 300px;
@@ -575,32 +577,42 @@ body {
 	text-decoration: none;
 }
 
-.main-promo-top ul {
-	width: 100%;
+.main-promo-top {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 59px 0 20px 0;
 }
-
-.main-promo-position {
-	position: relative;
+/* ________________________________________________________ */
+.backgroud-promo-yellow {
+	background-color: #ffbf47;
+	padding: 26px 0 97px 0;
+	width: 44px;
+	height: 66px;
+	background-image: url("../img/logo/icon-materials.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
-.main-promo-position:not(:last-child) {
+
+/* .main-promo-position {
+	position: relative;
+} */
+
+/* .main-promo-position:not(:last-child) {
 	margin-right: 20px;
 }
-
-.main-promo-materials {
+ */
+/* .main-promo-materials {
 	background-color: #ffbf47;
 	padding: 22px 166px 71px 23px;
 	position: relative;
-}
+} */
 
-.promo-materials {
+/* .promo-materials {
 	background-color: #dda028;
-} 
-
+}  */
+/* 
 .button-promo {
 	width: 135px;
 	display: inline-block;
@@ -650,14 +662,6 @@ body {
 	position: 0 0;
 }
 
-.main-promo-position:first-child::after {
-	bottom: 27px;
-	right: 43px;
-	width: 44px;
-	height: 66px;
-	background-image: url("../img/logo/icon-materials.svg");
-}
-
 .main-promo-materials::after {
 	content: "";
 
@@ -669,6 +673,14 @@ body {
 	background-image: url("../img/logo/icon-new-flag.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+.main-promo-position:first-child::after {
+	bottom: 27px;
+	right: 43px;
+	width: 44px;
+	height: 66px;
+	background-image: url("../img/logo/icon-materials.svg");
 }
 
 .main-promo-position:nth-child(2)::after {
@@ -685,9 +697,10 @@ body {
 	width: 78px;
 	height: 62px;
 	background-image: url("../img/logo/icon-tractor.svg");
-}
-/* верхняя часть!!! */
-/* Нижняя часть... */
+} */
+/* верхняя часть!!!*/
+
+/* Нижняя часть...*/
 
 .main-promo-bottom {
 	padding: 0;
