@@ -1351,6 +1351,7 @@ fieldset {
 
 .catalog-buy,
 .catalog-bookmark {
+	font-family: 'Cuprum', Helvetica, Arial, sans-serif;
 	width: 135px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -1364,7 +1365,8 @@ fieldset {
 	background-color: #63a63e;
 	border-radius: 3px;
 	border-bottom: 3px solid #367315;
-	padding: 14px 0 11px 0;
+	padding: 10px 0 8px 0;
+	position: relative;
 }
 
 .catalog-buy::before {
@@ -1396,7 +1398,7 @@ fieldset {
 	color: #32425c;
 	border: 3px solid #63a63e;
 	border-radius: 3px;
-	padding: 11px 0;
+	padding: 8px 0;
 	margin-top: 7px;
 }
 
@@ -1421,6 +1423,8 @@ fieldset {
 }
 .catalog-item-type {
 	line-height: 20px;
+	width: 160px;
+	display: inline-block;
 }
 
 .discount {
