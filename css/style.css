@@ -784,6 +784,7 @@ body {
 
 .arrow-button-wrapper {
 	width: 65px;
+	height: 23px;
 	position: absolute;
 	left: 277px;
 	bottom: 33px;
@@ -792,8 +793,8 @@ body {
 .arrow-button {
 	border: none;
 	outline: none;
-	width: 10px;
-	height: 11px;
+	width: 12px;
+	height: 12px;
 	background-color: #fff;
 	border-radius: 50%;
 	cursor: pointer;
@@ -828,14 +829,16 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 53px;
+	padding: 25px 24px 26px 30px;
 }
 
 .popular-products {
 	color: #32425c;
 	font-size: 30px;
 	line-height: 30px;
+	font-weight: 400;
 	text-transform: uppercase;
-	margin-left: 30px;
+	margin: 0;
 }
 
 .all-popular-products {
@@ -847,9 +850,8 @@ body {
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
-	padding: 14px 0;
+	padding: 10px 0;
 	border-radius: 3px;
-	margin-right: 24px;
 }
 
 .all-popular-products:hover {
