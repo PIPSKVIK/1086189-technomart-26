@@ -1227,6 +1227,10 @@ body {
 
 /* Еще часть main cotalog */
 
+.filter-manufacturers-power-wrapper {
+	
+}
+
 fieldset {
    border: 0 none;
 }
@@ -1248,48 +1252,118 @@ fieldset {
 	margin-top: 40px;
 }
 
-/* Стилизуем checkdox и radio... */
+/* Стилизуем checkdox... */
+.form-manufacturers {
+	padding: 0;
+	margin: 0;
+	width: 220px;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 25px;
+}
+
+.form-manufacturers-tytle {
+	margin: 0;
+	padding-bottom: 22px;
+}
+
+.type-manufacturers {
+	padding: 0;
+	margin: 0;
+}
+
+.type-manufacturers li {
+	padding-bottom: 15px;
+}
 
 .label-manufacturers {
+	display: flex;
+	align-items: center;
+}
 
+.checkbox-manufacturers-off {
+	margin-right: 10px;
+}
+
+.checkbox-manufacturers-off,
+.checkbox-manufacturers-on,
+.radio-power-off,
+.radio-power-on {
+	opacity: 0.3;
 }
 
 .checkbox-manufacturers {
 	display: none;
 }
+.checkbox-manufacturers-on {
+	display: none;
+}
 
-.fake-checkbox-manufacturers {
+.checkbox-manufacturers:checked ~ .checkbox-manufacturers-off {
+	display: none;
+}
+
+.checkbox-manufacturers:checked ~ .checkbox-manufacturers-on {
 	display: inline-block;
-	width: 23px;
-	height: 23px;
-	border: 2px solid #c5c5c5;
-	border-radius: 3px;
-	position: relative;
+	margin-right: 6px;
+}
+/* Стилизуем checkdox!!! */
+
+/* Стилизуем radio... */
+.form-electro-power {
+	margin: 0;
+	padding: 0;
 }
 
-.fake-checkbox-manufacturers::before {
-	content: "";
-	position: absolute;
-	display: block;
-
-	background-image: url(../img/logo/icon-checkbox-on.svg);
-	background-repeat: no-repeat;
-	background-position: -2px -2px;
-	width: 27px;
-	height: 23px;
-	opacity: 0;
-	transition: .2s;
+.type-electro-power {
+	margin: 0;
+	padding: 0;
 }
 
-.checkbox-manufacturers:checked + .fake-checkbox-manufacturers::before {
-	opacity: 0.5;
+.radio-power-type {
+	display: none;
 }
 
-.text-manufacturers {
+.radio-power-on {
+	display: none;
+}
+
+.radio-power-type:checked ~ .radio-power-off {
+	display: none;
+}
+
+.radio-power-type:checked ~ .radio-power-on {
+	display: inline-block;
+}
+
+.form-electro-power-tytle {
+	margin: 0;
 
 }
 
-/* Стилизуем checkdox и radio!!! */
+.form-electro-power {
+	width: 220px;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 25px;
+}
+
+.form-electro-power-tytle {
+	padding-bottom: 18px;
+}
+
+.label-power-type {
+	display: flex;
+	align-items: center;
+}
+
+.type-electro-power li {
+	padding-bottom: 16px;
+}
+
+.text-power-type {
+	padding-left: 10px;
+}
+
+/* Стилизуем radio!!! */
 
 .type-manufacturers,
 .type-electro-power {
@@ -1301,7 +1375,6 @@ fieldset {
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
-	border-top: 1px solid #e5e5e5;
 }
 
 .button-show-manufacturers {
@@ -1312,7 +1385,7 @@ fieldset {
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
 	outline: none;
-	margin-top: 70px;
+	margin-top: 54px;
 }
 
 .button-show-manufacturers:hover {
