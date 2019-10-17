@@ -980,15 +980,16 @@ body {
 	padding-left: 0;
 }
 
-.service-information h3 {
+.service-wrapper h3 {
 	font-size: 30px;
 	line-height: 30px;
 	color: #000;
 	text-transform: uppercase;
 	margin: 0;
+	font-weight: 400;
 }
 
-.service-information p {
+.service-wrapper p {
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -999,11 +1000,9 @@ body {
 
 .services-button-list {
 	display: flex;
-	padding: 75px 0 95px 0;
+	padding: 75px 0 0 0;
 	position: relative;
 }
-
-
 
 .services-button {
 	width: 240px;
@@ -1024,7 +1023,7 @@ body {
 	border-top: 1px solid #405069;
 }
 
-.button-service::after {
+.services-button::after {
 	content: "";
 
 	background-image: url("../img/pictures/box-shadow-for-slider2.png");
@@ -1032,7 +1031,7 @@ body {
 	background-position: 0 0;
 	position: absolute;
 	right: 0px;
-	bottom: 50%;
+	bottom: 65%;
 	transform: translateY(50%);
 	height: 279px;
 	width: 10px;
@@ -1048,17 +1047,13 @@ body {
 	border: 1px solid #fff;
 }
 
-.service-list-title {
-	width: 356px;
-	padding-left: 80px;
-}
-
 .service-list-title h3 {
 	font-size: 36px;
 	line-height: 36px;
 	color: #32425c;
 	text-transform: uppercase;
 	margin: 0;
+	font-weight: 400;
 }
 
 
@@ -1081,12 +1076,15 @@ body {
 }
 
 .service-list-title.warranty-wrapper {
-	width: 500px;
+	width: 378px;
 }
 
+.service-list-title.delivery-wrapper {
+	width: 277px;
+}
 
 .service-list-title.credit-wrapper {
-	width: 360px;
+	width: 280px;
 }
 
 .picture-procedure.credit-image {
@@ -1095,6 +1093,15 @@ body {
 
 .service-list-title.credit-wrapper p {
 	padding-top: 27px;
+}
+
+.delivery-wrapper h3 {
+	padding-bottom: 32px;
+}
+
+.warranty-wrapper h3 {
+	padding-bottom: 36px;
+	font-style: italic;
 }
 
 .service-list-title-button {
@@ -1110,7 +1117,11 @@ body {
 	outline: none;
 	cursor: pointer;
 	position: relative;
-	z-index: 20;
+}
+
+.hide-services-wrapper {
+	margin-left: 80px;
+	width: 630px;
 }
 
 .service-list-title-button:hover {
@@ -1122,16 +1133,29 @@ body {
 }
 
 .hide-services-delivery {
-	display: none; 	       		/* Прячим слайдер Доставка - Гарантия - Кредит */
+	display: none;	       		/* Прячим слайдер Доставка - Гарантия - Кредит */
+	background-image: url("../img/pictures/bottom-slider-car.png");
+	background-repeat: no-repeat;
+	background-position: 153px 35px;
+	padding-bottom: 116px;
 }
 
 .hide-services-warranty {
 	display: none;				/* Прячим слайдер Доставка - Гарантия - Кредит */
+	background-image: url("../img/pictures/bottom-slider-warranty.png");
+	background-repeat: no-repeat;
+	background-position: 232px 0;
+	padding-bottom: 95px;
 }
 
 .hide-services-credit {
-				 				/* Прячим слайдер Доставка - Гарантия - Кредит */
+								/* Прячим слайдер Доставка - Гарантия - Кредит */	
+	background-image: url("../img/pictures/bottom-slider-credit.png");
+	background-repeat: no-repeat;
+	background-position: 153px 0;
+	padding-bottom: 95px;
 }
+
 /* СЕРВИС И ДОСТАВКА ВТОРОЙ СЛАЙДЕР!!! */
 
 /* Основная часть MAIN главной станицы!!! */
@@ -1699,13 +1723,15 @@ fieldset {
 .footer-bootom-wrapper{
 	display: flex;
 	align-items: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 .copyrigh p {
 	font-size: 16px;
 	color: #ffffff;
+	margin: 0;
+
 }
 
 .copyrigh {
@@ -1778,6 +1804,7 @@ fieldset {
 .footer-feedback-title p {
 	font-size: 16px;
 	color: #ffffff;
+	margin: 0;
 }
 
 .footer-feedback-title a {
@@ -1813,8 +1840,10 @@ fieldset {
 	width: 620px;
 	border-top: 7px solid #ff5358;
 	position: fixed;
-	left: 34%;
-	top: 500px;
+	left: 50%;
+	margin-left: -310px;
+	top: 50%;
+	margin-top: -260px;
 
 	background-color: #FFFFFF;
 	background-image: url(../img/pictures/popup-feedback.png);
