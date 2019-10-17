@@ -1421,6 +1421,81 @@ fieldset {
 }
 
 /* Часть с типани перформаторов */
+
+/* Сортировка каталога... */
+
+.catalog-sorting-wrapper {
+	list-style: none;
+	display: flex;
+	background-color: #f7f3ec;
+	margin: 0 0 0 20px;
+	align-items: center;
+	padding: 13px 10px 10px 19px;
+	border-radius: 3px;
+}
+
+.catalog-sorting a {
+	text-decoration: none;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
+	font-weight: 700;
+	border-bottom: 1px dotted #ee3643;
+}
+
+.catalog-sorting-tytle h3 {
+	margin: 0;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #000;
+	padding-right: 140px;
+}
+
+.catalog-sorting.byprice {
+	padding-right: 72px;
+}
+
+.catalog-sorting.bytype {
+	padding-right: 66px;
+}
+
+.catalog-sorting.byfunctionality {
+	padding-right: 47px;
+}
+
+.sorting-button-up {
+	padding-right: 21px;
+}
+
+.sorting-button-up,
+.sorting-button-down {
+	fill: #000000;
+	opacity: 0.3;
+}
+
+.sorting-button-up:hover,
+.sorting-button-down:hover {
+	opacity: 1;
+} 
+
+.sorting-button-up:hover {   /* НЕ РАБОТАЕТ, Нужно разобраться */
+	fill: #ee3643;
+}
+
+.catalog-sorting a:hover {
+	color: rgba(0, 0, 0, 1);
+	border-bottom: 1px solid #ee3643;
+}
+
+.catalog-sorting a:active {
+	color: #ee3643;
+	border: none;
+}
+
+/* Сортировка каталога!!! */
+
 /* catalog */
 
 .catalog {
@@ -1432,8 +1507,13 @@ fieldset {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
+}
+/* tr:not(:nth-child(3) */
+
+.catalog-item {
 	margin-left: 20px;
 }
+
 
 .catalog-item {
  	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
@@ -1442,7 +1522,6 @@ fieldset {
 	width: 220px;
 	min-height: 320px;
 	margin-bottom: 20px;
-	margin-left: 13px;
 	border: 1px solid #e5e5e5;
 	text-align: center;
 	position: relative;
@@ -1628,7 +1707,7 @@ fieldset {
 /* Кнопки страниц каталога...  */
 
 .catalog-button-page {
-	padding-left: 33px;
+	padding-left: 20px;
 	margin: 34px 0 60px 0;
 }
 
@@ -1652,6 +1731,9 @@ fieldset {
 	display: inline-block;
 	text-align: center;
 	padding-top: 9px;
+}
+
+.catalog-page-wrapper {
 	margin-right: 10px;
 }
 
@@ -1668,6 +1750,32 @@ fieldset {
 	border-color: #ee3643;
 }
 /* Кнопки страниц каталога!!!  */
+
+/* Глова - "Пара слов о перфораторах"... */
+
+.few-words-about-hammers {
+	background-color: #f2f6f8;
+}
+
+.about-hammers-wrapper {
+	padding: 27px 0 70px 0;
+}
+
+.about-hammers-tytle {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.about-hammers-text {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	margin: 0;
+}
+
+/* Глова - "Пара слов о перфораторах"!!! */
 
 /* Меню footer, большой список/ */
 
@@ -1843,12 +1951,8 @@ fieldset {
 	left: 50%;
 	margin-left: -310px;
 	top: 50%;
-	margin-top: -260px;
-
-	background-color: #FFFFFF;
-	background-image: url(../img/pictures/popup-feedback.png);
-	background-repeat: repeat;
-	background-position: -37px -15px;
+	transform: translateY(-50%);
+	background-color: #FFFFFF;	
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 	display: none;
 }

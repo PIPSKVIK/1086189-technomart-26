@@ -67,32 +67,34 @@
     </header>
                         <!-- Main Start -->
 
-  <main class="main-content  wrap">
+  <main class="main-content">
     <div class="main-wrapper-catalog">
-      <section class="breadcrumbs">
-        <ul class="breadcrumbs-list">
-          <li>
-            <a href="index.html"><span class="main-hidden">Главная</span><img src="img/logo/icon-home.svg" alt="home"></a>
-          </li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Инструменты</a></li>
-          <li><a>Перфораторы</a></li>
-        </ul>
-      </section>
-    <div class="instruments-title-wrapper">
-      <h2 class="instruments-title">ПЕРФОРАТОРЫ</h2>
-    </div>
-    <div class="form-catalog-wrapper">
-      <div class="filter-manufacturers-power-wrapper">  
-        <form action="url" action="get">
-          <fieldset class="filter-item">
-            <legend>Фильтр</legend>
-            <h3 class="filter-price">Цена:</h3>
-            <div class="range-filter">
+      <div class="wrap">
+        <section class="breadcrumbs">
+          <ul class="breadcrumbs-list">
+            <li>
+              <a href="index.html"><span class="main-hidden">Главная</span><img src="img/logo/icon-home.svg" alt="home"></a>
+            </li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a>Перфораторы</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="instruments-title-wrapper wrap">
+        <h2 class="instruments-title">ПЕРФОРАТОРЫ</h2>
+      </div>
+      <div class="form-catalog-wrapper wrap">
+        <div class="filter-manufacturers-power-wrapper">  
+          <form action="url" action="get">
+            <fieldset class="filter-item">
+              <legend>Фильтр</legend>
+              <h3 class="filter-price">Цена:</h3>
+              <div class="range-filter">
               
-            </div>
-          </fieldset>
-        </form>
+              </div>
+            </fieldset>
+          </form>
 
         <form action="url" method="get">
           <fieldset class="form-manufacturers">
@@ -222,6 +224,40 @@
       </div>
       <!-- Часть с типани перформаторов -->
       <section class="catalog">
+
+
+        <ul class="catalog-sorting-wrapper">     <!-- Сортировка каталога -->
+          <li class="catalog-sorting-tytle">
+            <h3>Сортировка:</h3>
+          </li>
+          <li class="catalog-sorting byprice">
+            <a href="#">По цене</a>
+          </li>
+          <li class="catalog-sorting bytype">
+            <a href="#">По типу</a>
+          </li>
+          <li class="catalog-sorting byfunctionality">
+            <a href="#">По функционалу</a> 
+          </li>
+          <li class="sorting-button-up">
+            <a href="#">
+              <svg version="1.1" x="0px" y="0px"
+                width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                </svg>
+            </a>
+          </li>
+          <li class="sorting-button-down">
+            <a href="#">
+              <svg  version="1.1" x="0px" y="0px"
+                width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+
         <ul class="catalog-list">
           <li class="catalog-item"><!-- ============================ 1 -->
             <div class="catalog-bookmark-buy">
@@ -353,6 +389,17 @@
         <!-- Кнопки страниц каталога!!! -->
       </section>
     </div>
+
+    <section class="few-words-about-hammers">
+      <div class="about-hammers-wrapper wrap">
+        <h3 class="about-hammers-tytle">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
+        <p class="about-hammers-text">
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
+      </div>
+    </section>
+    
   </main>
 
                         <!-- Footer Start -->
