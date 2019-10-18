@@ -353,7 +353,7 @@
     	</section>
     </footer>
                                         <!-- popup форма -->
-    <section class="popup-feedback wrap">
+    <section class="popup-feedback">
       <h2 class="visually-hidden">Форма для обратной связи</h2>
       <button class="closed closing-feedback" type="submit">
         <span class="visually-hidden">Закрыть всплывающие окна</span>
@@ -407,5 +407,27 @@
         </button>
       </form>
     </section>
+
+
+    <script>
+      
+    var registration = document.querySelector(".registration");
+    var popup = document.querySelector(".popup-feedback");
+    var close = document.querySelector(".closed");
+
+    registration.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      console.log("Клик по ссылке");
+      popup.classList.add("modal-show");
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      console.log("Закрыть модальное окно");
+      popup.classList.remove("modal-show");
+    })
+
+    </script>
+
   </body>
 </html>

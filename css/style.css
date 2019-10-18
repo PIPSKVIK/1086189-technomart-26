@@ -2070,6 +2070,10 @@ fieldset {
 	display: none;
 }
 
+.modal-show {
+	display: block;
+}
+
 .form-feedback-info {
 	display: flex;
 	justify-content: center;
