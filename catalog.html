@@ -85,13 +85,29 @@
         <h2 class="instruments-title">ПЕРФОРАТОРЫ</h2>
       </div>
       <div class="form-catalog-wrapper wrap">
+
         <div class="filter-manufacturers-power-wrapper">  
           <form action="url" action="get">
             <fieldset class="filter-item">
-              <legend>Фильтр</legend>
+              <legend>Фильтр:</legend>
               <h3 class="filter-price">Цена:</h3>
               <div class="range-filter">
-              
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar">
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-controls">
+                  <label for="min-price">
+                    <input type="text" name="min-price" value="0" id="min-price">
+                  </label>
+                  <label for="max-price">
+                    <input type="text" name="max-price" value="30000" id="max-price">
+                  </label>
+                </div>
               </div>
             </fieldset>
           </form>

@@ -512,6 +512,113 @@ body {
 	padding: 33px 0 35px 30px;
 }
 
+/* Фильтр с Ползунком... */
+
+.filter-price {
+	margin: 0;
+}
+
+.filter-item {
+	margin: 0;
+	padding: 0;
+	width: 220px;
+}
+
+.filter-item legend {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	background-color: #f7f3ec;
+	width: 220px;
+	padding: 14px 0 14px 19px;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+.filter-price {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 15px 0;
+}
+
+.range-controls {
+	background-color: #f7f3ec;
+	height: 80px;
+	border-radius: 5px;
+	margin-bottom: 9px;
+	padding: 38px 20px 0 20px;
+	position: relative;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background-color: #d7dcde;
+}
+
+.range-controls .bar {
+	height: 2px;
+	background-color: #00ca74;
+	width: 80%;
+}
+
+.range-controls .toggle {
+  	padding: 0;
+	
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border-radius: 50%;
+	border: 8px solid #fff;
+  	background-color: #ababab;
+  	position: absolute;
+  	left: 0;
+  	top: 28px;
+  	cursor: pointer;
+  	width: 4px;
+  	height: 4px;
+  	box-sizing: content-box
+}
+
+.range-controls .toggle-min {
+	left: 12px;
+}
+
+.range-controls .toggle-max {
+	left: 155px;
+}
+
+.price-controls {
+	display: flex;
+	position: relative;
+}
+
+.price-controls:before {
+	content: "";
+
+	width: 10px;
+	height: 1px;
+	background-color: #000;
+	top: 50%;
+	left: 105px;
+
+	position: absolute;
+}
+
+.price-controls input {
+	width: 95px;
+	border: none;
+	background-color: #f7f3ec;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 5px;
+}
+
+.price-controls label:nth-child(1) {
+	margin-right: 30px;
+}
+
+/* Фильтр с Ползунком!!! */
+
 .about-title,
 .contacts {
 	font-size: 30px;
@@ -1252,7 +1359,7 @@ body {
 /* Еще часть main cotalog */
 
 .filter-manufacturers-power-wrapper {
-	
+	margin: 18px 0;
 }
 
 fieldset {
@@ -1261,7 +1368,8 @@ fieldset {
 
 .form-catalog-wrapper {
 	display: flex;
-	min-height: 995px;
+	
+
 }
 
 .form-catalog-wrapper form {
@@ -1279,7 +1387,7 @@ fieldset {
 /* Стилизуем checkdox... */
 .form-manufacturers {
 	padding: 0;
-	margin: 0;
+	margin: 20px 0 0 0;
 	width: 220px;
 	border-top: 1px solid #e5e5e5;
 	padding-top: 25px;
@@ -1624,6 +1732,8 @@ fieldset {
 	line-height: 20px;
 	width: 160px;
 	display: inline-block;
+	margin: 0;
+	padding-top: 7px;
 }
 
 .discount {
@@ -1636,7 +1746,9 @@ fieldset {
 	color: #ffffff;
 	background-color: #ee3643;
 	width: 142px;
-	margin: 15px auto;
+	margin-top: 11px;
+	margin-bottom: 15px;
+	margin: 5px 38px 15px 38px;
 	padding: 10px 0;
 	position: relative;
 }
@@ -1652,8 +1764,8 @@ fieldset {
 }
 
 .price {
+	margin-top: 11px;
 	color: #999999;
-	margin-top: 18px;
 	min-height: 23px;
 	display: block;
 }
@@ -1758,7 +1870,7 @@ fieldset {
 }
 
 .about-hammers-wrapper {
-	padding: 27px 0 70px 0;
+	padding: 65px 0 70px 10px;
 }
 
 .about-hammers-tytle {
@@ -1766,6 +1878,7 @@ fieldset {
 	line-height: 30px;
 	font-weight: 400;
 	margin: 0;
+	padding-bottom: 35px;
 }
 
 .about-hammers-text {
