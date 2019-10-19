@@ -13,7 +13,7 @@
     <header class="header-wrapper"><!-- Header - Start -->
       <section class="header-top">
         <div class="header-top-wrapper wrap">
-          <a class="logo"><img src="img/logo/logo-tehnomart.png" alt="техномарт" width="119" height="19"></a>
+          <a class="logo"><img src="img/logo/logo-tehnomart.png" alt="техномарт" width="112" height="20"></a>
           <form class="search" action="url" method="get">
             <input type="search" id="search" name="search" placeholder="Поиск:" class="search-style">
             <svg xmlns="http://www.w3.org/2000/svg" width="17"height="17" viewBox="0 0 17 17" fill="#fff">
@@ -22,8 +22,8 @@
                 C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/>
             </svg>
           </form>
-    		  <a class="marker" href="#">Закладки:</a>
-    		  <a class="basket" href="#">Корзина:</a>
+    		  <a class="marker" href="#">Закладки: 0</a>
+    		  <a class="basket" href="#">Корзина: 0</a>
     		  <a class="order" href="#">Оформить заказ</a>
         </div>
       </section>
@@ -39,7 +39,7 @@
     		   <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     		</div>
     		<div class="entrance-registration">
-          <a href="#" class="entrance">Выход</a>
+          <a href="#" class="entrance">Войти</a>
           <a href="#" class="registration">Регистрация</a>
     		</div>
     	</section>
@@ -409,25 +409,25 @@
       </form>
     </section>
 
-
     <script>
-      
-    var registration = document.querySelector(".registration");
-    var popup = document.querySelector(".popup-feedback");
-    var close = document.querySelector(".closed");
+      var registration = document.querySelector(".registration");
+      var popup = document.querySelector(".popup-feedback");
+      var close = document.querySelector(".closed");
+      var login = popup.querySelector("[id=name]");
 
-    registration.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      console.log("Клик по ссылке");
-      popup.classList.add("modal-show");
-    });
 
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      console.log("Закрыть модальное окно");
-      popup.classList.remove("modal-show");
-    })
+      registration.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        console.log("Клик по ссылке");
+        popup.classList.add("modal-show");
+        login.focus();
+      });
 
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        console.log("Закрыть модальное окно");
+        popup.classList.remove("modal-show");
+      })
     </script>
 
   </body>

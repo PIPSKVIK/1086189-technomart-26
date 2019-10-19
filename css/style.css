@@ -149,7 +149,7 @@ body {
 
 .marker,
 .basket {
-	padding-left: 30px;
+	padding-left: 18px;
 }
 
 .marker::before,
@@ -189,8 +189,8 @@ body {
 
 .header-info {
 	display: flex;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 33px;
+	padding-bottom: 22px;
 	align-items: center;
 }
 
@@ -205,8 +205,7 @@ body {
 
 .contact-information {
 	width: 275px;
-	margin-left: 71px;
-	margin-top: 27px;
+	margin-left: 64px;
 	text-align: center;
 }
 
@@ -231,7 +230,7 @@ body {
 	line-height: 21px;
 	color: #ee3643;
 	text-decoration: none;
-	padding: 5px 12px;
+	padding: 8px 12px 8px 39px;
 	width: 270px;
 	display: block;
 	position: relative;
@@ -246,15 +245,15 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
-	margin-left: 10px;
+	margin: 0;
 }
 
 .entrance-registration {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-left: 50px;
-	padding-bottom: 22px;
+	margin-left: 67px;
+	padding-bottom: 27px;
 }
 
 .entrance-registration a {
@@ -442,7 +441,7 @@ body {
 	text-decoration: none;
 	font-size: 17px;
 	color: #ffffff;
-	padding: 22px 32px;
+	padding: 20px 32px;
 }
 
 .menu-list a:hover {

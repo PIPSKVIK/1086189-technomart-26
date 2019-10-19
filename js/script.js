@@ -6,6 +6,7 @@ var registration = document.querySelector(".registration");
 var popup = document.querySelector(".popup-feedback");
 var close = document.querySelector(".closed");
 
+
 registration.addEventListener("click", function (evt) {
   evt.preventDefault();
   console.log("Клик по ссылке");
