@@ -190,7 +190,7 @@ body {
 .header-info {
 	display: flex;
 	padding-top: 33px;
-	padding-bottom: 22px;
+	padding-bottom: 25px;
 	align-items: center;
 }
 
@@ -636,18 +636,12 @@ body {
 }
 
 .about-description-first,
-.description-second {
-	margin-top: 27px;
-}
-
-.about-description-first,
 .contacts-info {
-	padding-top: 35px;
+	padding-top: 27px;
 }
 
-.description-second,
-.map-location {
-	padding-top: 33px;
+.description-second {
+	padding-top: 25px;
 }
 
 .contacts-info {
@@ -709,7 +703,7 @@ body {
 
 .main-promo-top li {
 	width: 300px;
-	padding: 26px 90px 20px 20px;
+	padding: 20px 90px 20px 23px;
 }
 
 .backgroud-promo-materials {
@@ -755,7 +749,7 @@ body {
 	text-align: center;
 	padding: 10px 0;
 	border-radius: 3px;
-	margin-top: 9px;
+	margin-top: 14px;
 }
 
 .button-promo-materials {
@@ -804,10 +798,12 @@ body {
 
 .promo-discount {
 	background-color: #80c180;
+	margin-top: 9px;
 }
 
 .promo-delivery {
 	background-color: #e5ac40;
+	margin-top: 10px;
 }
 /*  - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* верхняя часть!!!*/
@@ -855,7 +851,7 @@ body {
 .slider-list p {
 	line-height: 24px;
 	color: #fff;
-	margin: 10px 0;
+	margin: 0 0 10px 0;
 }
 
 .slider-catalog-open {
@@ -864,8 +860,8 @@ body {
 	background-color: #ee3643;
 	text-align: center;
 	border-radius: 3px;
-	padding: 14px 0;
-	margin-top: 91px;
+	padding: 12px 0 10px 0;
+	margin-top: 110px;
 }
 
 .slider-catalog-open:hover {
@@ -1019,7 +1015,7 @@ body {
 
 .popular-manufacturers-wrapper {
 	margin-top: 21px;
-	margin-bottom: 80px;
+	margin-bottom: 68px;
 }
 
 .manufacturers-list-wrapper {
@@ -1101,12 +1097,12 @@ body {
 	line-height: 24px;
 	color: #000;
 	margin: 0px;
-	margin-top: 38px;
+	margin-top: 28px;
 }
 
 .services-button-list {
 	display: flex;
-	padding: 75px 0 0 0;
+	padding: 68px 0 13px 0;
 	position: relative;
 }
 
@@ -1202,7 +1198,7 @@ body {
 }
 
 .delivery-wrapper h3 {
-	padding-bottom: 32px;
+	padding-bottom: 24px;
 }
 
 .warranty-wrapper h3 {
@@ -1239,7 +1235,7 @@ body {
 }
 
 .hide-services-delivery {
-	display: none;	       		/* Прячим слайдер Доставка - Гарантия - Кредит */
+		       		/* Прячим слайдер Доставка - Гарантия - Кредит */
 	background-image: url("../img/pictures/bottom-slider-car.png");
 	background-repeat: no-repeat;
 	background-position: 153px 35px;
@@ -1255,7 +1251,7 @@ body {
 }
 
 .hide-services-credit {
-								/* Прячим слайдер Доставка - Гарантия - Кредит */	
+	display: none;							/* Прячим слайдер Доставка - Гарантия - Кредит */	
 	background-image: url("../img/pictures/bottom-slider-credit.png");
 	background-repeat: no-repeat;
 	background-position: 153px 0;
@@ -1288,15 +1284,14 @@ body {
 
 .map-location {
 	display: block;
-	padding-bottom: 57px;
+	padding: 35px 0 33px 0;
 }
 
 .about-company-list {
 	font-size: 18px;
 	line-height: 40px;
 	list-style-type: none;
-	padding-top: 20px;
-	padding-bottom: 30px;
+	padding: 12px 0 25px 35px;
 }
 
 .about-company-list li {
@@ -1325,7 +1320,7 @@ body {
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
-	padding: 14px 0 14px 0;
+	padding: 10px 0 10px 0;
 	display: inline-block;
 	text-align: center;
 	vertical-align: top;
@@ -1796,7 +1791,7 @@ fieldset {
 .footer-address {
 	line-height: 24px;
 	color: #f1f5f7;
-	margin-top: 32px;
+	margin: 32px 0 0 0;
 }
 
 .footer-logo::after {
@@ -1893,7 +1888,7 @@ fieldset {
 
 .footer-menu {
 	width: 550px;
-	padding-top: 42px;
+	padding-top: 37px;
 	margin-left: 65px;
 }
 
@@ -1921,8 +1916,8 @@ fieldset {
 
 .footer-menu-bottom {      /* 2 */
 	color: #ffd180;
-	margin-left: 15px;
-	margin-top: 28px;
+	margin-left: 25px;
+	margin-top: 35px;
 }
 
 .footer-menu-list a:hover {
@@ -1956,13 +1951,13 @@ fieldset {
 
 .copyrigh {
 	width: 230px;
-	margin-right: 145px;
+	margin-right: 162px;
 }
 
 .social-wrapper {
 	display: flex;
 	width: 135px;
-	margin-right: 115px;
+	margin-right: 110px;
 }
 
 .footer-feedback {
@@ -2018,7 +2013,7 @@ fieldset {
 
 
 .footer-feedback-title.left {
-	padding-right: 40px;
+	padding-right: 29px;
 }
 
 .footer-feedback-title p {
