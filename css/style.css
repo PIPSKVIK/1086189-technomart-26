@@ -303,8 +303,7 @@ body {
 .client-wrapper {
 	width: 300px;
 	text-align: center;
-	margin-left: 38px;
-	padding-top: 14px;
+	margin-left: 50px;
 }
 
 .client a {
@@ -316,6 +315,7 @@ body {
 
 .client-name {
 	position: relative;
+	padding-left: 6px;
 }
 
 .client-name:active {
@@ -346,7 +346,7 @@ body {
 
 .client-exit {
 	position: relative;
-	margin-left: 45px;
+	margin-left: 38px;
 }
 
 .client-exit::after {
@@ -379,7 +379,7 @@ body {
 	display: flex;
 	position: relative;
 	padding-left: 18px;
-	margin-bottom: 0;
+	margin: 8px 0 0 0;
 }
 
 .personal-account li:nth-child(1)::after {
@@ -458,7 +458,7 @@ body {
 }
 
 .breadcrumbs {
-	margin: 25px 0 25px 0;
+	margin: 20px 0 20px 0;
 }
 
 .breadcrumbs-list {
@@ -500,6 +500,7 @@ body {
 
 .instruments-title-wrapper {
 	background-color: #f2f6f8;
+	width: 940px;
 }
 
 .instruments-title {
@@ -508,7 +509,8 @@ body {
 	color: #32425c;
 	text-transform: uppercase;
 	font-weight: 400;
-	padding: 33px 0 35px 30px;
+	padding: 30px 0 30px 18px;
+	margin: 0;
 }
 
 /* Фильтр с Ползунком... */
@@ -539,7 +541,7 @@ body {
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 15px 0;
+	padding: 9px 0 15px 0;
 }
 
 .range-controls {
@@ -1353,7 +1355,7 @@ body {
 /* Еще часть main cotalog */
 
 .filter-manufacturers-power-wrapper {
-	margin: 18px 0;
+	margin: 16px 0;
 }
 
 fieldset {
@@ -1384,12 +1386,16 @@ fieldset {
 	margin: 20px 0 0 0;
 	width: 220px;
 	border-top: 1px solid #e5e5e5;
-	padding-top: 25px;
+	padding-top: 18px;
 }
 
 .form-manufacturers-tytle {
 	margin: 0;
-	padding-bottom: 22px;
+	padding-bottom: 13px;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
 }
 
 .type-manufacturers {
@@ -1398,7 +1404,7 @@ fieldset {
 }
 
 .type-manufacturers li {
-	padding-bottom: 15px;
+	padding-bottom: 17px;
 }
 
 .label-manufacturers {
@@ -1407,7 +1413,7 @@ fieldset {
 }
 
 .checkbox-manufacturers-off {
-	margin-right: 10px;
+	margin-right: 12px;
 }
 
 .checkbox-manufacturers-off,
@@ -1461,19 +1467,26 @@ fieldset {
 	display: inline-block;
 }
 
-.form-electro-power-tytle {
-	margin: 0;
-
-}
-
 .form-electro-power {
 	width: 220px;
 	border-top: 1px solid #e5e5e5;
-	padding-top: 25px;
+	padding-top: 21px;
 }
 
 .form-electro-power-tytle {
-	padding-bottom: 18px;
+	margin: 0;
+	padding-bottom: 12px;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.text-manufacturers,
+.text-power-type {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
 }
 
 .label-power-type {
@@ -1511,7 +1524,7 @@ fieldset {
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
 	outline: none;
-	margin-top: 54px;
+	margin-top: 58px;
 }
 
 .button-show-manufacturers:hover {
@@ -1602,7 +1615,7 @@ fieldset {
 
 .catalog {
 	width: 720px;
-	margin-top: 20px;
+	margin-top: 17px;
 }
 
 .catalog-list {
@@ -1814,7 +1827,7 @@ fieldset {
 
 .catalog-button-page {
 	padding-left: 20px;
-	margin: 34px 0 60px 0;
+	margin: 28px 0 60px 0;
 }
 
 .catalog-button-page li {
@@ -1864,7 +1877,7 @@ fieldset {
 }
 
 .about-hammers-wrapper {
-	padding: 65px 0 70px 10px;
+	padding: 65px 0 68px 10px;
 }
 
 .about-hammers-tytle {
@@ -1872,7 +1885,7 @@ fieldset {
 	line-height: 30px;
 	font-weight: 400;
 	margin: 0;
-	padding-bottom: 35px;
+	padding-bottom: 26px;
 }
 
 .about-hammers-text {
