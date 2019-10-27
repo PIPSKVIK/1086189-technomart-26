@@ -211,6 +211,7 @@ body {
 	width: 275px;
 	margin-left: 64px;
 	text-align: center;
+	margin-bottom: 4px;
 }
 
 .phone::before {
@@ -238,6 +239,7 @@ body {
 	width: 270px;
 	display: block;
 	position: relative;
+	margin-bottom: 5px;
 }
 
 .phone img {
@@ -445,7 +447,7 @@ body {
 	text-decoration: none;
 	font-size: 17px;
 	color: #ffffff;
-	padding: 20px 32px;
+	padding: 18px 32px;
 }
 
 .menu-list a:hover {
@@ -663,7 +665,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-top: 78px;
+	margin-top: 80px;
 	margin-bottom: 86px;
 }
 
@@ -709,7 +711,7 @@ body {
 
 .main-promo-top li {
 	width: 300px;
-	padding: 20px 90px 20px 23px;
+	padding: 20px 90px 20px 24px;
 }
 
 .backgroud-promo-materials {
@@ -719,6 +721,7 @@ body {
 	background-position: right 43px top 31px;
 	position: relative;
 	margin-right: 20px;
+	padding-left: 24px;
 }
 
 .backgroud-promo-tools {
@@ -784,7 +787,7 @@ body {
 
 .main-promo-discount-delivery li {
 	width: 300px;
-	padding: 26px 90px 20px 20px;
+	padding: 21px 90px 22px 22px;
 }
 
 .backgroud-promo-discount {
@@ -804,12 +807,11 @@ body {
 
 .promo-discount {
 	background-color: #80c180;
-	margin-top: 9px;
 }
 
 .promo-delivery {
 	background-color: #e5ac40;
-	margin-top: 10px;
+	margin-top: 12px;
 }
 /*  - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* верхняя часть!!!*/
@@ -834,7 +836,7 @@ body {
 .slider-list {
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	padding: 27px 25px 22px 25px;
+	padding: 25px 25px 22px 25px;
 }
 
 .slider-list-first {
@@ -959,7 +961,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 53px;
-	padding: 25px 24px 26px 30px;
+	padding: 25px 24px 26px 28px;
 }
 
 .popular-products {
@@ -998,7 +1000,7 @@ body {
 
 .catalog-popular ul {
 	padding: 0;
-	margin: 20px 0 0 0;
+	margin: 18px 0 0 0;
 }
 
 .catalog-popular-products {
@@ -1023,14 +1025,14 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 21px;
-	padding: 25px 24px 26px 30px;
+	padding: 25px 24px 26px 28px;
 }
 /* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ!!! */
 
 /* СПИСОК ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ... */
 
 .popular-manufacturers-wrapper {
-	margin-top: 21px;
+	margin-top: 18px;
 	margin-bottom: 68px;
 }
 
@@ -1103,7 +1105,7 @@ body {
 	line-height: 30px;
 	color: #000;
 	text-transform: uppercase;
-	margin: 0;
+	margin: 3px 0 0 0;
 	font-weight: 400;
 }
 
@@ -1113,7 +1115,7 @@ body {
 	line-height: 24px;
 	color: #000;
 	margin: 0px;
-	margin-top: 28px;
+	margin-top: 25px;
 }
 
 .services-button-list {
@@ -1254,7 +1256,7 @@ body {
 		       		/* Прячим слайдер Доставка - Гарантия - Кредит */
 	background-image: url("../img/pictures/bottom-slider-car.png");
 	background-repeat: no-repeat;
-	background-position: 153px 35px;
+	background-position: 151px 24px;
 	padding-bottom: 116px;
 }
 
@@ -1300,14 +1302,14 @@ body {
 
 .map-location {
 	display: block;
-	padding: 35px 0 33px 0;
+	padding: 30px 0 36px 0;
 }
 
 .about-company-list {
 	font-size: 18px;
 	line-height: 40px;
 	list-style-type: none;
-	padding: 12px 0 25px 35px;
+	padding: 10px 0 25px 35px;
 }
 
 .about-company-list li {
@@ -1426,8 +1428,13 @@ fieldset {
 	align-items: center;
 }
 
-.checkbox-manufacturers-off:hover {
-	opacity: 0.9;
+.checkbox-manufacturers-off:hover,
+.checkbox-manufacturers-on:hover {
+	opacity: 0.4;
+}
+
+.checkbox-manufacturers:disabled {
+	opacity: 1;
 }
 
 .checkbox-manufacturers-off {
@@ -1505,7 +1512,6 @@ fieldset {
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	line-height: 20px;
-	color: 
 }
 
 .label-power-type {
@@ -1536,6 +1542,10 @@ fieldset {
 }
 
 .button-show-manufacturers {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	text-transform: uppercase;
 	background-color: #ffffff;
 	border-color: #e5e5e5;
 	width: 140px;
@@ -1574,7 +1584,6 @@ fieldset {
 	font-size: 13px;
 	text-transform: uppercase;
 	color: rgba(0, 0, 0, 0.3);
-	font-weight: 700;
 	border-bottom: 1px dotted #ee3643;
 }
 
@@ -1603,20 +1612,14 @@ fieldset {
 	padding-right: 21px;
 }
 
-.sorting-button-up,
-.sorting-button-down {
-	fill: #000000;
-	opacity: 0.3;
+.sorting-button-image-svg {
+	opacity: 0.5;
 }
 
-.sorting-button-up:hover,
-.sorting-button-down:hover {
+.sorting-button-image-svg:hover {
 	opacity: 1;
-} 
-
-.sorting-button-up:hover {   /* НЕ РАБОТАЕТ, Нужно разобраться */
-	fill: #ee3643;
 }
+
 
 .catalog-sorting a:hover {
 	color: rgba(0, 0, 0, 1);
@@ -1772,9 +1775,7 @@ fieldset {
 	color: #ffffff;
 	background-color: #ee3643;
 	width: 142px;
-	margin-top: 11px;
-	margin-bottom: 15px;
-	margin: 5px 38px 15px 38px;
+	margin: 5px 30px 15px 42px;
 	padding: 10px 0;
 	position: relative;
 }
@@ -1783,7 +1784,7 @@ fieldset {
 	content: " ";
 	
 	top: 0px;
-	right: -23px;
+	right: -17px;
 	border: 19px solid white;
   border-left-color: #ee3643;
   position: absolute;
@@ -1823,7 +1824,7 @@ fieldset {
 .footer-address {
 	line-height: 24px;
 	color: #f1f5f7;
-	margin: 32px 0 0 0;
+	margin: 30px 0 0 2px;
 }
 
 .footer-logo::after {
@@ -1869,6 +1870,11 @@ fieldset {
 	display: inline-block;
 	text-align: center;
 	padding-top: 9px;
+}
+
+.catalog-page.first-button-active {
+	background-color: #ee3643;
+	color: #fef2f2;
 }
 
 .catalog-page-wrapper {
@@ -1989,13 +1995,12 @@ fieldset {
 .social-wrapper {
 	display: flex;
 	width: 135px;
-	margin-right: 110px;
+	margin-right: 115px;
 }
 
 .footer-feedback {
 	display: flex;
 	justify-content: center;
-	width: 310px;
 }
 
 .social-wrapper a {
@@ -2045,7 +2050,7 @@ fieldset {
 
 
 .footer-feedback-title.left {
-	padding-right: 29px;
+	margin-right: 50px;
 }
 
 .footer-feedback-title p {
