@@ -108,7 +108,7 @@ body {
 	height: 42px;
 	background-color: transparent;
 	outline: none;
-	padding-left: 49px;
+	padding-left: 47px;
 }
 
 .search-style:hover + svg {
@@ -648,7 +648,7 @@ body {
 }
 
 .description-second {
-	padding-top: 25px;
+	padding-top: 23px;
 }
 
 .contacts-info {
@@ -665,7 +665,7 @@ body {
 	justify-content: space-between;
 	align-items: flex-start;
 	margin-top: 80px;
-	margin-bottom: 84px;
+	margin-bottom: 85px;
 }
 
 /* Основная часть MAIN главной станицы... */
@@ -1031,8 +1031,8 @@ body {
 /* СПИСОК ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ... */
 
 .popular-manufacturers-wrapper {
-	margin-top: 18px;
-	margin-bottom: 68px;
+	margin-top: 20px;
+	margin-bottom: 67px;
 }
 
 .manufacturers-list-wrapper {
@@ -1126,7 +1126,6 @@ body {
 .services-button {
 	width: 240px;
 	position: relative;
-	padding-top: 4px;
 }
 
 .button-service {
@@ -1309,7 +1308,7 @@ body {
 	font-size: 18px;
 	line-height: 40px;
 	list-style-type: none;
-	padding: 10px 0 27px 35px;
+	padding: 11px 0 27px 35px;
 }
 
 .about-company-list li {
@@ -1774,8 +1773,8 @@ fieldset {
 .price.new {
 	color: #ffffff;
 	background-color: #ee3643;
-	width: 142px;
-	margin: 5px 30px 15px 42px;
+	width: 141px;
+	margin: 5px 30px 15px 41px;
 	padding: 10px 0;
 	position: relative;
 }
@@ -1784,7 +1783,7 @@ fieldset {
 	content: " ";
 	
 	top: 0px;
-	right: -17px;
+	right: -19px;
 	border: 19px solid white;
   border-left-color: #ee3643;
   position: absolute;
