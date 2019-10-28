@@ -2096,7 +2096,7 @@ fieldset {
 	background-image: url(../img/logo/icon-popup-exit.svg);
 	background-repeat: no-repeat;
 	cursor: pointer;
-	background-color: #ffffff;
+	background-color: transparent;
 	outline: none;
 	position: absolute;
 	right: 9px;
@@ -2182,10 +2182,16 @@ fieldset {
 
 .popup-map {
 	position: fixed;
-	left: 29.2%;
-	top: 360px;
+	margin-left: -495px;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%);
 	z-index: 22;
 	display: none;  /* Спрятали попап */
+}
+
+.popup-map-show {
+	display: block;
 }
 
 .closing-map {
@@ -2209,8 +2215,10 @@ fieldset {
 	border-top: 7px solid #ee3643;
 	position: fixed;
 	z-index: 23;
-	left: 37%;
-	top: 320px;
+	margin-left: -290px;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%);
 	display: none;    /* Спрятали попап */
 
 	background-color: #FFFFFF;
@@ -2220,10 +2228,13 @@ fieldset {
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
+.popup-item-basket-show {
+	display: block;
+}
+
 .item-basket-wrapper {
 	display: flex;
-	padding-top: 48px;
-	padding-bottom: 48px;
+	padding: 48px 0 48px 80px;
 	align-items: center;
 }
 

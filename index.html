@@ -359,7 +359,7 @@
       <button class="closed closing-feedback" type="submit">
         <span class="visually-hidden">Закрыть всплывающие окна</span>
       </button>
-      <form class="form-feedback" action="url" method="post">
+      <form class="form-feedback" action="url" method="submit">
       <div class="form-feedback-info">
         <p class="form-name">
           <label for="name">Ваше имя:</label>
@@ -381,16 +381,18 @@
         </div>
       </form>
     </section>
-                            <!-- попап большой каоры -->
+                            <!-- попап большой карты -->
     <section class="popup-map wrap">
       <h2 class="visually-hidden">Карта, как до нас добратся</h2>
       <button class="closed closing-map">
         <span class="visually-hidden">Закрыть всплывающие окна</span>
       </button>
-      <img src="img/pictures/map-popap.png" width="970" height="476" alt="большая карта навигации">
+      <!-- <img src="img/pictures/map-popap.png" width="970" height="476" alt="большая карта навигации"> -->
+      <iframe src="https://maps.google.com/maps?q=%D0%B3.%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB.%20%D0%91.%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="970" height="476" allowfullscreen>
+      </iframe>
     </section>
                             <!-- попап корзины товаров -->
-    <section class="popup-item-basket wrap">
+    <section class="popup-item-basket">
       <h2 class="visually-hidden">Товар добавлен в корзину</h2>
        <button class="closed closing-form-item">
         <span class="visually-hidden">Закрыть всплывающие окна</span>
@@ -410,10 +412,16 @@
     </section>
 
     <script>
+
+                      /*КНОПКА РЕГИСТРАЦИИ В HEADER*/
       var registration = document.querySelector(".registration");
       var popup = document.querySelector(".popup-feedback");
       var close = document.querySelector(".closed");
       var login = popup.querySelector("[id=name]");
+      var form = popup.querySelector(".form-feedback");
+      var email = popup.querySelector("[id=email]");
+      var textLetter = popup.querySelector("[id=text-letter]");
+
 
 
       registration.addEventListener("click", function (evt) {
@@ -427,7 +435,61 @@
         evt.preventDefault();
         console.log("Закрыть модальное окно");
         popup.classList.remove("modal-show");
+      });
+
+      form.addEventListener("submit", function (evt) {
+        evt.preventDefault();
+        console.log(login.value);   /*Прописываем значение по нашим атрибутам, функции.*/
+        console.log(email.value);
+        console.log(textLetter.value);
+        /*Теперь делаем условие*/
+        if (!login.value || email.value || textLetter.value) {
+          evt.preventDefault();
+          console.log("Нужно ввести Имя, Почту и Комментарий!");
+        }
+
+      });
+
+
+
+
+
+                      /*БОЛЬШАЯ КАРТА*/
+      var link = document.querySelector(".map-location"); 
+      var popupBigMap = document.querySelector(".popup-map");
+      var closeBigMap = document.querySelector(".closing-map");
+
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+          console.log("Клик по кнопке, Напишите нам!");
+        popupBigMap.classList.add("popup-map-show");
+      });
+
+      closeBigMap.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        console.log("Закрыть модальное большой карты");
+        popupBigMap.classList.remove("popup-map-show");
+      });
+
+                  /*КУПИТЬ, ТОВАР ДОБАВЛЕН В КОРЗИНУ!*/
+
+      var catalogBuy = document.querySelector(".catalog-buy");
+      var popupBasket = document.querySelector(".popup-item-basket");
+      var closeItem = document.querySelector(".closing-form-item");
+
+      catalogBuy.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        console.log("Клик по кнопке КУПИТЬ");
+        popupBasket.classList.add("popup-item-basket-show");
+      });
+
+      closeItem.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        console.log("Закрыть окно, Товар добавлен в корзину");
+        popupBasket.classList.remove("popup-item-basket-show");
       })
+
     </script>
 
   </body>
