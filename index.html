@@ -437,6 +437,7 @@
         popup.classList.remove("modal-show");
       });
 
+
       form.addEventListener("submit", function (evt) {
         evt.preventDefault();
         console.log(login.value);   /*Прописываем значение по нашим атрибутам, функции.*/
@@ -446,11 +447,21 @@
         if (!login.value || email.value || textLetter.value) {
           evt.preventDefault();
           console.log("Нужно ввести Имя, Почту и Комментарий!");
+        } else {
+          localStorage.setItem("login", login.value);
         }
-
       });
 
-
+                 /*Закрываем окно popup клавишей esc*/
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (popup.classList.contains("modal-show")) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+            console.log("Нажали esc, чтобы закрыть окно popup");
+          }
+        }
+      });
 
 
 
