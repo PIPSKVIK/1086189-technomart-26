@@ -347,6 +347,7 @@ body {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	padding-left: 40px;
+	margin-bottom: 10px;
 }
 
 .client-exit {
@@ -384,7 +385,7 @@ body {
 	display: flex;
 	position: relative;
 	padding-left: 18px;
-	margin: 8px 0 0 0;
+	margin: 0;
 }
 
 .personal-account li:nth-child(1)::after {
@@ -399,7 +400,7 @@ body {
 }
 
 .personal-account li:nth-child(2) {
-	margin-left: 30px;
+	margin-left: 32px;
 }
 
 .personal-account a {
@@ -546,14 +547,14 @@ body {
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 9px 0 15px 0;
+	padding: 7px 0 15px 0;
 }
 
 .range-controls {
 	background-color: #f7f3ec;
 	height: 80px;
 	border-radius: 5px;
-	margin-bottom: 9px;
+	margin-bottom: 7px;
 	padding: 38px 20px 0 20px;
 	position: relative;
 }
@@ -586,11 +587,11 @@ body {
 }
 
 .range-controls .toggle-min {
-	left: 12px;
+	left: 20px;
 }
 
 .range-controls .toggle-max {
-	left: 155px;
+	left: 160px;
 }
 
 .price-controls {
@@ -1370,7 +1371,7 @@ body {
 /* Еще часть main cotalog */
 
 .filter-manufacturers-power-wrapper {
-	margin: 16px 0;
+	margin: 15px 0;
 }
 
 fieldset {
@@ -1398,10 +1399,10 @@ fieldset {
 /* Стилизуем checkdox... */
 .form-manufacturers {
 	padding: 0;
-	margin: 20px 0 0 0;
+	margin: 24px 0 0 0;
 	width: 220px;
 	border-top: 1px solid #e5e5e5;
-	padding-top: 18px;
+	padding-top: 15px;
 }
 
 .form-manufacturers-tytle {
@@ -1472,7 +1473,7 @@ fieldset {
 
 .type-electro-power {
 	margin: 0;
-	padding: 0;
+	padding: 11px 0 0 0;
 }
 
 .radio-power-type {
@@ -1494,12 +1495,13 @@ fieldset {
 .form-electro-power {
 	width: 220px;
 	border-top: 1px solid #e5e5e5;
-	padding-top: 21px;
+	padding-top: 17px;
+	margin: 4px 0 0 0;
 }
 
 .form-electro-power-tytle {
 	margin: 0;
-	padding-bottom: 12px;
+	padding: 0;
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-size: 17px;
 	line-height: 30px;
@@ -1596,7 +1598,7 @@ fieldset {
 }
 
 .catalog-sorting.byprice {
-	padding-right: 72px;
+	padding-right: 70px;
 }
 
 .catalog-sorting.bytype {
@@ -1619,6 +1621,9 @@ fieldset {
 	opacity: 1;
 }
 
+.sorting-button-image-svg:active {
+	fill: #ee3643;
+}
 
 .catalog-sorting a:hover {
 	color: rgba(0, 0, 0, 1);
@@ -1636,14 +1641,16 @@ fieldset {
 
 .catalog {
 	width: 720px;
-	margin-top: 17px;
+	margin-top: 15px;
 }
 
 .catalog-list {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0;
+	padding: 19px 0 33px 0;
+	margin: 0;
 }
+
 /* tr:not(:nth-child(3) */
 
 .catalog-item {
@@ -1656,8 +1663,7 @@ fieldset {
 	font-weight: bold;
 	list-style: none;
 	width: 220px;
-	min-height: 320px;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 	border: 1px solid #e5e5e5;
 	text-align: center;
 	position: relative;
@@ -1774,7 +1780,7 @@ fieldset {
 	color: #ffffff;
 	background-color: #ee3643;
 	width: 141px;
-	margin: 5px 30px 15px 41px;
+	margin: 5px 30px 21px 41px;
 	padding: 10px 0;
 	position: relative;
 }
@@ -1798,6 +1804,8 @@ fieldset {
 	min-height: 23px;
 	display: block;
 }
+
+
 
          /* Стили для footer */
 
@@ -1829,10 +1837,6 @@ fieldset {
 	margin: 31px 0 0 2px;
 }
 
-.footer-logo-address a {
-	padding-left: 3px;
-}
-
 .footer-logo::after {
 	content: "";
 	width: 100%;
@@ -1842,6 +1846,9 @@ fieldset {
 	background-color: #b52933;
 }
 
+.footer-address-phote-number {
+	padding-left: 3px;
+}
 
 .footer-logo-address a {
 	text-decoration: none;
@@ -1853,7 +1860,7 @@ fieldset {
 
 .catalog-button-page {
 	padding-left: 20px;
-	margin: 28px 0 60px 0;
+	padding-bottom: 60px;
 }
 
 .catalog-button-page li {
@@ -1862,6 +1869,7 @@ fieldset {
 
 .catalog-button-page {
 	display: flex;
+	margin: 0;
 }
 
 .catalog-page {
@@ -1961,7 +1969,7 @@ fieldset {
 .footer-menu-bottom {      /* 2 */
 	color: #ffd180;
 	margin-left: 25px;
-	margin-top: 35px;
+	margin-top: 33px;
 }
 
 .footer-menu-list a:hover {
@@ -1995,7 +2003,7 @@ fieldset {
 
 .copyrigh {
 	width: 230px;
-	margin-right: 162px;
+	margin-right: 161px;
 }
 
 .social-wrapper {
@@ -2056,7 +2064,7 @@ fieldset {
 
 
 .footer-feedback-title.left {
-	margin-right: 50px;
+	margin-right: 52px;
 }
 
 .footer-feedback-title p {
