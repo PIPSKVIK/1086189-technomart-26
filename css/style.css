@@ -142,7 +142,7 @@ body {
 .basket,
 .order {
 	width: 150px;
-	padding: 11px 0 12px 0;
+	padding: 12px 0 12px 0;
 	position: relative;
 	text-align: center;
 }
@@ -194,7 +194,7 @@ body {
 .header-info {
 	display: flex;
 	padding-top: 33px;
-	padding-bottom: 25px;
+	padding-bottom: 24px;
 	align-items: center;
 }
 
@@ -211,7 +211,6 @@ body {
 	width: 275px;
 	margin-left: 64px;
 	text-align: center;
-	margin-bottom: 4px;
 }
 
 .phone::before {
@@ -666,7 +665,7 @@ body {
 	justify-content: space-between;
 	align-items: flex-start;
 	margin-top: 80px;
-	margin-bottom: 86px;
+	margin-bottom: 84px;
 }
 
 /* Основная часть MAIN главной станицы... */
@@ -700,7 +699,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
-	padding: 59px 0 20px 0;
+	padding: 59px 0 21px 0;
 }
 /* ________________________________________________________ */
 
@@ -836,7 +835,7 @@ body {
 .slider-list {
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	padding: 25px 25px 22px 25px;
+	padding: 23px 25px 22px 25px;
 }
 
 .slider-list-first {
@@ -859,7 +858,7 @@ body {
 .slider-list p {
 	line-height: 24px;
 	color: #fff;
-	margin: 0 0 10px 0;
+	margin: 2px 0 10px 0;
 }
 
 .slider-catalog-open {
@@ -901,7 +900,7 @@ body {
 
 .button-slider-next {
 	background-image: url("../img/logo/icon-right.svg");
-	right: 25px;
+	right: 20px;
 }
 
 .arrow-button-wrapper {
@@ -961,7 +960,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 53px;
-	padding: 25px 24px 26px 28px;
+	padding: 24px 24px 26px 28px;
 }
 
 .popular-products {
@@ -1025,7 +1024,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 21px;
-	padding: 25px 24px 26px 28px;
+	padding: 24px 24px 26px 28px;
 }
 /* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ!!! */
 
@@ -1127,6 +1126,7 @@ body {
 .services-button {
 	width: 240px;
 	position: relative;
+	padding-top: 4px;
 }
 
 .button-service {
@@ -1302,14 +1302,14 @@ body {
 
 .map-location {
 	display: block;
-	padding: 30px 0 36px 0;
+	padding: 30px 0 37px 0;
 }
 
 .about-company-list {
 	font-size: 18px;
 	line-height: 40px;
 	list-style-type: none;
-	padding: 10px 0 25px 35px;
+	padding: 10px 0 27px 35px;
 }
 
 .about-company-list li {
@@ -1791,6 +1791,9 @@ fieldset {
 }
 
 .price {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	font-weight: 700;
 	margin-top: 11px;
 	color: #999999;
 	min-height: 23px;
@@ -1824,7 +1827,11 @@ fieldset {
 .footer-address {
 	line-height: 24px;
 	color: #f1f5f7;
-	margin: 30px 0 0 2px;
+	margin: 31px 0 0 2px;
+}
+
+.footer-logo-address a {
+	padding-left: 3px;
 }
 
 .footer-logo::after {
@@ -1926,7 +1933,7 @@ fieldset {
 
 .footer-menu {
 	width: 550px;
-	padding-top: 37px;
+	padding-top: 38px;
 	margin-left: 65px;
 }
 
@@ -1976,7 +1983,7 @@ fieldset {
 .footer-bootom-wrapper{
 	display: flex;
 	align-items: center;
-	padding-top: 35px;
+	padding-top: 36px;
 	padding-bottom: 35px;
 }
 
