@@ -435,6 +435,7 @@
         evt.preventDefault();
         console.log("Закрыть модальное окно");
         popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
       });
 
 
@@ -446,7 +447,7 @@
         /*Теперь делаем условие*/
         if (!login.value || email.value || textLetter.value) {
           evt.preventDefault();
-          console.log("Нужно ввести Имя, Почту и Комментарий!");
+          popup.classList.add("modal-error");
         } else {
           localStorage.setItem("login", login.value);
         }
@@ -483,6 +484,18 @@
         popupBigMap.classList.remove("popup-map-show");
       });
 
+        /*закрываем карту кнопкой esc*/
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (popupBigMap.classList.contains("popup-map-show")) {
+            evt.preventDefault();
+            popupBigMap.classList.remove("popup-map-show");
+            console.log("нажили esc, чтобы закрыть карту");
+          }
+        }
+      });
+
+
                   /*КУПИТЬ, ТОВАР ДОБАВЛЕН В КОРЗИНУ!*/
 
       var catalogBuy = document.querySelector(".catalog-buy");
@@ -500,6 +513,17 @@
         console.log("Закрыть окно, Товар добавлен в корзину");
         popupBasket.classList.remove("popup-item-basket-show");
       })
+
+       /*закрываем корзину кнопкой esc*/
+       window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (popupBasket.classList.contains("popup-item-basket-show")) {
+            evt.preventDefault();
+            popupBasket.classList.remove("popup-item-basket-show");
+            console.log("закрываем окно esc");
+          }
+        }
+       });
 
     </script>
 
