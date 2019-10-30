@@ -1143,6 +1143,12 @@ body {
 	border-top: 1px solid #405069;
 }
 
+.button-service.botton-delivery {
+	background-color: #ffffff;
+	color: #32425c;
+	border-top: none;
+}
+
 .services-button::after {
 	content: "";
 
@@ -1588,6 +1594,12 @@ fieldset {
 	border-bottom: 1px dotted #ee3643;
 }
 
+.catalog-sorting.byprice a {
+	color: #ee3643;
+	font-weight: 700;
+	border-bottom: none;
+}
+
 .catalog-sorting-tytle h3 {
 	margin: 0;
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
@@ -1595,6 +1607,7 @@ fieldset {
 	text-transform: uppercase;
 	color: #000;
 	padding-right: 140px;
+	font-weight: 400;
 }
 
 .catalog-sorting.byprice {
@@ -1615,6 +1628,10 @@ fieldset {
 
 .sorting-button-image-svg {
 	opacity: 0.5;
+}
+
+.sorting-button-image-svg-first {
+	fill: #ee3643;
 }
 
 .sorting-button-image-svg:hover {
@@ -1678,6 +1695,7 @@ fieldset {
 	position: absolute;
 	left: 12px;
 	top: 30px;
+	font-weight: 400;
 }
 
 .catalog-item:hover {
@@ -1889,6 +1907,7 @@ fieldset {
 .catalog-page.first-button-active {
 	background-color: #ee3643;
 	color: #fef2f2;
+	border: none;
 }
 
 .catalog-page-wrapper {
@@ -2239,7 +2258,7 @@ fieldset {
 	left: 50%;
 	top: 50%;
 	transform: translateY(-50%);
-	display: none;    /* Спрятали попап */
+	display: none;  /* Спрятали попап */
 
 	background-color: #FFFFFF;
 	background-image: url(../img/pictures/popup-item-basket.png);
