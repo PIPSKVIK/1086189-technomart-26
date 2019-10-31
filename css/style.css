@@ -1434,13 +1434,11 @@ fieldset {
 	align-items: center;
 }
 
+.label-manufacturers:hover,
 .checkbox-manufacturers-off:hover,
 .checkbox-manufacturers-on:hover {
-	opacity: 0.4;
-}
-
-.checkbox-manufacturers:disabled {
-	opacity: 1;
+	opacity: 0.6;
+	cursor: pointer;
 }
 
 .checkbox-manufacturers-off {
@@ -1451,8 +1449,8 @@ fieldset {
 .checkbox-manufacturers-on,
 .radio-power-off,
 .radio-power-on {
-	opacity: 0.3;
-}
+	fill: #c5c5c5;
+} 
 
 .checkbox-manufacturers {
 	display: none;
@@ -2137,9 +2135,7 @@ fieldset {
 
 @keyframes bounce {
 	0%	{ transform: translateY(-2000px); }
-	70% { transform: translateY(30px); }
-	90% { transform: translateY(-10px); }
-	100% { transform: translateY(0); }
+	70% { transform: translateY(20px); }
 }
 
 .modal-show {
@@ -2149,9 +2145,8 @@ fieldset {
 }
 
 @keyframes shake {
-	0%, 100% { transform: translateX(0); }
-	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-	20%, 40%, 60%, 80% { transform: translateX(10px); }
+	10%, 30%, 50%, 70%, 90% { transform: translateY(-10px); }
+	20%, 40%, 60%, 80% { transform: translateY(10px); } 
 }
 
 .modal-error {
@@ -2269,7 +2264,15 @@ fieldset {
 
 .popup-item-basket-show {
 	display: block;
+	animation-name: basket-bounce;
+	animation-duration: 0.5s;
 }
+
+@keyframes basket-bounce {
+	0%  { transform: translateY(-2000px); }
+  	50% { transform: translateY(30px); }
+}
+
 
 .item-basket-wrapper {
 	display: flex;

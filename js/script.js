@@ -1,5 +1,5 @@
                       
-/*Скрипты для первой страници*/
+                      /*Скрипты для первой страници*/
 
                       /*КНОПКА РЕГИСТРАЦИИ В HEADER*/
       var registration = document.querySelector(".button-navigation-info");
@@ -11,8 +11,7 @@
       var textLetter = popup.querySelector("[id=text-letter]");
 
 
-
-      registration.addEventListener("click", function (evt) {
+        registration.addEventListener("click", function (evt) {
         evt.preventDefault();
         console.log("Клик по ссылке");
         popup.classList.add("modal-show");
@@ -51,9 +50,6 @@
           }
         }
       });
-
-
-
                       /*БОЛЬШАЯ КАРТА*/
       var link = document.querySelector(".map-location"); 
       var popupBigMap = document.querySelector(".popup-map");
@@ -82,7 +78,6 @@
           }
         }
       });
-
 
                   /*КУПИТЬ, ТОВАР ДОБАВЛЕН В КОРЗИНУ!*/
 
