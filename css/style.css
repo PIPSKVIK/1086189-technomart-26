@@ -1441,6 +1441,22 @@ fieldset {
 	cursor: pointer;
 }
 
+.label-power-type:hover,
+.radio-power-off:hover,
+.radio-power-on:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.checkbox-manufacturers:disabled ~ [class*="checkbox-manufacturers"] {
+	fill: #e9e9e9;
+	opacity: 1;
+}
+
+.radio-power-type:disabled ~ [class*="radio-power-type"] {
+	opacity: 0.3;
+}
+
 .checkbox-manufacturers-off {
 	margin-right: 10px;
 }
@@ -1744,6 +1760,9 @@ fieldset {
 
 .catalog-buy:active {
 	background-color: #518534;
+	border-bottom: none;
+	margin-bottom: 10px;
+	padding-bottom: 8px;
 }
 
 .catalog-buy:hover::before,
