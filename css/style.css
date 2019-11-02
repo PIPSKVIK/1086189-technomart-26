@@ -15,14 +15,13 @@ body {
 	background-color: #ffffff;
 	position: relative;
 }
-/* /Header/ */
 
 .wrap {
-	margin: 0 auto; /* Центровщик */
+	margin: 0 auto;
 	width: 960px;
 	padding: 0 10px;
 }
-/* -------------------- */
+
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 
@@ -38,7 +37,7 @@ body {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-/* -------------------- */
+
 .header-wrapper {
 	background-color: #f2f6f8;
 	padding: 0;
@@ -103,7 +102,6 @@ body {
 	opacity: 0.3;
 }
 
-
 .search-style {
 	border: none;
 	width: 100%;
@@ -117,7 +115,7 @@ body {
 	opacity: 1;
 }
 
-.search-style:focus + svg {   /* Это гиниально)))) */
+.search-style:focus + svg {
 	fill: #ee3643;
 	opacity: 1;
 }
@@ -125,14 +123,13 @@ body {
 .search-style:focus {
 	background-color: #ffffff;
 	color: #111111;
-
 }
 
-.search-style::-webkit-input-placeholder {  /* Цвет placeholder для Opera и Safary */
+.search-style::-webkit-input-placeholder {
 	color: #ffffff;
 }
 
-.search-style:-moz-placeholder {  /* Цвет placeholder для Firefox  */
+.search-style:-moz-placeholder {
 	color: #ffffff;
 }
 
@@ -178,6 +175,7 @@ body {
 .entrance:hover::before {
 	opacity: 1;
 }
+
 .marker:active::before,
 .basket:active::before,
 .entrance:active::before {
@@ -227,7 +225,6 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 	left: 13px;
-	
 }
 
 .phone {
@@ -305,8 +302,6 @@ body {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-/* Стили бля catalog - client */
-
 .client-wrapper {
 	width: 300px;
 	text-align: center;
@@ -346,10 +341,10 @@ body {
 	background-color: #ffffff;
 	width: 100%;
 	display: flex;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 10px;
+	padding-bottom: 14px;
 	padding-left: 40px;
-	margin-bottom: 10px;
+	margin-bottom: 6px;
 }
 
 .client-exit {
@@ -407,7 +402,6 @@ body {
 
 .personal-account a {
 	color: #3f4e66;
-	
 }
 
 .personal-account a:hover {
@@ -430,9 +424,9 @@ body {
 	padding: 0;
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	position: relative;
+	justify-content: center;
 }
 
 .menu-list::after {
@@ -451,7 +445,7 @@ body {
 	text-decoration: none;
 	font-size: 17px;
 	color: #ffffff;
-	padding: 18px 32px;
+	padding: 21px 32.1px 17px 28.5px;
 }
 
 .menu-list a:hover {
@@ -474,12 +468,11 @@ body {
 .breadcrumbs-list {
 	display: flex;
 	padding: 0;
-	
 }
 
 .breadcrumbs-list li {
 	list-style-type: none;
-	padding-right: 40px;
+	padding-right: 41px;
 	position: relative;
 }
 
@@ -522,8 +515,6 @@ body {
 	padding: 30px 0 30px 18px;
 	margin: 0;
 }
-
-/* Фильтр с Ползунком... */
 
 .filter-price {
 	margin: 0;
@@ -575,19 +566,19 @@ body {
 }
 
 .range-controls .toggle {
-  	padding: 0;
+  padding: 0;
 	
 	box-shadow: 0 2px 1px 0 #cfcfcf;
 	border-radius: 50%;
 	border: 8px solid #fff;
-  	background-color: #ababab;
-  	position: absolute;
-  	left: 0;
-  	top: 28px;
-  	cursor: pointer;
-  	width: 4px;
-  	height: 4px;
-  	box-sizing: content-box
+	background-color: #ababab;
+	position: absolute;
+	left: 0;
+	top: 28px;
+	cursor: pointer;
+	width: 4px;
+	height: 4px;
+	box-sizing: content-box
 }
 
 .range-controls .toggle-min {
@@ -611,7 +602,6 @@ body {
 	background-color: #000;
 	top: 50%;
 	left: 105px;
-
 	position: absolute;
 }
 
@@ -627,8 +617,6 @@ body {
 .price-controls label:nth-child(1) {
 	margin-right: 30px;
 }
-
-/* Фильтр с Ползунком!!! */
 
 .about-title,
 .contacts {
@@ -673,9 +661,6 @@ body {
 	margin-bottom: 85px;
 }
 
-/* Основная часть MAIN главной станицы... */
-
-/* верхняя часть...*/
 .main-promo-wrapper li {
 	list-style: none;
 }
@@ -706,7 +691,6 @@ body {
 	margin: 0;
 	padding: 59px 0 21px 0;
 }
-/* ________________________________________________________ */
 
 .main-promo-bottom ul {
 	padding: 0;
@@ -817,10 +801,6 @@ body {
 	background-color: #e5ac40;
 	margin-top: 12px;
 }
-/*  - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* верхняя часть!!!*/
-
-/* Нижняя часть...*/
 
 .main-promo-bottom {
 	padding: 0;
@@ -829,7 +809,6 @@ body {
 	flex-direction: row;
 	position: relative;
 }
-/* __________________________________________________________ */
 
 .main-promo-slider-wrapper {
 	position: relative;
@@ -849,7 +828,7 @@ body {
 
 .slider-list-second {
 	background-image: url("../img/pictures/slider-second.jpg");
-	display: none;  /* Спрятали Второй слайд */
+	display: none;
 }
 
 .slider-list h3 {
@@ -940,12 +919,10 @@ body {
 	border: 2px solid #fdfdfd;
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-/* ПОПУЛЯРНЫЕ ТОВАРЫ... */
 .items-catalog-products {
 	position: relative;
 }
+
 .items-catalog-products:nth-child(4)::after {
 	content: "";
 	
@@ -998,10 +975,6 @@ body {
 	background-color: #ba2732;
 }
 
-/* ПОПУЛЯРНЫЕ ТОВАРЫ!!! */
-
-/* СПИСОК ПОПУЛЯРНЫЕ ТОВАРЫ... */
-
 .catalog-popular ul {
 	padding: 0;
 	margin: 18px 0 0 0;
@@ -1020,9 +993,6 @@ body {
 	margin: 0;
 }
 
-/* СПИСОК ПОПУЛЯРНЫЕ ТОВАРЫ!!! */
-
-/* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ... */
 .popular-products2-wrapper {
 	background-color: #f9f5f0;
 	display: flex;
@@ -1031,9 +1001,6 @@ body {
 	margin-top: 21px;
 	padding: 24px 24px 26px 28px;
 }
-/* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ!!! */
-
-/* СПИСОК ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ... */
 
 .popular-manufacturers-wrapper {
 	margin-top: 20px;
@@ -1043,7 +1010,25 @@ body {
 .manufacturers-list-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+}
 
+.manufactures-item.makita-img img {
+	margin-bottom: 5px;
+	margin-right: 2px;
+}
+
+.manufactures-item.deWalt-img img {
+	margin-bottom: 6px;
+}
+
+.manufactures-item.interscol-img img {
+	margin-bottom: 15px;
+	margin-right: 2px;
+}
+
+.manufactures-item.metabo-img img {
+	margin-bottom: 8px;
+	margin-left: 3px;
 }
 
 .manufactures-item {
@@ -1077,9 +1062,6 @@ body {
 	opacity: 0.3;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-/* СПИСОК ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ!!! */
-
-/* СЕРВИС И ДОСТАВКА ВТОРОЙ СЛАЙДЕР... */
 
 .services-wrapper-for-dimension {
 	padding-top: 60px;
@@ -1087,7 +1069,6 @@ body {
 
 .services-wrapper {
 	background-color: #f4f7f9;
-
 }
 
 .services-wrapper li {
@@ -1186,7 +1167,6 @@ body {
 	font-weight: 400;
 }
 
-
 .service-list-title p {
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
@@ -1263,7 +1243,6 @@ body {
 }
 
 .hide-services-delivery {
-		       		/* Прячим слайдер Доставка - Гарантия - Кредит */
 	background-image: url("../img/pictures/bottom-slider-car.png");
 	background-repeat: no-repeat;
 	background-position: 151px 24px;
@@ -1271,7 +1250,7 @@ body {
 }
 
 .hide-services-warranty {
-	display: none;				/* Прячим слайдер Доставка - Гарантия - Кредит */
+	display: none;
 	background-image: url("../img/pictures/bottom-slider-warranty.png");
 	background-repeat: no-repeat;
 	background-position: 232px 0;
@@ -1279,17 +1258,12 @@ body {
 }
 
 .hide-services-credit {
-	display: none;							/* Прячим слайдер Доставка - Гарантия - Кредит */	
+	display: none;
 	background-image: url("../img/pictures/bottom-slider-credit.png");
 	background-repeat: no-repeat;
 	background-position: 153px 0;
 	padding-bottom: 95px;
 }
-
-/* СЕРВИС И ДОСТАВКА ВТОРОЙ СЛАЙДЕР!!! */
-
-/* Основная часть MAIN главной станицы!!! */
-
 
 .about-company {
 	color: #000000;
@@ -1378,8 +1352,6 @@ body {
 	background-color: #ba2732;
 }
 
-/* Еще часть main cotalog */
-
 .filter-manufacturers-power-wrapper {
 	margin: 15px 0;
 }
@@ -1390,8 +1362,6 @@ fieldset {
 
 .form-catalog-wrapper {
 	display: flex;
-	
-
 }
 
 .form-catalog-wrapper form {
@@ -1406,7 +1376,6 @@ fieldset {
 	margin-top: 40px;
 }
 
-/* Стилизуем checkdox... */
 .form-manufacturers {
 	padding: 0;
 	margin: 24px 0 0 0;
@@ -1475,6 +1444,7 @@ fieldset {
 .checkbox-manufacturers {
 	display: none;
 }
+
 .checkbox-manufacturers-on {
 	display: none;
 }
@@ -1487,9 +1457,7 @@ fieldset {
 	display: inline-block;
 	margin-right: 6px;
 }
-/* Стилизуем checkdox!!! */
 
-/* Стилизуем radio... */
 .form-electro-power {
 	margin: 0;
 	padding: 0;
@@ -1552,8 +1520,6 @@ fieldset {
 	padding-left: 10px;
 }
 
-/* Стилизуем radio!!! */
-
 .type-manufacturers,
 .type-electro-power {
 	list-style: none;
@@ -1588,10 +1554,6 @@ fieldset {
 .button-show-manufacturers:active {
 	border-color: #ee3643;
 }
-
-/* Часть с типани перформаторов */
-
-/* Сортировка каталога... */
 
 .catalog-sorting-wrapper {
 	list-style: none;
@@ -1670,10 +1632,6 @@ fieldset {
 	border: none;
 }
 
-/* Сортировка каталога!!! */
-
-/* catalog */
-
 .catalog {
 	width: 720px;
 	margin-top: 15px;
@@ -1685,8 +1643,6 @@ fieldset {
 	padding: 19px 0 33px 0;
 	margin: 0;
 }
-
-/* tr:not(:nth-child(3) */
 
 .catalog-item {
 	margin-left: 20px;
@@ -1704,15 +1660,13 @@ fieldset {
 	position: relative;
 }
 
-/* ссылки купить в закладки ... */
-
 .catalog-bookmark-buy {
 	display: none;
 	width: 200px;
 	min-height: 100px;
 	position: absolute;
-	left: 12px;
-	top: 30px;
+	left: 8px;
+	top: 44px;
 	font-weight: 400;
 }
 
@@ -1790,8 +1744,6 @@ fieldset {
 	opacity: 0.3;
 }
 
-/* ссылки купить в закладки  !!!*/
-
 .new-flag img {
 	right: 0px;
 	position: absolute;
@@ -1844,10 +1796,6 @@ fieldset {
 	display: block;
 }
 
-
-
-         /* Стили для footer */
-
 .footer-top {
 	background-color: #32425c;
 	min-height: 192px;
@@ -1896,8 +1844,6 @@ fieldset {
 	line-height: 24px;
 	color: #f1f5f7;
 }
-
-/* Кнопки страниц каталога...  */
 
 .catalog-button-page {
 	padding-left: 20px;
@@ -1949,9 +1895,6 @@ fieldset {
 .catalog-page:active {
 	border-color: #ee3643;
 }
-/* Кнопки страниц каталога!!!  */
-
-/* Глова - "Пара слов о перфораторах"... */
 
 .few-words-about-hammers {
 	background-color: #f2f6f8;
@@ -1967,6 +1910,7 @@ fieldset {
 	font-weight: 400;
 	margin: 0;
 	padding-bottom: 26px;
+	text-transform: uppercase;
 }
 
 .about-hammers-text {
@@ -1975,10 +1919,6 @@ fieldset {
 	line-height: 24px;
 	margin: 0;
 }
-
-/* Глова - "Пара слов о перфораторах"!!! */
-
-/* Меню footer, большой список/ */
 
 .footer-menu {
 	width: 550px;
@@ -1990,14 +1930,13 @@ fieldset {
 	list-style: none;
 }
 
-.footer-menu-list {     /* 1 */
+.footer-menu-list {
 	line-height: 24px;
 	color: #f1f5f7;
 	display: flex;
 	padding: 0;
 	margin: 0;
 }
-
 
 .footer-menu-list a {
 	text-decoration: none;
@@ -2008,7 +1947,7 @@ fieldset {
 	margin-right: 60px;
 }
 
-.footer-menu-bottom {      /* 2 */
+.footer-menu-bottom {
 	color: #ffd180;
 	margin-left: 25px;
 	margin-top: 33px;
@@ -2022,8 +1961,6 @@ fieldset {
 	opacity: 0.5;
 	text-decoration: none;
 }
-
-/* Меню footer, большой список// */
 
 .footer-bottom {
 	background-color: #293449;
@@ -2040,7 +1977,6 @@ fieldset {
 	font-size: 16px;
 	color: #ffffff;
 	margin: 0;
-
 }
 
 .copyrigh {
@@ -2076,12 +2012,10 @@ fieldset {
 	background-color: #ee3643;
 }
 
-
 .vkontakte::before,
 .facebook::before,
 .instagram::before {
 	content: "";
-	position: absolute;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -2103,7 +2037,6 @@ fieldset {
 	height: 21px;
 	background-image: url("../img/logo/icon-insta.svg");
 }
-
 
 .footer-feedback-title.left {
 	margin-right: 52px;
@@ -2129,7 +2062,6 @@ fieldset {
 	color: #ee3643;
 	text-decoration: none;
 }
-                 /* Стилизация ПОПАП */
 
 .closed {
 	border: none;
@@ -2246,7 +2178,7 @@ fieldset {
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 22;
-	display: none;  /* Спрятали попап */
+	display: none;
 }
 
 .popup-map-show {
@@ -2258,8 +2190,6 @@ fieldset {
 	right: 5px;
 	top: 25px;
 } 
-
-/* попап "Товар добавлен в корзину"... */
 
 .closing-form-item {
 	right: 5px;
@@ -2278,7 +2208,7 @@ fieldset {
 	left: 50%;
 	top: 50%;
 	transform: translateY(-50%);
-	display: none;  /* Спрятали попап */
+	display: none;
 
 	background-color: #FFFFFF;
 	background-image: url(../img/pictures/popup-item-basket.png);
@@ -2338,4 +2268,3 @@ fieldset {
 	background-color: #ffffff;
 	color: #000000;
 }
-/* попап "Товар добавлен в корзину"!!! */
