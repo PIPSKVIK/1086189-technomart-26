@@ -3,17 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Каталог</title>
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="js/script.js">
+		<link rel="stylesheet" href="css/compressed.css">
 	</head>
 	<body>
 		<header class="header-wrapper">
 			<section class="header-top">
 				<div class="header-top-wrapper wrap">
-					<a class="logo"><img src="img/logo/logo-tehnomart.png" alt="техномарт" width="112" height="19"></a>
+					<a class="logo" href="index.html"><img src="img/logo/logo-tehnomart.png" alt="техномарт" width="112" height="19"></a>
 					<form class="search" action="url" method="get">
 						<input type="search" id="search" name="search" placeholder="Поиск:" class="search-style">
 						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0  0 17 17" fill="#fff">
@@ -30,20 +28,20 @@
 			<div class="wrap">
 				<section class="header-info">
 					<p class="header-description">
-						Интернет-магазин 
+						Интернет-магазин
 						строительных материалов <br>
-						и инструментов для ремонта 
+						и инструментов для ремонта
 					</p>
 					<div class="contact-information">
-						<a class="phone" href="#">+7 (812) 555-05-55</a>
+						<a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
 						<p class="address">
 							г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 						</p>
 					</div>
 					<article class="client-wrapper">
 						<div class="client">
-							<a class="client-name" href="#">Равшан Джамшутович</a>
-							<a class="client-exit" href="index.html"></a>
+							<a class="client-name" href="user.html">Равшан Джамшутович</a>
+							<a class="client-exit" href="logout.html"></a>
 						</div>
 						<ul class="personal-account">
 							<li><a href="#">Мои заказы</a></li>
@@ -65,339 +63,337 @@
 			</div>
 		</header>
 		<main class="main-content">
-			<div class="main-wrapper-catalog">
-				<div class="wrap">
-					<section class="breadcrumbs">
-						<ul class="breadcrumbs-list">
-							<li>
-								<a href="index.html"><span class="main-hidden">Главная</span><img src="img/logo/icon-home.svg" alt="home" width="14" height="12"></a>
-							</li>
-							<li><a href="catalog.html">Каталог</a></li>
-							<li><a href="#">Инструмент</a></li>
-							<li><a>Перфораторы</a></li>
-						</ul>
-					</section>
-				</div>
-				<div class="instruments-title-wrapper wrap">
-					<h2 class="instruments-title">Перфораторы</h2>
-				</div>
-				<div class="form-catalog-wrapper wrap">
-					<div class="filter-manufacturers-power-wrapper">  
-						<form action="url" method="get">
-              <fieldset class="filter-item">
-                <legend>Фильтр:</legend>
-                <h3 class="filter-price">Цена:</h3>
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar">
-                        <div class="toggle toggle-min"></div>
-                        <div class="toggle toggle-max"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="price-controls">
-                    <label for="min-price">
-                      <input type="text" name="min-price" value="0" id="min-price">
-                    </label>
-                    <label for="max-price">
-                      <input type="text" name="max-price" value="30000" id="max-price">
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-							<fieldset class="form-manufacturers">
-								<h3 class="form-manufacturers-tytle">производители:</h3>
-								<ul class="type-manufacturers">
-									<li>
-										<label class="label-manufacturers" for="bosch">
-											<input class="checkbox-manufacturers" type="checkbox" name="bosch" id="bosch">
-											<svg class="checkbox-manufacturers-off" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px" fill="c5c5c5">
-												<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-												C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-											</svg>
-											<svg class="checkbox-manufacturers-on" width="27px"
-												height="23px" fill="c5c5c5">
-												<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439     "/>
-												<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-												H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-											</svg>
-											<span class="text-manufacturers">bosch</span>
-										</label>
-									</li>
-									<li>
-										<label class="label-manufacturers" for="interscol">
-											<input class="checkbox-manufacturers" type="checkbox" name="interscol" id="interscol">
-												<svg class="checkbox-manufacturers-off" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px">
-												<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-												C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-											</svg>
-											<svg class="checkbox-manufacturers-on" width="27px"
-												height="23px">
-												<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439     "/>
-												<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-												H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-											</svg>
-											<span class="text-manufacturers">интерскол</span>
-										</label>
-									</li>
-									<li>
-										<label class="label-manufacturers" for="makita">
-											<input class="checkbox-manufacturers" type="checkbox" name="makita" id="makita">
-												<svg class="checkbox-manufacturers-off" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px">
-												<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-												C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-											</svg>
-											<svg class="checkbox-manufacturers-on" width="27px"
-												height="23px">
-												<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439     "/>
-												<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-												H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-											</svg>
-											<span class="text-manufacturers">makita</span>
-										</label>
-									</li>
-									<li>
-										<label class="label-manufacturers" for="dewalt">
-											<input class="checkbox-manufacturers" type="checkbox" name="dewalt" id="dewalt">
-												<svg class="checkbox-manufacturers-off" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px">
-												<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-												C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-											</svg>
-											<svg class="checkbox-manufacturers-on" width="27px"
-												height="23px">
-												<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439     "/>
-												<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-												H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-											</svg>
-											<span class="text-manufacturers">dewalt</span>
-										</label>
-									</li>
-									<li>
-										<label class="label-manufacturers" for="hitachi">
-											<input class="checkbox-manufacturers" type="checkbox" name="hitachi" id="hitachi">
-												<svg class="checkbox-manufacturers-off" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px">
-												<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-												C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-											</svg>
-											<svg class="checkbox-manufacturers-on" width="27px"
-												height="23px">
-												<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
-												<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-												H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-											</svg>
-											<span class="text-manufacturers">hitachi</span>
-										</label>
-									</li>
-								</ul>
-							</fieldset>
-							<fieldset class="form-electro-power">
-								<h3 class="form-electro-power-tytle">питание:</h3>
-								<ul class="type-electro-power">
-									<li>
-										<label class="label-power-type" for="battery">  
-											<input class="radio-power-type" type="radio" name="electronic" id="battery" value="battery">
-											<svg class="radio-power-off" x="0px" y="0px" width="25px" height="25px">
-												<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-												C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-											</svg>
-											<svg class="radio-power-on" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-												<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-												C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-												<circle cx="12.5" cy="12.5" r="4.5"/>
-											</svg>
-											<span class="text-power-type">Аккумуляторные</span>
-										</label>
-									</li>
-									<li>
-										<label class="label-power-type" for="electronic">
-											<input class="radio-power-type" type="radio" name="electronic" id="electronic" value="electronic">
-											<svg class="radio-power-off" x="0px" y="0px" width="25px" height="25px">
-												<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-												C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-											</svg>
-											<svg class="radio-power-on" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-												<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-												C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-												<circle cx="12.5" cy="12.5" r="4.5"/>
-											</svg>
-											<span class="text-power-type">Сетевые</span>
-										</label>
-									</li>
-								</ul>
-							</fieldset>
-							<button class="button-show-manufacturers" type="submit">Показать</button>
-						</form>
-					</div>
-					<div class="catalog">
-						<ul class="catalog-sorting-wrapper">
-							<li class="catalog-sorting-tytle">
-								<h3>Сортировка:</h3>
-							</li>
-							<li class="catalog-sorting byprice">
-								<a href="#">По цене</a>
-							</li>
-							<li class="catalog-sorting bytype">
-								<a href="#">По типу</a>
-							</li>
-							<li class="catalog-sorting byfunctionality">
-								<a href="#">По функционалу</a> 
-							</li>
-							<li class="sorting-button-up">
-								<a href="#">
-									<svg class="sorting-button-image-svg-first" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve" fill="#231F20">
-										<polygon points="5.5,0 0,10 11,10 "/>
-									</svg>
-								</a>
-							</li>
-							<li class="sorting-button-down">
-								<a href="#">
-									<svg class="sorting-button-image-svg" version="1.1" x="0px" y="0px"
-										width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve" fill="#231F20">
-										<polyline points="5.5,10 0,0 11,0 "/>
-									</svg>
-								</a>
-							</li>
-						</ul>
-						<ul class="catalog-list">
-							<li class="catalog-item">
-								<div class="catalog-bookmark-buy">
-									<a class="catalog-buy" href="#">купить</a>
-									<a class="catalog-bookmark" href="#">в закладки</a>
-								</div>
-								<img class="catalog-item-image" src="img/pictures/item-1.jpg" alt="Перфоратор" width="218" height="170">
-								<p class="catalog-item-type">
-									<a href="catalog.html">Перфоратор BOSCH BFG 3000</a>
-								</p>
-								<span class="price"><del>22500 Р.</del></span>
-								<span class="price new">15500 Р.</span>
-							</li>
-							<li class="catalog-item">
-								<div class="catalog-bookmark-buy">
-									<a class="catalog-buy" href="#">купить</a>
-									<a class="catalog-bookmark" href="#">в закладки</a>
-								</div>
-								<img class="catalog-item-image" src="img/pictures/item-2.jpg" alt="Перфоратор" width="218" height="170">
-								<p class="catalog-item-type">
-									<a href="catalog.html">Перфоратор BOSCH BFG 6000</a>
-								</p>
-								<span class="price"><del>30500 Р.</del></span>
-								<span class="price new">25500 Р.</span>
-							</li>
-							<li class="catalog-item">
-								<div class="catalog-bookmark-buy">
-									<a class="catalog-buy" href="#">купить</a>
-									<a class="catalog-bookmark" href="#">в закладки</a>
-								</div>
-								<div class="new-flag"><img src="img/logo/icon-new-flag.png" alt="new-flag" width="60" height="59"></div>
-								<img class="catalog-item-image" src="img/pictures/item-3.jpg" alt="Перфоратор" width="218" height="170">
-								<p class="catalog-item-type">
-									<a href="catalog.html">Перфоратор BOSCH BFG 2000</a>
-								</p>
-								<span class="price"></span>
-								<span class="price new">12500 Р.</span>
-							</li>
-							<li class="catalog-item">
-								<div class="catalog-bookmark-buy">
-									<a class="catalog-buy" href="#">купить</a>
-									<a class="catalog-bookmark" href="#">в закладки</a>
-								</div>
-								<img class="catalog-item-image" src="img/pictures/item-1.jpg" alt="Перфоратор" width="218" height="170">
-								<p class="catalog-item-type">
-									<a href="catalog.html">Перфоратор BOSCH BFG 3000</a>
-								</p>
-								<span class="price"><del>22500 Р.</del></span>
-								<span class="price new">15500 Р.</span>
-							</li>
-							<li class="catalog-item">
-								<div class="catalog-bookmark-buy">
-									<a class="catalog-buy" href="#">купить</a>
-									<a class="catalog-bookmark" href="#">в закладки</a>
-								</div>
-								<div class="new-flag"><img src="img/logo/icon-new-flag.png" alt="new-flag" width="60" height="59"></div>
-								<img class="catalog-item-image" src="img/pictures/item-2.jpg" alt="Перфоратор" width="218" height="170">
-								<p class="catalog-item-type">
-									<a href="catalog.html">Перфоратор BOSCH BFG 6000</a>
-								</p>
-								<span class="price"><del>30500 Р.</del></span>
-								<span class="price new">25500 Р.</span>
-							</li>
-							<li class="catalog-item">
-								<div class="catalog-bookmark-buy">
-									<a class="catalog-buy" href="#">купить</a>
-									<a class="catalog-bookmark" href="#">в закладки</a>
-								</div>
-								<img class="catalog-item-image" src="img/pictures/item-3.jpg" alt="Перфоратор" width="218" height="170">
-								<p class="catalog-item-type">
-									<a href="catalog.html">Перфоратор BOSCH BFG 2000</a>
-								</p>
-								<span class="price"></span>
-								<span class="price new">12500 Р.</span>
-							</li>
-							<li class="catalog-item catalog-item-last-items-margin">
-								<div class="catalog-bookmark-buy">
-									<a class="catalog-buy" href="#">купить</a>
-									<a class="catalog-bookmark" href="#">в закладки</a>
-								</div>
-								<div class="new-flag"><img src="img/logo/icon-new-flag.png" alt="new-flag" width="60" height="59"></div>
-								<img class="catalog-item-image" src="img/pictures/item-1.jpg" alt="Перфоратор" width="218" height="170">
-								<p class="catalog-item-type">
-									<a href="catalog.html">Перфоратор BOSCH BFG 3000</a>
-								</p>
-								<span class="price"><del>22500 Р.</del></span>
-								<span class="price new">15500 Р.</span>
-							</li>
-							<li class="catalog-item catalog-item-last-items-margin">
-								<div class="catalog-bookmark-buy">
-									<a class="catalog-buy" href="#">купить</a>
-									<a class="catalog-bookmark" href="#">в закладки</a>
-								</div>
-								<img class="catalog-item-image" src="img/pictures/item-2.jpg" alt="Перфоратор" width="218" height="170">
-								<p class="catalog-item-type">
-									<a href="catalog.html">Перфоратор BOSCH BFG 6000</a>
-								</p>
-								<span class="price"><del>30500 Р.</del></span>
-								<span class="price new">25500 Р.</span>
-							</li>
-							<li class="catalog-item catalog-item-last-items-margin">
-								<div class="catalog-bookmark-buy">
-									<a class="catalog-buy" href="#">купить</a>
-									<a class="catalog-bookmark" href="#">в закладки</a>
-								</div>
-								<img class="catalog-item-image" src="img/pictures/item-3.jpg" alt="Перфоратор" width="218" height="170">
-								<p class="catalog-item-type">
-									<a href="catalog.html">Перфоратор BOSCH BFG 2000</a>
-								</p>
-								<span class="price"></span>
-								<span class="price new">12500 Р.</span>
-							</li>
-						</ul>
-						<ul class="catalog-button-page">
-							<li class="catalog-page-wrapper">
-								<a class="catalog-page first-button-active" href="catalog.html">1</a>
-							</li>
-							<li class="catalog-page-wrapper">
-								<a class="catalog-page" href="catalog.html">2</a>
-							</li>
-							<li class="catalog-page-wrapper">
-								<a class="catalog-page" href="catalog.html">3</a>
-							</li>
-							<li class="catalog-page-wrapper">
-								<a class="catalog-page catalog-next-button" href="catalog.html">следующая</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<section class="few-words-about-hammers">
-					<div class="about-hammers-wrapper wrap">
-						<h3 class="about-hammers-tytle">Пара слов о перфораторах</h3>
-						<p class="about-hammers-text">
-							Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
-							Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-						</p>
-					</div>
+			<div class="wrap">
+				<section class="breadcrumbs">
+					<ul class="breadcrumbs-list">
+						<li>
+							<a href="index.html"><span class="main-hidden">Главная</span><img src="img/logo/icon-home.svg" alt="home" width="14" height="12"></a>
+						</li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="#">Инструмент</a></li>
+						<li><a>Перфораторы</a></li>
+					</ul>
 				</section>
 			</div>
+			<div class="instruments-title-wrapper wrap">
+				<h2 class="instruments-title">Перфораторы</h2>
+			</div>
+			<div class="form-catalog-wrapper wrap">
+				<div class="filter-manufacturers-power-wrapper">
+					<form action="url" method="get">
+            <fieldset class="filter-item">
+							<legend>Фильтр:</legend>
+							<h3 class="filter-price">Цена:</h3>
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar">
+											<div class="toggle toggle-min"></div>
+											<div class="toggle toggle-max"></div>
+											</div>
+										</div>
+								</div>
+								<div class="price-controls">
+									<label for="min-price">
+										<input type="text" name="min-price" value="0" id="min-price">
+									</label>
+									<label for="max-price">
+										<input type="text" name="max-price" value="30000" id="max-price">
+									</label>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form-manufacturers">
+							<h3 class="form-manufacturers-tytle">производители:</h3>
+							<ul class="type-manufacturers">
+								<li>
+									<label class="label-manufacturers" for="bosch" tabindex="0">
+										<input class="checkbox-manufacturers" type="checkbox" name="bosch" id="bosch">
+										<svg class="checkbox-manufacturers-off" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px" fill="c5c5c5">
+											<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+											C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+										</svg>
+										<svg class="checkbox-manufacturers-on" width="27px"
+											height="23px" fill="c5c5c5">
+											<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439     "/>
+											<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+											H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+										</svg>
+										<span class="text-manufacturers">bosch</span>
+									</label>
+								</li>
+								<li>
+									<label class="label-manufacturers" for="interscol" tabindex="0">
+										<input class="checkbox-manufacturers" type="checkbox" name="interscol" id="interscol">
+											<svg class="checkbox-manufacturers-off" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px">
+											<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+											C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+										</svg>
+										<svg class="checkbox-manufacturers-on" width="27px"
+											height="23px">
+											<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439     "/>
+											<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+											H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+										</svg>
+										<span class="text-manufacturers">интерскол</span>
+									</label>
+								</li>
+								<li>
+									<label class="label-manufacturers" for="makita" tabindex="0">
+										<input class="checkbox-manufacturers" type="checkbox" name="makita" id="makita">
+											<svg class="checkbox-manufacturers-off" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px">
+											<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+											C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+										</svg>
+										<svg class="checkbox-manufacturers-on" width="27px"
+											height="23px">
+											<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439     "/>
+											<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+											H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+										</svg>
+										<span class="text-manufacturers">makita</span>
+									</label>
+								</li>
+								<li>
+									<label class="label-manufacturers" for="dewalt" tabindex="0">
+										<input class="checkbox-manufacturers" type="checkbox" name="dewalt" id="dewalt">
+											<svg class="checkbox-manufacturers-off" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px">
+											<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+											C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+										</svg>
+										<svg class="checkbox-manufacturers-on" width="27px"
+											height="23px">
+											<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439     "/>
+											<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+											H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+										</svg>
+										<span class="text-manufacturers">dewalt</span>
+									</label>
+								</li>
+								<li>
+									<label class="label-manufacturers" for="hitachi" tabindex="0">
+										<input class="checkbox-manufacturers" type="checkbox" name="hitachi" id="hitachi">
+											<svg class="checkbox-manufacturers-off" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23px" height="23px">
+											<path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+											C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+										</svg>
+										<svg class="checkbox-manufacturers-on" width="27px"
+											height="23px">
+											<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439"/>
+											<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+											H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+										</svg>
+										<span class="text-manufacturers">hitachi</span>
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="form-electro-power">
+							<h3 class="form-electro-power-tytle">питание:</h3>
+							<ul class="type-electro-power">
+								<li>
+									<label class="label-power-type" for="battery" tabindex="0">
+										<input class="radio-power-type" type="radio" name="electronic" id="battery" value="battery">
+										<svg class="radio-power-off" x="0px" y="0px" width="25px" height="25px">
+											<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+											C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+										</svg>
+										<svg class="radio-power-on" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+											<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+											C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+											<circle cx="12.5" cy="12.5" r="4.5"/>
+										</svg>
+										<span class="text-power-type">Аккумуляторные</span>
+									</label>
+								</li>
+								<li>
+									<label class="label-power-type" for="electronic" tabindex="0">
+										<input class="radio-power-type" type="radio" name="electronic" id="electronic" value="electronic">
+										<svg class="radio-power-off" x="0px" y="0px" width="25px" height="25px">
+											<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+											C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+										</svg>
+										<svg class="radio-power-on" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+											<path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
+											C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
+											<circle cx="12.5" cy="12.5" r="4.5"/>
+										</svg>
+										<span class="text-power-type">Сетевые</span>
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button class="button-show-manufacturers" type="submit">Показать</button>
+					</form>
+				</div>
+				<div class="catalog">
+					<ul class="catalog-sorting-wrapper">
+						<li class="catalog-sorting-tytle">
+							<h3>Сортировка:</h3>
+						</li>
+						<li class="catalog-sorting byprice">
+							<a href="#">По цене</a>
+						</li>
+						<li class="catalog-sorting bytype">
+							<a href="#">По типу</a>
+						</li>
+						<li class="catalog-sorting byfunctionality">
+							<a href="#">По функционалу</a>
+						</li>
+						<li class="sorting-button-up">
+							<a href="#">
+								<svg class="sorting-button-image-svg-first" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve" fill="#231F20">
+									<polygon points="5.5,0 0,10 11,10 "/>
+								</svg>
+							</a>
+						</li>
+						<li class="sorting-button-down">
+							<a href="#">
+								<svg class="sorting-button-image-svg" version="1.1" x="0px" y="0px"
+									width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve" fill="#231F20">
+									<polyline points="5.5,10 0,0 11,0 "/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<ul class="catalog-list">
+						<li class="catalog-item">
+							<div class="catalog-bookmark-buy">
+								<a class="catalog-buy" href="#">купить</a>
+								<a class="catalog-bookmark" href="#">в закладки</a>
+							</div>
+							<img class="catalog-item-image" src="img/pictures/item-1.jpg" alt="Перфоратор" width="218" height="170">
+							<p class="catalog-item-type">
+								<a href="catalog.html">Перфоратор BOSCH BFG 3000</a>
+							</p>
+							<span class="price"><del>22500 Р.</del></span>
+							<span class="price new">15500 Р.</span>
+						</li>
+						<li class="catalog-item">
+							<div class="catalog-bookmark-buy">
+								<a class="catalog-buy" href="#">купить</a>
+								<a class="catalog-bookmark" href="#">в закладки</a>
+							</div>
+							<img class="catalog-item-image" src="img/pictures/item-2.jpg" alt="Перфоратор" width="218" height="170">
+							<p class="catalog-item-type">
+								<a href="catalog.html">Перфоратор BOSCH BFG 6000</a>
+							</p>
+							<span class="price"><del>30500 Р.</del></span>
+							<span class="price new">25500 Р.</span>
+						</li>
+						<li class="catalog-item">
+							<div class="catalog-bookmark-buy">
+								<a class="catalog-buy" href="#">купить</a>
+								<a class="catalog-bookmark" href="#">в закладки</a>
+							</div>
+							<div class="new-flag"><img src="img/logo/icon-new-flag.png" alt="new-flag" width="60" height="59"></div>
+							<img class="catalog-item-image" src="img/pictures/item-3.jpg" alt="Перфоратор" width="218" height="170">
+							<p class="catalog-item-type">
+								<a href="catalog.html">Перфоратор BOSCH BFG 2000</a>
+							</p>
+							<span class="price"></span>
+							<span class="price new">12500 Р.</span>
+						</li>
+						<li class="catalog-item">
+							<div class="catalog-bookmark-buy">
+								<a class="catalog-buy" href="#">купить</a>
+								<a class="catalog-bookmark" href="#">в закладки</a>
+							</div>
+							<img class="catalog-item-image" src="img/pictures/item-1.jpg" alt="Перфоратор" width="218" height="170">
+							<p class="catalog-item-type">
+								<a href="catalog.html">Перфоратор BOSCH BFG 3000</a>
+							</p>
+							<span class="price"><del>22500 Р.</del></span>
+							<span class="price new">15500 Р.</span>
+						</li>
+						<li class="catalog-item">
+							<div class="catalog-bookmark-buy">
+								<a class="catalog-buy" href="#">купить</a>
+								<a class="catalog-bookmark" href="#">в закладки</a>
+							</div>
+							<div class="new-flag"><img src="img/logo/icon-new-flag.png" alt="new-flag" width="60" height="59"></div>
+							<img class="catalog-item-image" src="img/pictures/item-2.jpg" alt="Перфоратор" width="218" height="170">
+							<p class="catalog-item-type">
+								<a href="catalog.html">Перфоратор BOSCH BFG 6000</a>
+							</p>
+							<span class="price"><del>30500 Р.</del></span>
+							<span class="price new">25500 Р.</span>
+						</li>
+						<li class="catalog-item">
+							<div class="catalog-bookmark-buy">
+								<a class="catalog-buy" href="#">купить</a>
+								<a class="catalog-bookmark" href="#">в закладки</a>
+							</div>
+							<img class="catalog-item-image" src="img/pictures/item-3.jpg" alt="Перфоратор" width="218" height="170">
+							<p class="catalog-item-type">
+								<a href="catalog.html">Перфоратор BOSCH BFG 2000</a>
+							</p>
+							<span class="price"></span>
+							<span class="price new">12500 Р.</span>
+						</li>
+						<li class="catalog-item catalog-item-last-items-margin">
+							<div class="catalog-bookmark-buy">
+								<a class="catalog-buy" href="#">купить</a>
+								<a class="catalog-bookmark" href="#">в закладки</a>
+							</div>
+							<div class="new-flag"><img src="img/logo/icon-new-flag.png" alt="new-flag" width="60" height="59"></div>
+							<img class="catalog-item-image" src="img/pictures/item-1.jpg" alt="Перфоратор" width="218" height="170">
+							<p class="catalog-item-type">
+								<a href="catalog.html">Перфоратор BOSCH BFG 3000</a>
+							</p>
+							<span class="price"><del>22500 Р.</del></span>
+							<span class="price new">15500 Р.</span>
+						</li>
+						<li class="catalog-item catalog-item-last-items-margin">
+							<div class="catalog-bookmark-buy">
+								<a class="catalog-buy" href="#">купить</a>
+								<a class="catalog-bookmark" href="#">в закладки</a>
+							</div>
+							<img class="catalog-item-image" src="img/pictures/item-2.jpg" alt="Перфоратор" width="218" height="170">
+							<p class="catalog-item-type">
+								<a href="catalog.html">Перфоратор BOSCH BFG 6000</a>
+							</p>
+							<span class="price"><del>30500 Р.</del></span>
+							<span class="price new">25500 Р.</span>
+						</li>
+						<li class="catalog-item catalog-item-last-items-margin">
+							<div class="catalog-bookmark-buy">
+								<a class="catalog-buy" href="#">купить</a>
+								<a class="catalog-bookmark" href="#">в закладки</a>
+							</div>
+							<img class="catalog-item-image" src="img/pictures/item-3.jpg" alt="Перфоратор" width="218" height="170">
+							<p class="catalog-item-type">
+								<a href="catalog.html">Перфоратор BOSCH BFG 2000</a>
+							</p>
+							<span class="price"></span>
+							<span class="price new">12500 Р.</span>
+						</li>
+					</ul>
+					<ul class="catalog-button-page">
+						<li class="catalog-page-wrapper">
+							<a class="catalog-page first-button-active" href="catalog.html">1</a>
+						</li>
+						<li class="catalog-page-wrapper">
+							<a class="catalog-page" href="catalog.html">2</a>
+						</li>
+						<li class="catalog-page-wrapper">
+							<a class="catalog-page" href="catalog.html">3</a>
+						</li>
+						<li class="catalog-page-wrapper">
+							<a class="catalog-page catalog-next-button" href="catalog.html">следующая</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="few-words-about-hammers">
+				<div class="about-hammers-wrapper wrap">
+					<h3 class="about-hammers-tytle">Пара слов о перфораторах</h3>
+					<p class="about-hammers-text">
+						Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
+						Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+					</p>
+				</div>
+			</section>
 		</main>
 		<footer class="footer-wrapper">
 			<section class="footer-top">
@@ -407,7 +403,7 @@
 						<p class="footer-address">
 							г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 						</p>
-						<a class="footer-address-phote-number" href="#">+7 (812) 555-05-55</a>
+						<a class="footer-address-phote-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
 					</section>
 					<section class="footer-menu">
 						<ul class="footer-menu-list ">
@@ -438,13 +434,13 @@
 						<a class="instagram" href="#"><span class="visually-hidden">Instagram</span></a>
 					</section>
 					<section class="footer-feedback">
-						<div class="footer-feedback-title left">  
+						<div class="footer-feedback-title left">
 							<p>Обратная связь:</p>
 							<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 						</div>
 						<div class="footer-feedback-title right">
 							<p>Разработано -</p>
-							<a href="htmlacademy.ru">htmlacademy.ru</a>
+							<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 						</div>
 					</section>
 				</div>
@@ -460,16 +456,15 @@
 				<img src="img/logo/icon-green-check-mark.svg" alt="Зеленая галочка" width="66" height="66">
 				<h2 class="item-basket">Товар добавлен в корзину!</h2>
 			</div>
-			<form class="buttons-popup-item" action="url" method="get">
+			<div class="buttons-popup-item">
 				<button class="buttons-item make-request" type="submit">
 					Оформить заказ
 				</button>
 				<button class="buttons-item continue-shopping" type="submit">
 					Продолжить покупки
 				</button>
-			</form>
+			</div>
 		</section>
-
 		<script src="js/compressed-catalog-script.js"></script>
 	</body>
 </html>
