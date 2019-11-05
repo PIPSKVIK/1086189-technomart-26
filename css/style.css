@@ -2619,6 +2619,8 @@ fieldset {
 
 .make-request {
 	margin-right: 20px;
+	text-align: center;
+	text-decoration: none;
 }
 
 .buttons-item:hover {
